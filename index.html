@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#233822">
-  <meta name="description" content="愤怒的小鸟：怒鸟群岛。24 关经典弹弓冒险，完整离线单文件游戏。">
+  <meta name="description" content="愤怒的小鸟：怒鸟群岛。120 关经典弹弓冒险与无限远征，完整离线单文件游戏。">
   <title>愤怒的小鸟 · 怒鸟群岛</title>
   <style>
 :root{font-family:"Arial Black","Microsoft YaHei",Arial,sans-serif;color:#fff6d5;background:#152617;font-synthesis:none;--ink:#2c2113;--wood:#bb7931;--gold:#ffd142;--cream:#fff7d5}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none}body{display:flex;align-items:center;justify-content:center;min-height:100svh;background:radial-gradient(ellipse at 50% 50%,#456947 0,#274c2d 40%,#142517 78%);-webkit-font-smoothing:antialiased}body:before{content:"";position:fixed;pointer-events:none;inset:0;background:radial-gradient(ellipse 27% 13% at -6% 15%,#0a1b1190 0 75%,transparent 76%),radial-gradient(ellipse 23% 12% at 102% 84%,#0a1b1190 0 75%,transparent 76%),radial-gradient(ellipse 13% 27% at 5% 108%,#0b1a1190 0 72%,transparent 74%),radial-gradient(ellipse 19% 16% at 96% -4%,#0a1b1190 0 75%,transparent 76%)}button,canvas{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer;user-select:none;touch-action:manipulation;-webkit-user-select:none;transition:transform .12s,filter .12s,box-shadow .12s}button:hover:not(:disabled){filter:brightness(1.12);transform:translateY(-2px)}button:active:not(:disabled){transform:translateY(3px) scale(.96);filter:brightness(.95)}button:focus-visible{outline:3px solid #fffac7;outline-offset:4px}button:disabled{opacity:.45;cursor:default}button svg{display:block;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}svg{display:block}.hidden{display:none!important}.arcade-shell{position:relative;width:min(100vw,200svh);height:min(50vw,100svh);z-index:1;box-shadow:0 0 70px #0007}#stage{container-type:size;position:relative;isolation:isolate;width:100%;height:100%;overflow:hidden;background:#8eddeb}#gameCanvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;outline:0!important;cursor:grab}#gameCanvas:active{cursor:grabbing}.game-hud{z-index:3}.corner-controls{position:absolute;top:3%;left:2%;display:flex;gap:1cqw}.round-btn{display:grid;place-items:center;width:4.8cqw;height:4.8cqw;min-width:25px;min-height:25px;max-width:82px;max-height:82px;border-radius:50%;position:relative}.wood-btn{border:3px solid #3d2814;color:#fff3bb;background:radial-gradient(ellipse at 50% 0,#ffe49c80 0,transparent 63%),repeating-linear-gradient(5deg,transparent 0 12px,#6f3f1522 13px 15px,transparent 16px 25px),linear-gradient(#d69a46,#a96b2f);box-shadow:inset 0 3px 0 #ffe5a299,inset 0 -5px 0 #78502077,0 5px 0 #402910bb,0 7px 0 #0002;text-shadow:0 2px 0 #634014}.wood-btn:before{content:"";pointer-events:none;position:absolute;inset:4px;border:1px solid #efba6266;border-radius:inherit}.round-btn svg{width:54%;height:54%;stroke-width:3.5;filter:drop-shadow(0 2px 0 #513816)}.level-hud{position:absolute;left:15%;top:3%;width:25%;padding:.8cqw 1.8cqw .7cqw;transform:rotate(-2deg);text-align:center;pointer-events:none}.wooden-plaque{border:3px solid #4b321d;border-radius:9px;background:repeating-linear-gradient(3deg,transparent 0 18px,#67401825 19px 21px,transparent 22px 38px),linear-gradient(#bf813e,#a8662d);box-shadow:inset 0 2px 0 #f4c876aa,inset 0 -4px 0 #70411d66,0 5px 0 #39261450}.hud-eyebrow{font-size:.67cqw;font-weight:900;letter-spacing:.15cqw;color:#f3d5a1;text-shadow:1px 1px 0 #62401e;white-space:nowrap}.level-hud h1{margin:.3cqw 0 .35cqw;font-size:1.5cqw;letter-spacing:.04cqw;line-height:1.1;white-space:nowrap;color:#fff3c4;-webkit-text-stroke:.11cqw #53351c;paint-order:stroke fill;text-shadow:0 .18cqw 0 #613e1b;font-weight:900}.screw{position:absolute;top:40%;width:.5cqw;height:.5cqw;border-radius:50%;background:#563720;border:1px solid #d89c53;box-shadow:inset 1px 1px 1px #1b130e}.screw:after{content:"";position:absolute;width:70%;height:1px;background:#ad7f45;top:45%;left:15%;transform:rotate(35deg)}.screw-left{left:.7cqw}.screw-right{right:.7cqw}.level-progress-track{width:48%;height:.25cqw;min-height:2px;background:#5c3a22;border:1px solid #5b371c;border-radius:4px;overflow:hidden;margin:.3cqw auto 0}#levelProgress{height:100%;background:#ffe070;border-radius:4px;box-shadow:0 0 3px #ffea8588;transition:width .4s}.pig-counter{position:absolute;top:4%;left:47%;display:flex;align-items:center;gap:.5cqw;pointer-events:none;filter:drop-shadow(0 2px 1px #30482955)}.pig-counter svg{width:3cqw;height:3cqw}.pig-counter-label{font-size:1.3cqw;font-weight:900;color:#fff7d6;-webkit-text-stroke:.1cqw #293923;paint-order:stroke fill}.pig-counter strong{font-size:2.3cqw;line-height:1;font-weight:900;color:#fff7d6;-webkit-text-stroke:.23cqw #293923;paint-order:stroke fill;text-shadow:0 .23cqw 0 #355025}.score-hud{position:absolute;right:2.7%;top:3%;display:flex;flex-direction:column;align-items:flex-end;pointer-events:none}.score-label{font-family:Impact,"Arial Black",Arial,sans-serif;font-weight:900;font-size:1.15cqw;letter-spacing:.13cqw;color:#fffbd3;-webkit-text-stroke:.17cqw #2b291c;paint-order:stroke fill;text-shadow:0 .17cqw 0 #0005}.score-hud>strong{font-family:Impact,"Arial Black",Arial,sans-serif;font-size:4cqw;line-height:1.05;font-weight:900;letter-spacing:.07cqw;color:#fffbd9;-webkit-text-stroke:.35cqw #272318;paint-order:stroke fill;text-shadow:.14cqw .3cqw 0 #0005;font-variant-numeric:tabular-nums}.best-score{display:flex;align-items:center;gap:.55cqw;font-family:"Arial Black",Arial,sans-serif;font-size:.95cqw;line-height:1.5;font-weight:900;color:#ffdc6a;-webkit-text-stroke:.13cqw #30301d;paint-order:stroke fill;text-shadow:0 2px 0 #0003}.best-score strong{font-size:1.1cqw;letter-spacing:.03cqw}.utility-controls{position:absolute;right:2.7%;top:23%;display:flex;gap:.6cqw;z-index:7}.utility-btn{width:3.1cqw;height:3.1cqw;max-width:51px;max-height:51px;min-width:21px;min-height:21px;border:2px solid #364128;color:#fff7c8;background:linear-gradient(#718752db,#475f38eb);box-shadow:inset 0 2px 0 #aabc7b80,0 3px 0 #2d3c25aa}.utility-btn svg{stroke-width:3;filter:drop-shadow(0 1px 0 #253b26)}.sound-muted{display:none}#soundBtn[aria-pressed="false"] .sound-waves,#soundBtn.muted .sound-waves{display:none}#soundBtn[aria-pressed="false"] .sound-muted,#soundBtn.muted .sound-muted{display:block}.flock-hud{position:absolute;bottom:2.6%;left:1.8%;display:flex;align-items:center;gap:.6cqw;min-width:16cqw;max-width:28cqw;padding:.45cqw 1.15cqw .45cqw .55cqw;background:linear-gradient(90deg,#203f20c9,#203f2080,transparent);border-radius:4cqw 1cqw 1cqw 4cqw;pointer-events:none}.bird-portrait-wrap{flex-shrink:0;width:4.4cqw;height:4.4cqw;background:#eac570;border:2px solid #3c301b;border-radius:50%;box-shadow:inset 0 2px 0 #fff7ca7a,0 2px 0 #10271b66;display:grid;place-items:center}#birdPortrait{width:110%;height:110%}.flock-details{display:flex;flex-direction:column;gap:.18cqw}.bird-title{display:flex;align-items:center;gap:.6cqw;white-space:nowrap}.bird-title>strong{font-size:1cqw;letter-spacing:.04cqw;text-shadow:0 2px 0 #244025}.bird-count{font-size:.7cqw;color:#e2d9aa}#birdAbility{font-family:"Microsoft YaHei",Arial,sans-serif;font-size:.6cqw;line-height:1.3;color:#dddfba}.bird-queue{display:flex;gap:.3cqw;align-items:center;min-height:1.5cqw}.queue-bird{position:relative;display:grid;place-items:center}.queue-bird canvas{width:1.75cqw;height:1.75cqw;filter:drop-shadow(0 1px 0 #143125)}.queue-bird.spent{opacity:.25;filter:grayscale(1)}.queue-bird.current{transform:translateY(-.15cqw)}.queue-bird.current:after{content:"";position:absolute;bottom:-.12cqw;left:calc(50% - .15cqw);width:.3cqw;height:.3cqw;border-radius:50%;background:#ffdf5a}.bottom-controls{position:absolute;right:2.5%;bottom:3%;display:flex;align-items:center;gap:.7cqw}.bottom-controls .round-btn{width:3.8cqw;height:3.8cqw;max-width:65px;max-height:65px}.map-button{position:relative;display:flex;align-items:center;justify-content:center;gap:.65cqw;padding:.8cqw 1.2cqw;border-radius:.9cqw;font-size:.95cqw;font-weight:900;white-space:nowrap;min-height:3.8cqw}.map-button svg{width:1.8cqw;height:1.8cqw;filter:drop-shadow(0 2px 0 #684222)}.shot-hint{position:absolute;left:12%;bottom:20%;display:flex;align-items:center;gap:.55cqw;color:#fff8d7;pointer-events:none;transform:rotate(-7deg);filter:drop-shadow(0 2px 0 #364a2d)}.shot-hint svg{width:3.5cqw;height:2.6cqw;fill:none;stroke:currentColor;stroke-width:3.3;stroke-linecap:round;stroke-linejoin:round}.shot-hint span{font-size:1cqw;letter-spacing:.02cqw;-webkit-text-stroke:.15cqw #3c512b;paint-order:stroke fill}.ability-btn{position:absolute;bottom:3.5%;left:50%;transform:translateX(-50%) rotate(-2deg);display:flex;align-items:center;gap:.6cqw;padding:.8cqw 1.5cqw;border:3px solid #4b3011;border-radius:1cqw;background:linear-gradient(#ffe77c,#f6be36 65%,#dc961d);box-shadow:inset 0 3px 0 #fff3b0,0 5px 0 #82521b,0 7px 0 #0002;color:#fff8d5;text-shadow:0 2px 0 #986012;z-index:5;animation:ability-pulse 1.6s ease-in-out infinite}.ability-btn svg{width:2cqw;height:2cqw;fill:#fff5bf;stroke:#7e4818;stroke-width:2}.ability-btn>span{font-size:1.3cqw;font-weight:900;-webkit-text-stroke:.2cqw #7b4819;paint-order:stroke fill;white-space:nowrap}.ability-btn kbd{font-size:.65cqw;color:#8a571b;border-color:#b98932;background:#ffedab}.ability-btn:hover{transform:translateX(-50%) rotate(-2deg) translateY(-2px)!important}.ability-btn:active{transform:translateX(-50%) rotate(-2deg) translateY(3px)!important}kbd,.key{display:inline-flex;align-items:center;justify-content:center;padding:.15em .4em;min-width:2em;background:#f3dda2;border:1px solid #9f7a3e;border-bottom-width:2px;border-radius:4px;font-family:inherit;font-size:.82em;line-height:1.1;color:#65461f;white-space:nowrap}.toast{position:absolute;left:50%;bottom:15%;transform:translateX(-50%) rotate(-1deg);padding:.85cqw 1.5cqw;border:2px solid #302717;border-radius:.65cqw;max-width:75%;background:linear-gradient(#fff5c6,#efd99d);box-shadow:0 4px 0 #30271766;font-size:1.15cqw;line-height:1.5;font-weight:900;color:#593d20;text-align:center;z-index:15;pointer-events:none;animation:toast-in .18s ease-out}
@@ -24,6 +24,13 @@
 @media(min-width:901px){.modal-overlay[data-kind="album"] .modal{padding:1.5cqw 2.2cqw}.bird-album{gap:.7cqw;margin:1cqw 0}.bird-card{padding:.7cqw}.achievement-row{margin:1cqw 0}}
 @media(orientation:portrait) and (max-width:700px){.round-btn,.bottom-controls .round-btn{min-width:30px;min-height:30px}.utility-btn{min-width:28px;min-height:28px}.corner-controls{gap:6px}.level-hud{left:22%;width:30%;padding:5px 8px}.hud-eyebrow{font-size:4px}.level-hud h1{font-size:7px}.pig-counter{left:55%;top:5%}.collect-hud{left:55%;top:18%;font-size:6px}.wind-indicator{font-size:6px}.wind-indicator svg{width:12px;height:10px}.egg-status svg{height:12px;width:10px}.score-label{font-size:7px}.score-hud>strong{font-size:24px}.best-score,.best-score strong{font-size:7px}.utility-controls{top:31%;gap:4px}.bottom-controls{gap:6px;right:2%;bottom:3%}.map-button{min-height:31px;padding:6px 8px;font-size:8px;border-radius:6px;gap:5px}.map-button svg{width:13px;height:13px}.flock-hud{max-width:33%;gap:5px}.bird-portrait-wrap{width:26px;height:26px}.bird-title>strong{font-size:6px}.bird-count{font-size:5px}#birdAbility{font-size:4px}.queue-bird canvas{height:10px;width:10px}.ability-btn{min-height:30px;padding:6px 9px;border-radius:7px;bottom:21%;gap:5px}.ability-btn>span{font-size:10px;-webkit-text-stroke:1.3px #7b4819}.ability-btn svg{width:15px;height:15px}.toast{font-size:9px;padding:7px 12px;border-radius:6px;bottom:39%;max-width:85%}.shot-hint{bottom:23%;left:11%}.shot-hint span{font-size:6px}.modal-overlay[data-kind="album"] .modal{padding:25px 18px 20px}.bird-album{grid-template-columns:1fr;gap:10px;margin:18px 0}.bird-card{padding:12px}.achievement-row{margin:15px 0}.arcade-shell:has(#homeScreen:not(.hidden)):after{display:none}#stage:has(#homeScreen:not(.hidden)){container-type:normal;overflow:visible;z-index:1}#stage:has(#homeScreen:not(.hidden)) .utility-controls{position:fixed;top:16px;right:15px;gap:8px;z-index:10}.home-screen{position:fixed;inset:0;container-type:inline-size;background:linear-gradient(180deg,#294a2e 0,#42663c 28%,#385c3026 42%,#385c3000 55%,#36512d 67%,#1c3423 100%)}.home-logo{left:13%;top:10%;width:74%;transform:rotate(-7deg)}.logo-line{-webkit-text-stroke:1.7cqw #241d14;text-shadow:.1cqw .65cqw 0 #241d14;letter-spacing:-.6cqw}.logo-angry{font-size:17.5cqw}.logo-birds{font-size:22cqw}.logo-ribbon{margin-top:3cqw;margin-left:.5cqw;padding:9px 12px;gap:8px;font-size:13px;border-width:2px;letter-spacing:.5px}.logo-ribbon i{font-size:6px;letter-spacing:.3px}#titleBirds{left:-2.5%;top:31%;width:105%;height:22%}.play-button{left:39%;top:56%;width:22cqw;height:22cqw;border:3px solid #342310;box-shadow:inset 0 4px 0 #fff6b9,inset 0 -5px 0 #c68e21,0 5px 0 #795019,0 8px 1px #0003}.play-button:before{inset:7px;border-width:1px}.play-button>span{bottom:-27px;font-size:17px;-webkit-text-stroke:2.5px #382917;text-shadow:0 3px 0 #0004}.home-nav{left:4%;right:4%;bottom:21%;gap:9px;justify-content:center}.home-nav-btn{flex:1;min-width:0;min-height:43px;padding:9px 6px;border-radius:7px;gap:5px;font-size:12px;white-space:nowrap}.home-nav-btn svg{width:17px;height:17px}.home-stars{right:6%;bottom:9%;padding:9px 12px;gap:6px;border-width:2px;border-radius:7px;box-shadow:0 4px 0 #3b2b1c88,inset 0 2px 0 #d5a45a}.home-stars svg{width:25px;height:25px}.home-stars strong{font-size:23px;-webkit-text-stroke:2px #54341c}.home-stars>span{display:none}.home-eggs{left:6%;right:auto;bottom:10%;font-size:19px;gap:6px}.home-eggs svg{width:20px;height:25px}.home-eggs span{font-size:8px}.home-footer{bottom:2.5%;padding:0 6%;flex-direction:column;gap:10px;font-size:9px;letter-spacing:.4px}.home-footer small{font-size:6px;letter-spacing:1px}.home-footer b{padding:0 5px}}
 @media(max-height:450px) and (orientation:landscape){.primary-btn,.secondary-btn{min-height:32px;font-size:10px;padding:7px 12px}.world-tabs button{min-height:30px;font-size:9px}.node-name{font-size:8px}.world-heading strong{font-size:12px}.world-heading span{font-size:8px}}
+/* WORLD TOUR 3.0: paged islands, expedition modes and extended bird collection. */
+.home-nav-btn:nth-child(4){transform:rotate(1deg)}.home-nav-btn:nth-child(4) svg{fill:none;stroke:currentColor;stroke-width:2.5}.world-pager{display:flex;align-items:center;justify-content:center;gap:.7cqw;margin:.65cqw 0;color:#f4dda4;font-size:.82cqw;text-shadow:0 1px 0 #68401c}.world-pager .world-tabs{flex:1;margin:0}.world-pager>button,.level-page-nav>button{display:inline-flex;align-items:center;justify-content:center;gap:.4cqw;min-width:2.5cqw;min-height:32px;padding:.45cqw .85cqw;border:2px solid #5c3d1d;border-radius:.55cqw;background:linear-gradient(#f2d696,#d6ac60);box-shadow:inset 0 2px 0 #fff0b970,0 3px 0 #785027;color:#704a21;font-size:.85cqw;font-weight:900;white-space:nowrap}.world-pager>button:disabled{opacity:.35;box-shadow:none}.world-pager>span,.world-pager>strong{font-size:.82cqw;letter-spacing:.04cqw;min-width:6cqw;text-align:center}.level-page-nav{display:flex;align-items:center;justify-content:center;gap:.7cqw;margin:.9cqw 0 .35cqw}.level-page-nav>button{min-width:6.5cqw;padding:.45cqw 1cqw}.level-page-nav>button.active,.level-page-nav>button[aria-current="page"]{background:linear-gradient(#fff2a6,#ffd04a);border-color:#79501e;color:#63401d;box-shadow:inset 0 2px 0 #fffac780,0 3px 0 #946126}.level-page-nav>span{font-size:.8cqw;color:#ffe8b6}.modal-overlay[data-kind="levels"] .modal:has(.level-page-nav) .map-board{height:20.5cqw}.modal-overlay[data-kind="album"] .modal{display:flex;flex-direction:column;height:44cqw;max-height:100%;overflow:hidden}.modal-overlay[data-kind="album"] .modal>.modal-title,.modal-overlay[data-kind="album"] .modal>.modal-eyebrow,.modal-overlay[data-kind="album"] .modal>.achievement-row,.modal-overlay[data-kind="album"] .modal>.modal-actions{flex-shrink:0}.modal-overlay[data-kind="album"] .bird-album{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;align-content:start;padding:.25cqw .3cqw .5cqw 0;scrollbar-width:thin;scrollbar-color:#79502b #c28c44}.bird-card:nth-child(7){grid-column:auto}.bird-card:nth-child(10):last-child{grid-column:2}.modal-overlay[data-kind="album"] .modal-actions{margin-top:.7cqw}.modal-overlay[data-kind="album"] .achievement-row{margin-top:.7cqw;margin-bottom:.5cqw}.modal-overlay[data-kind="modes"] .modal,.modal-overlay[data-kind="upgrades"] .modal,.modal-overlay[data-kind="upgrade"] .modal,.modal-overlay[data-kind="trials"] .modal{width:76%;padding:2cqw 2.5cqw}.modal-overlay[data-kind="voyage-setup"] .modal,.modal-overlay[data-kind="voyage"] .modal{width:49%;padding:2.3cqw 3cqw}.mode-grid,.upgrade-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1cqw;margin:1.5cqw 0}.mode-card,.upgrade-card,.trial-card{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:.65cqw;min-width:0;padding:1.35cqw 1.2cqw;border:.22cqw solid #735022;border-radius:.85cqw;background:radial-gradient(ellipse at 50% 0,#fff6d488,transparent 70%),linear-gradient(#ffedb2,#dfbf79);color:#704b24;box-shadow:inset 0 .2cqw 0 #fff7cf,0 .35cqw 0 #754a25;text-align:center;font-family:"Arial Black","Microsoft YaHei",Arial,sans-serif;overflow-wrap:anywhere}.mode-card:hover,.upgrade-card:hover,.trial-card:hover{background-color:#ffefb6;box-shadow:inset 0 .2cqw 0 #fff7cf,0 .5cqw 0 #754a25}.mode-card:focus-visible,.upgrade-card:focus-visible,.trial-card:focus-visible{outline:3px solid #fff3aa;outline-offset:4px}.mode-icon{display:grid;place-items:center;width:5.4cqw;height:5.4cqw;margin:.2cqw 0 .45cqw;border:.2cqw solid #846027;border-radius:50%;background:radial-gradient(ellipse at 40% 20%,#fff6b5,#e9bc58 73%,#c78f2a);box-shadow:inset 0 .18cqw 0 #fff5c4,0 .2cqw 0 #b38333;color:#96601f;font-family:Arial,sans-serif;font-size:3.4cqw;font-weight:900;line-height:1;text-shadow:0 .15cqw 0 #ffed9a;flex-shrink:0}.mode-icon svg{width:62%;height:62%;stroke-width:2.7}.mode-card:first-child .mode-icon{background:radial-gradient(ellipse at 40% 20%,#e4f19f,#a4c15b 73%,#759442);border-color:#607b33;color:#526d28;text-shadow:0 2px 0 #ddef9b}.mode-card:nth-child(3) .mode-icon{background:radial-gradient(ellipse at 40% 20%,#e0eec9,#97b6a2 73%,#607f71);border-color:#526e56;color:#3f6556;text-shadow:0 2px 0 #d0e2c0}.mode-card h3,.mode-card>strong,.upgrade-card h3,.upgrade-card>strong,.trial-card h3,.trial-card>strong{display:block;font-size:1.5cqw;line-height:1.35;margin:0;color:#64401e;letter-spacing:.025cqw}.mode-desc,.mode-card p,.upgrade-card p,.upgrade-card>span,.trial-card p{display:block;font-family:Arial,"Microsoft YaHei",sans-serif;font-size:.88cqw;line-height:1.85;font-weight:600;margin:0;color:#916831}.mode-card small,.upgrade-card small,.trial-card small{font-family:Arial,"Microsoft YaHei",sans-serif;font-size:.76cqw;line-height:1.6;color:#a27a3b}.mode-card .mode-tag,.mode-tag{padding:.25cqw .65cqw;border:1px solid #b89a52;border-radius:20px;background:#eed494;color:#8b6028;font-size:.7cqw;line-height:1.3}.upgrade-card{min-height:12cqw;padding:1.6cqw 1.3cqw;justify-content:center;border-color:#70512b}.upgrade-card:before{content:"✦";display:block;width:3.8cqw;height:3.8cqw;font-family:Arial,sans-serif;font-size:3.5cqw;line-height:1;color:#e9b835;-webkit-text-stroke:.12cqw #8e6028;paint-order:stroke fill;text-shadow:0 .15cqw 0 #d3a450}.upgrade-card[data-upgrade="bird"]:before{color:#dd7348}.upgrade-card[data-upgrade="power"]:before{color:#80a848}.upgrade-card[data-upgrade="blast"]:before{color:#d89c38}.trial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.95cqw;margin:1.3cqw 0}.trial-card{min-height:9cqw;align-items:flex-start;padding:1.1cqw 1.2cqw;text-align:left;gap:.45cqw;background:linear-gradient(#f8e5b1,#dbba76)}.trial-card h3,.trial-card>strong{font-size:1.2cqw}.trial-card p{font-size:.82cqw;line-height:1.75}.trial-card .mode-icon{width:3.6cqw;height:3.6cqw;font-size:2.3cqw;margin:0 0 .25cqw}.trial-card.completed{border-color:#657d38;background:linear-gradient(#eef0b0,#bfcc77)}.trial-card.locked{opacity:.6}.trial-card .trial-best,.trial-best{font-size:.8cqw;color:#9b6a25;font-weight:900}.voyage-fields,.voyage-form,.voyage-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1cqw;margin:1.3cqw 0;text-align:left}.voyage-fields label,.voyage-form label,.voyage-inputs label,.form-field{display:flex;flex-direction:column;gap:.45cqw;font-size:.95cqw;line-height:1.4;font-weight:900;color:#ffe5a7;text-shadow:0 1px 0 #775027}.voyage-fields .wide,.voyage-form .wide{grid-column:1/-1}#voyageSeed,#voyageDifficulty{display:block;width:100%;max-width:100%;min-width:0;min-height:40px;padding:.8cqw 1cqw;border:.2cqw solid #6a4523;border-radius:.65cqw;background:linear-gradient(#fff3c8,#f0dca6);box-shadow:inset 0 2px 4px #80511c20,0 2px 0 #f3bd6644;color:#714f26;font-family:Arial,"Microsoft YaHei",sans-serif;font-size:1.2cqw;line-height:1.3;font-weight:700;letter-spacing:.04cqw;outline:none}#voyageSeed::placeholder{font-size:.9cqw;color:#b49461;letter-spacing:0}#voyageSeed:focus,#voyageDifficulty:focus{border-color:#ffe686;outline:3px solid #715124;outline-offset:1px}#voyageDifficulty option{background:#f4dfac;color:#644421}.voyage-info{padding:1.1cqw 1.4cqw;margin:1.25cqw 0;border:2px solid #855b2b;border-radius:.7cqw;background:#754c2530;color:#ffebbd;text-align:left;font-family:Arial,"Microsoft YaHei",sans-serif;font-size:.9cqw;line-height:1.9;font-weight:600}.voyage-info strong{color:#fff0a5}.voyage-info p{margin:.35cqw 0}.voyage-info ul{padding-left:1.4em;margin:.35cqw 0}.voyage-info code{font:inherit;color:#ffe66f}.voyage-hud{position:absolute;left:15.4%;top:16.5%;display:flex;align-items:center;gap:.9cqw;max-width:38%;padding:.48cqw .9cqw;border:2px solid #2c4325;border-radius:.65cqw;background:linear-gradient(#526e37eb,#334e2ae8);box-shadow:inset 0 2px 0 #93ad5870,0 3px 0 #26391d7a;color:#fff1be;font-size:.8cqw;line-height:1.3;white-space:nowrap;text-shadow:0 2px 0 #29391e;pointer-events:none}.voyage-hud strong{color:#ffe16b;font-size:.97cqw}.voyage-hud .hearts,.voyage-hud .voyage-hearts{color:#ff9b72;letter-spacing:.12cqw}.objective-hud{position:absolute;left:50%;bottom:12%;transform:translateX(-50%);max-width:55%;padding:.4cqw .9cqw;border:1px solid #aa863e;border-radius:.55cqw;background:#fff2badb;color:#755025;font-size:.8cqw;font-weight:900;line-height:1.4;box-shadow:0 2px 0 #6345214d;text-align:center;pointer-events:none}.objective-hud strong{color:#42723a}.objective-hud.completed{background:#d9efabe6;border-color:#70964d;color:#426738}.objective-hud .progress{font-variant-numeric:tabular-nums;margin-left:.5cqw}
+.map-board.theme-jungle{background:radial-gradient(ellipse at 18% 70%,#4e9653 0 22%,transparent 23%),radial-gradient(ellipse at 80% 35%,#83bd6b 0 28%,transparent 29%),linear-gradient(#9fd77d,#65a561)}.map-board.theme-jungle:before{background:radial-gradient(ellipse at 0 0,#24583d 0 13%,transparent 14%),radial-gradient(ellipse at 99% 103%,#255e3b 0 20%,transparent 21%),radial-gradient(ellipse at 50% 110%,#49a8a0 0 23%,transparent 24%)}.map-board.theme-desert{background:radial-gradient(ellipse at 33% 68%,#e4b466 0 26%,transparent 27%),radial-gradient(ellipse at 87% 80%,#d3a063 0 29%,transparent 30%),linear-gradient(#f5d591,#e7bd79)}.map-board.theme-desert:before{background:radial-gradient(ellipse at 48% -10%,#f5e2ad 0 26%,transparent 27%),radial-gradient(ellipse at 2% 100%,#c9945d 0 17%,transparent 18%),radial-gradient(ellipse at 89% 106%,#aab58b 0 14%,transparent 15%)}.map-board.theme-desert .world-heading,.map-board.theme-desert .world-heading span{color:#946537}.map-board.theme-volcano{background:radial-gradient(ellipse at 34% 57%,#786452 0 27%,transparent 28%),radial-gradient(ellipse at 87% 70%,#674d44 0 23%,transparent 24%),linear-gradient(#946f55,#755240)}.map-board.theme-volcano:before{background:linear-gradient(12deg,#ed8a37 0 7%,#d5582f 8% 14%,transparent 15% 83%,#de7335 84% 89%,#f6a744 90%),radial-gradient(ellipse at 5% 64%,#e67f32 0 12%,transparent 13%)}.map-board.theme-volcano .world-heading,.map-board.theme-volcano .world-heading span{color:#ffe2a4;text-shadow:0 1px 0 #573429}.map-board.theme-factory{background:repeating-linear-gradient(0deg,transparent 0 23%,#73857844 24% 25%),repeating-linear-gradient(90deg,transparent 0 19%,#73857844 20% 21%),linear-gradient(#b2b8a5,#8c9e8d)}.map-board.theme-factory:before{background:repeating-linear-gradient(135deg,#dfc168 0 10px,#72765d 11px 20px);clip-path:polygon(0 90%,100% 90%,100% 100%,0 100%)}.map-board.theme-factory .world-heading,.map-board.theme-factory .world-heading span{color:#4b5d4c}.map-board.theme-candy{background:radial-gradient(ellipse at 18% 60%,#d2b5cc 0 21%,transparent 22%),radial-gradient(ellipse at 60% 64%,#e6b9b4 0 28%,transparent 29%),linear-gradient(#f0d8c2,#dbb9c9)}.map-board.theme-candy:before{background:radial-gradient(ellipse at 0 0,#a9d6c0 0 15%,transparent 16%),radial-gradient(ellipse at 91% 100%,#dca7bb 0 23%,transparent 24%),radial-gradient(ellipse at 45% 115%,#f4dfac 0 25%,transparent 26%)}.map-board.theme-candy .world-heading,.map-board.theme-candy .world-heading span{color:#a0627c}.map-board.theme-sky{background:radial-gradient(ellipse at 28% 58%,#c0dce1 0 19%,transparent 20%),radial-gradient(ellipse at 82% 62%,#bddce2 0 20%,transparent 21%),linear-gradient(#acd9e3,#d0e9e6)}.map-board.theme-sky:before{background:radial-gradient(ellipse at 0 70%,#fff8dd 0 12%,transparent 13%),radial-gradient(ellipse at 85% 3%,#fff6de 0 16%,transparent 17%),radial-gradient(ellipse at 52% 110%,#eff5de 0 24%,transparent 25%)}.map-board.theme-sky .world-heading,.map-board.theme-sky .world-heading span{color:#547f84}.map-board.theme-space{background:radial-gradient(circle at 23% 78%,#7f7896 0 12%,transparent 13%),radial-gradient(ellipse at 74% 77%,#5f7290 0 26%,transparent 27%),linear-gradient(#334666,#50617d)}.map-board.theme-space:before{background:radial-gradient(circle at 6% 14%,#f4efb9 0 2px,transparent 3px),radial-gradient(circle at 31% 9%,#f4efb9 0 1px,transparent 2px),radial-gradient(circle at 52% 72%,#f4efb9 0 2px,transparent 3px),radial-gradient(circle at 75% 15%,#f4efb9 0 2px,transparent 3px),radial-gradient(circle at 95% 83%,#f4efb9 0 1px,transparent 2px)}.map-board.theme-space .world-heading,.map-board.theme-space .world-heading span{color:#f0e1af;text-shadow:0 1px 0 #273a5a}.map-board.theme-aurora{background:radial-gradient(ellipse at 30% 68%,#6f9991 0 24%,transparent 25%),radial-gradient(ellipse at 82% 58%,#578b88 0 25%,transparent 26%),linear-gradient(135deg,#344f68,#56797c 42%,#75a798 61%,#466c76)}.map-board.theme-aurora:before{background:linear-gradient(117deg,transparent 0 15%,#a7d2a544 24%,#c2d8a555 28%,transparent 36% 51%,#9bcfac55 66%,#9ccdd13b 74%,transparent 82%)}.map-board.theme-aurora .world-heading,.map-board.theme-aurora .world-heading span{color:#edf0c8;text-shadow:0 1px 0 #2e535e}.map-board:is(.theme-space,.theme-aurora,.theme-volcano) .node-name{-webkit-text-stroke-color:#354f4f;text-shadow:0 2px 0 #354f4f}
+@media(max-width:900px){.mode-card,.upgrade-card,.trial-card{border-width:2px}.mode-icon{border-width:2px}.world-pager>button,.level-page-nav>button{font-size:10px;min-width:32px;min-height:32px;padding:5px 9px;border-radius:6px}.world-pager>span,.world-pager>strong{font-size:9px}.level-page-nav>button{min-width:61px}.voyage-hud{border-width:1.5px}.objective-hud{font-size:max(7px,.8cqw)}}
+@media(orientation:portrait) and (max-width:700px){.home-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));left:10%;right:10%;bottom:18%;gap:10px 12px}.home-nav-btn{min-height:41px;padding:9px 10px;font-size:13px}.home-nav-btn:nth-child(3){transform:rotate(1deg)}.home-nav-btn:nth-child(4){transform:rotate(-1deg)}.play-button{top:54%}.home-stars{bottom:8%}.home-eggs{bottom:9%}.world-pager{gap:8px;margin:10px 0;font-size:10px}.world-pager>button{min-height:34px;min-width:34px;padding:6px 10px;font-size:11px}.world-pager>span,.world-pager>strong{font-size:10px;min-width:62px}.world-pager .world-tabs{gap:6px}.level-page-nav{gap:9px;margin:13px 0 5px}.level-page-nav>button{min-width:75px;min-height:34px;font-size:11px;padding:7px 13px;border-radius:7px}.level-page-nav>span{font-size:10px}.modal-overlay[data-kind="levels"] .modal:has(.level-page-nav) .map-board{height:250px}.modal-overlay[data-kind="album"] .modal{height:min(760px,calc(100svh - 40px));padding:25px 18px 20px}.modal-overlay[data-kind="album"] .bird-album{padding:3px 4px 8px 0;margin:14px 0;gap:10px;overflow-y:auto}.bird-card:nth-child(10):last-child{grid-column:auto}.modal-overlay[data-kind="album"] .modal-actions{margin-top:12px}.modal-overlay[data-kind="album"] .achievement-row{margin:8px 0}.modal-overlay[data-kind="modes"] .modal,.modal-overlay[data-kind="upgrade"] .modal,.modal-overlay[data-kind="upgrades"] .modal,.modal-overlay[data-kind="trials"] .modal,.modal-overlay[data-kind="voyage-setup"] .modal,.modal-overlay[data-kind="voyage"] .modal{width:100%;max-height:calc(100svh - 40px);padding:25px 18px 20px;border:3px solid #352311;border-radius:15px}.mode-grid,.upgrade-grid{grid-template-columns:1fr;gap:11px;margin:18px 0}.mode-card{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;gap:4px 12px;padding:15px 12px;border:2px solid #735022;border-radius:10px;min-height:104px;text-align:left;box-shadow:inset 0 2px 0 #fff7cf,0 4px 0 #754a25}.mode-card>:not(.mode-icon){grid-column:2}.mode-icon{grid-column:1;grid-row:1/4;width:50px;height:50px;margin:0;font-size:31px;border:2px solid #846027;box-shadow:inset 0 2px 0 #fff5c4,0 2px 0 #b38333}.mode-card h3,.mode-card>strong,.upgrade-card h3,.upgrade-card>strong{font-size:16px;line-height:1.4}.mode-desc,.mode-card p,.upgrade-card p,.upgrade-card>span{font-size:11px;line-height:1.8}.mode-card small,.upgrade-card small,.trial-card small{font-size:10px;line-height:1.5}.mode-card .mode-tag,.mode-tag{padding:3px 7px;border-radius:12px;font-size:9px;justify-self:start}.upgrade-card{display:grid;grid-template-columns:43px minmax(0,1fr);column-gap:13px;row-gap:5px;align-items:center;justify-content:start;min-height:101px;padding:15px 12px;border:2px solid #70512b;border-radius:10px;text-align:left;box-shadow:inset 0 2px 0 #fff7cf,0 4px 0 #754a25}.upgrade-card:before{grid-column:1;grid-row:1/4;width:40px;height:40px;font-size:39px;-webkit-text-stroke:1.5px #8e6028}.upgrade-card>*{grid-column:2}.trial-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.trial-card{min-height:130px;padding:13px 10px;border:2px solid #735022;border-radius:9px;gap:7px;box-shadow:inset 0 2px 0 #fff7cf,0 3px 0 #754a25}.trial-card h3,.trial-card>strong{font-size:12px;line-height:1.5}.trial-card p{font-size:10px;line-height:1.75}.trial-card .mode-icon{width:36px;height:36px;font-size:23px}.trial-card .trial-best,.trial-best{font-size:10px}.voyage-fields,.voyage-form,.voyage-inputs{grid-template-columns:1fr;gap:14px;margin:18px 0}.voyage-fields label,.voyage-form label,.voyage-inputs label,.form-field{gap:7px;font-size:12px}#voyageSeed,#voyageDifficulty{min-height:45px;padding:11px 12px;border:2px solid #6a4523;border-radius:8px;font-size:16px;letter-spacing:.3px}#voyageSeed::placeholder{font-size:12px}.voyage-info{padding:13px 14px;margin:16px 0;border-radius:9px;font-size:11px;line-height:1.85}.voyage-info p,.voyage-info ul{margin:5px 0}.voyage-hud{left:3%;top:25%;max-width:56%;gap:7px;padding:4px 7px;border:1px solid #2c4325;border-radius:5px;font-size:7px;line-height:1.3}.voyage-hud strong{font-size:8px}.voyage-hud .hearts,.voyage-hud .voyage-hearts{letter-spacing:1px}.objective-hud{bottom:44%;max-width:76%;padding:4px 8px;border-radius:5px;font-size:7px;line-height:1.3}.objective-hud .progress{margin-left:4px}}
+@media(max-height:450px) and (orientation:landscape){.home-nav{gap:1.05cqw}.home-nav-btn{font-size:max(9px,1.15cqw);min-height:34px;padding:.8cqw 1cqw;gap:.45cqw}.home-nav-btn svg{width:1.8cqw;height:1.8cqw}.world-pager{margin:5px 0;gap:7px}.world-pager>button,.level-page-nav>button{min-height:32px;min-width:32px;padding:5px 9px;font-size:10px}.world-pager>span,.world-pager>strong{font-size:9px}.world-tabs{margin:5px 0}.map-board{height:20cqw}.modal-overlay[data-kind="levels"] .modal:has(.level-page-nav) .map-board{height:18.5cqw}.level-page-nav{margin:7px 0 3px;gap:8px}.level-page-nav>button{min-width:67px}.modal-overlay[data-kind="modes"] .modal,.modal-overlay[data-kind="upgrade"] .modal,.modal-overlay[data-kind="upgrades"] .modal,.modal-overlay[data-kind="trials"] .modal{width:88%;padding:1.5cqw 2cqw}.modal-overlay[data-kind="voyage-setup"] .modal,.modal-overlay[data-kind="voyage"] .modal{width:67%;padding:1.5cqw 2.3cqw}.mode-grid,.upgrade-grid{gap:.8cqw;margin:1cqw 0}.mode-card,.upgrade-card{padding:1cqw .8cqw;gap:.6cqw;border-radius:8px}.mode-icon{width:5cqw;height:5cqw;font-size:3.2cqw}.mode-card h3,.mode-card>strong,.upgrade-card h3,.upgrade-card>strong{font-size:12px}.mode-desc,.mode-card p,.upgrade-card p,.upgrade-card>span{font-size:9px;line-height:1.65}.mode-card small,.upgrade-card small,.trial-card small{font-size:8px}.upgrade-card{min-height:14cqw}.upgrade-card:before{font-size:4cqw;width:4cqw;height:4cqw}.trial-grid{gap:.8cqw;margin:1cqw 0}.trial-card{min-height:11.5cqw;padding:.9cqw;gap:.5cqw}.trial-card h3,.trial-card>strong{font-size:10px}.trial-card p{font-size:8px;line-height:1.7}.trial-card .trial-best,.trial-best{font-size:8px}.voyage-fields,.voyage-form,.voyage-inputs{gap:12px;margin:12px 0}.voyage-fields label,.voyage-form label,.voyage-inputs label,.form-field{font-size:11px;gap:5px}#voyageSeed,#voyageDifficulty{font-size:14px;min-height:36px;padding:7px 10px;border-radius:7px}#voyageSeed::placeholder{font-size:11px}.voyage-info{font-size:10px;line-height:1.7;padding:10px 12px;margin:12px 0}.modal-overlay[data-kind="album"] .modal{height:45cqw;max-height:100%}.voyage-hud{font-size:8px}.voyage-hud strong{font-size:9px}}
+@media(orientation:portrait) and (max-height:740px){.home-logo{top:8%}.home-nav{bottom:16%;gap:8px 11px;left:11%;right:11%}.home-nav-btn{min-height:37px;padding:7px 8px;font-size:12px}.home-stars{bottom:6.7%;padding:6px 10px}.home-eggs{bottom:8%;font-size:17px}.home-footer{bottom:1.8%;gap:6px;font-size:8px}.home-footer small{font-size:5px}.play-button{top:51%;width:21cqw;height:21cqw;left:39.5%}.play-button>span{font-size:15px;bottom:-24px}}
 
 </style>
 </head>
@@ -36,6 +43,7 @@
         <button class="round-btn wood-btn" id="restartBtn" aria-label="重新开始本关" title="重新开始 · R"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 12a10 10 0 1 1-1 8M7 5v8h8"/></svg></button>
       </div>
       <div class="level-hud game-hud wooden-plaque"><span class="screw screw-left"></span><div id="chapterLabel" class="hud-eyebrow">GREEN MEADOWS</div><h1 id="levelName">1 — 初来乍到</h1><div class="level-progress-track"><div id="levelProgress" style="width:4.16%"></div></div><span class="screw screw-right"></span></div>
+      <div id="voyageHud" class="voyage-hud game-hud hidden" aria-label="远征进度"></div><div id="objectiveHud" class="objective-hud game-hud hidden" aria-label="本关额外目标"></div>
       <div id="pigCounter" class="pig-counter game-hud" aria-label="剩余小猪"><svg viewBox="0 0 36 34" aria-hidden="true"><path d="m8 10-1-7 7 4m9-1 7-4-1 9" fill="#75b338" stroke="#26321a" stroke-width="2.5"/><path d="M33 19c0 8-7 12-15 12S3 27 3 19 8 6 18 6s15 5 15 13Z" fill="#9edb44" stroke="#26321a" stroke-width="2.5"/><ellipse cx="11" cy="17" rx="3" ry="4" fill="#fffde8"/><ellipse cx="25" cy="17" rx="3" ry="4" fill="#fffde8"/><circle cx="12" cy="17" r="1.4"/><circle cx="24" cy="17" r="1.4"/><ellipse cx="18" cy="24" rx="8" ry="5" fill="#bee865" stroke="#3b5826" stroke-width="2"/><ellipse cx="15" cy="24" rx="1.3" ry="1.8" fill="#416129"/><ellipse cx="21" cy="24" rx="1.3" ry="1.8" fill="#416129"/></svg><span class="pig-counter-label">×</span><strong id="pigCountValue">2</strong></div>
       <div class="collect-hud game-hud"><div id="eggStatus" class="egg-status" title="本关隐藏金蛋"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M22 19c0 7-4 10-10 10S2 26 2 19 7 2 12 2s10 10 10 17Z"/></svg></div><div class="wind-indicator" title="当前风向"><svg viewBox="0 0 30 25" aria-hidden="true"><path d="M2 7h18c8 0 8-6 3-6M2 13h23c6 0 6 7 1 7M6 19h8c5 0 5 5 1 5"/></svg><span id="windValue">微风</span></div></div><div class="score-hud game-hud"><span class="score-label">SCORE</span><strong id="scoreValue">0</strong><div class="best-score"><span>BEST</span><strong id="bestValue">0</strong></div></div>
       <div id="shotHint" class="shot-hint game-hud"><svg viewBox="0 0 60 45" aria-hidden="true"><path d="M55 37C23 42 13 26 20 10m-13 7 13-9 9 13"/></svg><span>拉开弹弓，放飞怒气！</span></div>
@@ -44,11 +52,11 @@
       <div class="bottom-controls game-hud"><button class="round-btn wood-btn" id="homeBtn" aria-label="返回主菜单" title="主菜单"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m5 15 11-10 11 10M9 13v14h14V13M14 27v-8h5v8"/></svg></button><button class="map-button wood-btn" id="levelsBtn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m4 7 8-3 8 3 8-3v22l-8 3-8-3-8 3Zm8-3v22m8-19v22"/></svg><span>关卡地图</span></button><button class="round-btn wood-btn" id="albumBtn" aria-label="小鸟图鉴" title="小鸟图鉴"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 8C12 4 7 5 3 6v20c5-1 9 0 13 3 4-3 8-4 13-3V6c-4-1-9-2-13 2Zm0 0v21"/><path d="M7 12h4m10 0h4M7 17h4m10 0h4"/></svg></button></div>
       <div class="utility-controls"><button class="round-btn utility-btn" id="cinemaBtn" aria-label="冲击慢动作" title="冲击慢动作 · C" aria-pressed="true"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="15" r="9"/><path d="M14 9v7l4 2M11 2h6M14 2v4"/></svg></button><button class="round-btn utility-btn" id="soundBtn" aria-label="开启或关闭声音" title="声音 · M" aria-pressed="true"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m13 6-6 5H3v7h4l6 5Z"/><path class="sound-waves" d="M18 10a7 7 0 0 1 0 10m4-14a12 12 0 0 1 0 17"/><path class="sound-muted" d="m18 11 7 7m0-7-7 7"/></svg></button><button class="round-btn utility-btn" id="helpBtn" aria-label="玩法帮助" title="玩法帮助 · H"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M9 9a5 5 0 0 1 10 1c0 4-5 3-5 8M14 23h.01"/></svg></button><button class="round-btn utility-btn" id="fullscreenBtn" aria-label="切换全屏" title="全屏 · F"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M10 4H4v6m14-6h6v6M4 18v6h6m14-6v6h-6"/></svg></button></div>
       <div id="homeScreen" class="home-screen hidden" aria-label="主菜单">
-        <div class="home-logo" aria-label="Angry Birds 怒鸟群岛"><span class="logo-line logo-angry">ANGRY</span><span class="logo-line logo-birds">BIRDS</span><span class="logo-ribbon">怒 鸟 群 岛 <i>CLASSIC REMIX</i></span></div>
+        <div class="home-logo" aria-label="Angry Birds 怒鸟群岛"><span class="logo-line logo-angry">ANGRY</span><span class="logo-line logo-birds">BIRDS</span><span class="logo-ribbon">怒 鸟 群 岛 <i>WORLD TOUR 3.0</i></span></div>
         <canvas id="titleBirds" width="1200" height="410" aria-hidden="true"></canvas>
         <button id="playBtn" class="play-button" aria-label="开始冒险"><svg viewBox="0 0 70 70" aria-hidden="true"><path d="m26 14 30 21-30 21Z"/></svg><span>开始冒险</span></button>
-        <div class="home-nav"><button id="homeLevelsBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m4 7 8-3 8 3 8-3v22l-8 3-8-3-8 3Zm8-3v22m8-19v22"/></svg><span>冒险地图</span></button><button id="homeAlbumBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 8C12 4 7 5 3 6v20c5-1 9 0 13 3 4-3 8-4 13-3V6c-4-1-9-2-13 2Zm0 0v21"/></svg><span>小鸟图鉴</span></button><button id="homeChallengeBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1Z"/></svg><span>每日挑战</span></button></div>
-        <div class="home-eggs"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M22 19c0 7-4 10-10 10S2 26 2 19 7 2 12 2s10 10 10 17Z"/></svg><strong id="homeEggs">0 / 24</strong><span>隐藏金蛋</span></div><div class="home-stars"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="m15 2 4 8 9 2-7 6 1 10-7-5-8 5 2-10-7-6 9-2Z"/></svg><strong id="homeStars">0 / 72</strong><span>岛屿之星</span></div>
+        <div class="home-nav"><button id="homeLevelsBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m4 7 8-3 8 3 8-3v22l-8 3-8-3-8 3Zm8-3v22m8-19v22"/></svg><span>冒险地图</span></button><button id="homeAlbumBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 8C12 4 7 5 3 6v20c5-1 9 0 13 3 4-3 8-4 13-3V6c-4-1-9-2-13 2Zm0 0v21"/></svg><span>小鸟图鉴</span></button><button id="homeChallengeBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1Z"/></svg><span>每日挑战</span></button><button id="homeModesBtn" class="home-nav-btn wood-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="m20 10-2 8-8 4 3-9Z"/><path d="M16 2v4m0 20v4M2 16h4m20 0h4"/></svg><span>玩法中心</span></button></div>
+        <div class="home-eggs"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M22 19c0 7-4 10-10 10S2 26 2 19 7 2 12 2s10 10 10 17Z"/></svg><strong id="homeEggs">0 / 120</strong><span>隐藏金蛋</span></div><div class="home-stars"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="m15 2 4 8 9 2-7 6 1 10-7-5-8 5 2-10-7-6 9-2Z"/></svg><strong id="homeStars">0 / 360</strong><span>岛屿之星</span></div>
         <div class="home-footer"><span>拖拽发射 <b>·</b> 点击释放技能 <b>·</b> 连锁倒塌！</span><small>FAN-MADE · OFFLINE CLASSIC</small></div>
       </div>
       <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
@@ -301,6 +309,226 @@
 
 </script>
 <script>
+/* src/expansion.js */
+/* Voyage expansion: 96 authored campaign recipes + deterministic endless routes.
+   Loaded after levels.js. The original 24 level objects and indices stay intact. */
+(() => {
+  'use strict';
+  if(window.__voyageExpansionLoaded)return;
+  if(!Array.isArray(window.LEVELS)||!Array.isArray(window.WORLDS))throw new Error('Load levels.js before expansion.js');
+  const originalLevelCount=window.LEVELS.length,worldOffset=window.WORLDS.length;
+  const block=(l,x,y,w,h,material='wood')=>l.blocks.push({x,y,w,h,material,angle:0});
+  const pig=(l,x,bottom,r=24,extra={})=>l.pigs.push({x,y:bottom-r,r,...extra});
+  const column=(l,x,bottom,height,materials='wood',pieces=2,w=24)=>{
+    const h=height/pieces;
+    for(let i=0;i<pieces;i++)block(l,x,bottom-h*(i+.5),w,h,Array.isArray(materials)?materials[i%materials.length]:materials);
+  };
+  const frame=(l,x,bottom,w,h,posts='wood',roof='wood',pieces=2,pw=24)=>{
+    column(l,x-w/2+pw/2,bottom,h,posts,pieces,pw);column(l,x+w/2-pw/2,bottom,h,posts,pieces,pw);
+    block(l,x,bottom-h-12,w,24,roof);return bottom-h-24;
+  };
+  const platform=(l,x,top,w,h=28)=>l.platforms.push({x,y:top+h/2,w,h});
+  const tnt=(l,x,bottom=660,size=38)=>block(l,x,bottom-size/2,size,size,'tnt');
+  const rng=seed=>{let s=seed>>>0;return()=>{s=(s+0x6D2B79F5)>>>0;let t=Math.imul(s^(s>>>15),1|s);t^=t+Math.imul(t^(t>>>7),61|t);return((t^(t>>>14))>>>0)/4294967296;};};
+  const hash=(seed,value)=>{let h=(seed^(Math.imul(value>>>0,0x9E3779B1)))>>>0;h=Math.imul(h^(h>>>16),0x85EBCA6B);return(h^(h>>>13))>>>0;};
+
+  // Eighteen structurally distinct, bounded templates. Every deck has real support.
+  const motifs={
+    canopy(l,p,v){
+      const t=frame(l,1120,660,292,110+v*6,p.soft,p.beam);
+      pig(l,1050,660);pig(l,1190,660);
+      const u=frame(l,1090,t,190,96,[p.clear,p.soft],p.beam);pig(l,1090,t);pig(l,1230,t,23);pig(l,1090,u,24);
+    },
+    twins(l,p,v){
+      for(const x of [1000,1280]){frame(l,x,660,156,144+v*6,[p.soft,p.hard],p.hard,3);pig(l,x,660);}
+      const bottom=660-(144+v*6)-24;
+      block(l,1140,bottom-12,294,24,p.beam);pig(l,1020,bottom-24);pig(l,1140,bottom-24);pig(l,1260,bottom-24);tnt(l,1140);
+    },
+    stairs(l,p,v){
+      for(const [x,h,n]of[[970,96,2],[1150,156,3],[1330,216,4]]){const t=frame(l,x,660,112,h+v*4,[p.clear,p.soft],p.beam,n,20);pig(l,x,660,23);pig(l,x,t,23);}
+      tnt(l,1060);tnt(l,1240);
+    },
+    bridge(l,p,v){
+      for(const x of [990,1310]){const t=frame(l,x,660,160,152,[p.soft,p.hard],p.hard);frame(l,x,t,128,100+v*4,[p.clear,p.soft],p.beam,2,22);pig(l,x,660,24,{helmet:true});pig(l,x,t);}
+      const deckTop=360-v*4;block(l,1150,deckTop-12,320,24,p.clear);
+      pig(l,957,deckTop,23);pig(l,1343,deckTop,23);pig(l,1150,deckTop-24,26);tnt(l,1150,660,42);
+    },
+    pyramid(l,p,v){
+      for(const x of [980,1160,1340]){frame(l,x,660,140,92,p.soft,p.beam,1,28);pig(l,x,660);}
+      block(l,1160,532,500,24,p.beam);pig(l,980,520);pig(l,1340,520);
+      const t=frame(l,1160,520,184,104+v*4,[p.clear,p.hard],p.hard);pig(l,1160,520);
+      const u=frame(l,1160,t,124,80,p.clear,p.beam,2,20);pig(l,1160,t,23);pig(l,1160,u,24);tnt(l,1070,660,28);tnt(l,1250,660,28);
+    },
+    terraces(l,p,v){
+      platform(l,1040,602,252,32);platform(l,1340,526,156,28);
+      const t=frame(l,1040,602,228,122+v*4,[p.soft,p.clear],p.beam,2,22);pig(l,990,602);pig(l,1090,602);pig(l,1040,t);
+      const u=frame(l,1040,t,156,92,p.clear,p.beam,2,20);pig(l,1040,u,23);
+      const q=frame(l,1340,526,140,112,[p.hard,p.soft],p.clear,2,20);pig(l,1340,526);pig(l,1340,q);tnt(l,1215,660,36);
+    },
+    colonnade(l,p,v){
+      for(const x of [960,1090,1220,1350])column(l,x,660,112,[p.soft,p.clear],2);
+      block(l,1155,536,414,24,p.beam);for(const x of [1025,1155,1285])pig(l,x,660);
+      pig(l,1025,524);pig(l,1285,524);const t=frame(l,1155,524,144,100+v*4,[p.clear,p.hard],p.beam);pig(l,1155,524);pig(l,1155,t,25);
+    },
+    vault(l,p,v){
+      for(const [x,h]of[[970,128],[1150,176],[1330,128]]){const t=frame(l,x,660,142,h+v*4,[p.soft,p.hard],p.hard,2,26);pig(l,x,660,24,{helmet:x===1150});pig(l,x,t,24);}
+      tnt(l,1060,660,30);tnt(l,1240,660,30);
+    },
+    cargo(l,p,v){
+      for(const x of [930,1150,1370])for(let i=0;i<2;i++)block(l,x,633-i*54,54,54,i?p.clear:p.soft);
+      block(l,1150,540,494,24,p.beam);pig(l,1040,660);pig(l,1260,660);
+      for(const x of [995,1150,1305])block(l,x,501,54,54,p.soft);
+      block(l,1150,462,364,24,p.beam);pig(l,1070,528);pig(l,1230,528);pig(l,1150,450,25);
+    },
+    needles(l,p,v){
+      for(const [x,h]of[[950,160],[1150,230],[1350,300]]){const t=frame(l,x,660,104,h+v*4,[p.clear,p.soft],p.hard,3,20);pig(l,x,660,23);pig(l,x,t,23);}
+      tnt(l,1048,660,32);tnt(l,1252,660,32);
+    },
+    galleries(l,p,v){
+      platform(l,1000,552,180,28);platform(l,1315,440,180,28);
+      const a=frame(l,1000,552,144,100+v*4,[p.soft,p.clear],p.beam);pig(l,1000,552);pig(l,1000,a);
+      const b=frame(l,1315,440,144,96,[p.clear,p.soft],p.beam);pig(l,1315,440);pig(l,1315,b,23);pig(l,1145,660);
+    },
+    zigzag(l,p,v){
+      const t=frame(l,1140,660,320,104,p.soft,p.beam);pig(l,1070,660);pig(l,1200,660);
+      for(const [x,h]of[[1050,96],[1225,148+v*4]]){const u=frame(l,x,t,146,h,[p.clear,p.soft],p.hard,2,22);pig(l,x,t);pig(l,x,u,23);}
+    },
+    crossfire(l,p,v){
+      const t=frame(l,1150,660,164,148,[p.clear,p.soft],p.beam);pig(l,1150,660);pig(l,1150,t);
+      const u=frame(l,1150,t,112,92+v*4,p.clear,p.hard,2,20);pig(l,1150,u,23);
+      for(const x of [940,1360]){column(l,x,660,160,p.hard,2,26);block(l,x,488,70,24,p.hard);pig(l,x,476);}
+      tnt(l,1020);tnt(l,1280);
+    },
+    hammer(l,p,v){
+      const t=frame(l,1150,660,360,100,p.soft,p.beam);for(const x of [1020,1150,1280])pig(l,x,660);
+      for(const x of [1030,1110,1190,1270])column(l,x,t,100+v*4,p.clear,2,20);
+      block(l,1150,t-112-v*4,300,24,p.hard);for(const x of [1070,1150,1230])pig(l,x,t);pig(l,1150,t-124-v*4,25);
+    },
+    silos(l,p,v){
+      column(l,935,660,180,p.hard,3,44);column(l,1085,660,180,p.clear,3,22);
+      column(l,1215,660,180,p.clear,3,22);column(l,1365,660,180,p.hard,3,44);
+      block(l,1010,468,194,24,p.hard);block(l,1290,468,194,24,p.hard);block(l,1150,444,280,24,p.beam);
+      pig(l,1010,660);pig(l,1290,660);pig(l,971,456,23);pig(l,1329,456,23);pig(l,1150,432,25);tnt(l,1150,660,42);
+    },
+    mosaic(l,p,v){
+      for(const x of [970,1150,1330]){const t=frame(l,x,660,134,80+v*4,[p.clear,p.soft],p.beam,2,20);pig(l,x,660,23);pig(l,x,t,23);}
+      const base=556-v*4;const t=frame(l,1150,base,106,92,p.clear,p.hard,2,18);pig(l,1150,t,23);tnt(l,1060,660,32);tnt(l,1240,660,32);
+    },
+    archipelago(l,p,v){
+      for(const [x,top]of[[960,580],[1160,510],[1360,610]]){platform(l,x,top,140,26);const t=frame(l,x,top,116,96+v*4,[p.clear,p.soft],p.beam,2,20);pig(l,x,top,23);pig(l,x,t,23);}
+      tnt(l,1060,660,34);
+    },
+    fortress(l,p,v){
+      for(const x of [950,1080,1240,1370])column(l,x,660,168,['wood',p.hard,p.hard],3,30);
+      block(l,1160,479,446,26,p.beam);
+      for(const x of [1060,1260]){frame(l,x,466,164,112,[p.clear,p.hard],p.hard);pig(l,x,466,24,{helmet:true});}
+      block(l,1160,318,224,24,p.beam);const t=frame(l,1160,306,144,92+v*4,[p.clear,p.hard],p.hard);
+      for(const x of [1020,1160,1300])pig(l,x,660);pig(l,1410,660,23);
+      pig(l,1010,330,23);pig(l,1310,330,23);pig(l,1160,306,26);pig(l,1160,t,28,{king:true,shield:true});
+      tnt(l,1120,660,28);tnt(l,1200,660,28);
+    }
+  };
+  const profiles={
+    meadow:{soft:'wood',clear:'glass',beam:'wood',hard:'stone'},sunset:{soft:'wood',clear:'glass',beam:'wood',hard:'stone'},moon:{soft:'wood',clear:'crystal',beam:'wood',hard:'stone'},snow:{soft:'glass',clear:'crystal',beam:'wood',hard:'stone'},
+    jungle:{soft:'wood',clear:'glass',beam:'wood',hard:'stone'},desert:{soft:'wood',clear:'glass',beam:'wood',hard:'stone'},
+    volcano:{soft:'wood',clear:'crystal',beam:'wood',hard:'metal'},factory:{soft:'wood',clear:'crystal',beam:'metal',hard:'metal'},
+    candy:{soft:'wood',clear:'crystal',beam:'wood',hard:'stone',bumper:true},sky:{soft:'wood',clear:'glass',beam:'wood',hard:'stone'},
+    space:{soft:'wood',clear:'crystal',beam:'metal',hard:'metal'},aurora:{soft:'glass',clear:'crystal',beam:'wood',hard:'metal',bumper:true}
+  };
+  const hints={
+    canopy:'树冠很高，承重的下层木柱却很脆。',twins:'拆掉一座塔，桥上的邻居也会跟着紧张。',stairs:'先倒下一座，再把机会传给下一座。',bridge:'两层支柱和一座长桥，共享同一个弱点。',
+    pyramid:'底层托着上层，先找最下面的破绽。',terraces:'利用高低台地，试试从侧面或上方进攻。',colonnade:'长廊的重量，全压在几根细细的支柱上。',vault:'三座拱门并不需要三次进攻。',
+    cargo:'货箱叠得整齐，可不代表它们不会散架。',needles:'细高塔最怕横向的冲击。',galleries:'上层展台很远，但弧线可以绕过下层。',zigzag:'左右楼层错开，换个角度会有新发现。',
+    crossfire:'两侧炮台与中央高塔，各有各的薄弱点。',hammer:'沉重的屋顶，有时候也是最好的武器。',silos:'厚墙护住了正面，侧面的晶柱可没有。',mosaic:'拆开小房间，别漏掉阁楼上的客人。',archipelago:'三座浮台之间，留着一条飞行路线。',fortress:'王冠、护盾和厚墙，都需要一块可靠的地基。'
+  };
+
+  // Explicit route tables: title, structural motif, variation, optional apparatus.
+  // Each chapter ends in its own themed royal fortress, never a lock or a gate.
+  const chapters=[
+    {id:'jungle',name:'藤蔓秘境',english:'VINEWOOD WILDS',subtitle:'粉红旋风吹过树冠，丛林里藏着新的坏主意。',accent:'#4d9d63',lead:'pink',recipes:[
+      ['香蕉货运站','cargo',0,'conveyor'],['树冠保管箱','canopy',1,'fan'],['藤桥摇摇乐','bridge',2,'spring'],['雨林回声','zigzag',3,'none'],['青苔拱廊','vault',4,'conveyor'],['林间秘门','galleries',5,'portal'],
+      ['竹影三重奏','needles',6,'fan'],['蘑菇展台','terraces',7,'spring'],['瀑布另一边','archipelago',8,'portal'],['萤火长廊','colonnade',9,'gravity'],['椰壳连锁','stairs',10,'conveyor'],['藤王的空中宫殿','fortress',11,'fan']]},
+    {id:'desert',name:'沙海奇谋',english:'DUNE RUNNERS',subtitle:'橙鸟蓄起气势，吹散沙丘上的防线。',accent:'#d6a354',lead:'orange',recipes:[
+      ['沙丘鼓风机','twins',12,'none'],['骆驼货栈','cargo',13,'conveyor'],['玻璃海市蜃楼','galleries',14,'portal'],['绿洲三层楼','pyramid',15,'fan'],['流沙长廊','colonnade',16,'conveyor'],['风蚀尖塔','needles',17,'gravity'],
+      ['沙漏两端','silos',18,'portal'],['仙人掌客栈','mosaic',19,'spring'],['沙暴折线','zigzag',20,'fan'],['黄金峡桥','bridge',21,'conveyor'],['埋藏的火药','crossfire',22,'none'],['沙王的最后沙堡','fortress',23,'portal']]},
+    {id:'volcano',name:'熔火群峰',english:'EMBER ARCHIPELAGO',subtitle:'冰鸟登场，用一阵寒意拆开滚烫的金属城。',accent:'#e16e45',lead:'ice',recipes:[
+      ['冷却第一炉','hammer',24,'none'],['熔岩装卸台','cargo',25,'conveyor'],['黑曜石阶梯','stairs',26,'spring'],['火口天桥','bridge',27,'gravity'],['蒸汽烟囱','needles',28,'fan'],['赤红双仓','silos',29,'conveyor'],
+      ['冷焰晶洞','vault',30,'portal'],['余烬浮岛','archipelago',31,'fan'],['喷口转运站','terraces',32,'spring'],['火山口的回音','crossfire',33,'gravity'],['灰烬折廊','zigzag',34,'portal'],['熔王的铸铁王座','fortress',35,'conveyor']]},
+    {id:'factory',name:'齿轮工坊',english:'CLOCKWORK WORKS',subtitle:'传送带不会停，最精密的计划也会卡住。',accent:'#84959e',lead:'orange',recipes:[
+      ['流水线早餐','mosaic',36,'conveyor'],['传送带终点','cargo',37,'conveyor'],['龙门吊下方','hammer',38,'spring'],['齿轮天井','galleries',39,'gravity'],['检修双塔','twins',40,'conveyor'],['瞬移分拣机','archipelago',41,'portal'],
+      ['晶体电容库','vault',42,'none'],['压力测试间','silos',43,'fan'],['连杆长廊','colonnade',44,'conveyor'],['机器人楼梯','stairs',45,'portal'],['中央控制树','canopy',46,'gravity'],['厂长的钢铁办公室','fortress',47,'conveyor']]},
+    {id:'candy',name:'糖果大逃亡',english:'SUGAR RUSH',subtitle:'软糖会弹，晶糖会碎，甜蜜的城堡正好用来拆。',accent:'#d783b4',lead:'pink',recipes:[
+      ['软糖弹跳屋','canopy',48,'spring'],['威化金字塔','pyramid',49,'none'],['薄荷空中桥','bridge',50,'fan'],['焦糖货物架','cargo',51,'conveyor'],['棉花糖展厅','galleries',52,'portal'],['跳跳糖三兄弟','stairs',53,'spring'],
+      ['棒棒糖尖塔','needles',54,'gravity'],['曲奇走廊','colonnade',55,'conveyor'],['布丁罐头仓','silos',56,'none'],['彩虹夹心层','zigzag',57,'fan'],['甜筒浮岛','archipelago',58,'portal'],['糖王的脆皮皇冠','fortress',59,'spring']]},
+    {id:'sky',name:'云海航线',english:'CLOUDWAY EXPRESS',subtitle:'穿过传送门，让每一次回旋都有新的方向。',accent:'#79b7d4',lead:'boomerang',recipes:[
+      ['云端换乘站','terraces',60,'portal'],['风筝码头','twins',61,'fan'],['浮空邮局','galleries',62,'portal'],['彩云分拣架','cargo',63,'conveyor'],['天空拱廊','vault',64,'gravity'],['顺风连廊','colonnade',65,'fan'],
+      ['三片云之间','archipelago',66,'portal'],['回旋摩天楼','needles',67,'spring'],['云母之桥','bridge',68,'gravity'],['高空气象台','crossfire',69,'fan'],['云梯转弯处','zigzag',70,'portal'],['云王的漂浮王庭','fortress',71,'fan']]},
+    {id:'space',name:'星际偏航',english:'ORBITAL ODYSSEY',subtitle:'引力场弯曲路线，却挡不住一只认真的小鸟。',accent:'#8072c7',lead:'ice',recipes:[
+      ['零点引力站','crossfire',72,'gravity'],['轨道货运舱','cargo',73,'conveyor'],['星环双仓','silos',74,'gravity'],['虫洞陈列室','galleries',75,'portal'],['陨石金字塔','pyramid',76,'spring'],['月面穹顶','vault',77,'gravity'],
+      ['银河天桥','bridge',78,'portal'],['太阳帆尖塔','needles',79,'fan'],['空间折叠层','zigzag',80,'gravity'],['小行星群岛','archipelago',81,'portal'],['反应堆廊道','colonnade',82,'conveyor'],['星王的轨道堡垒','fortress',83,'gravity']]},
+    {id:'aurora',name:'极光终章',english:'AURORA FRONTIER',subtitle:'冰晶、金属与流光交错，新的冒险永远在前方。',accent:'#78d0be',lead:'terence',recipes:[
+      ['北极光货栈','cargo',84,'conveyor'],['冰镜双城','twins',85,'portal'],['极夜三阶','stairs',86,'spring'],['流光展廊','galleries',87,'gravity'],['霜晶重锤','hammer',88,'fan'],['北风金字塔','pyramid',89,'conveyor'],
+      ['冰封跳岛','archipelago',90,'portal'],['天幕电站','crossfire',91,'gravity'],['彩光折线','zigzag',92,'spring'],['破晓长廊','colonnade',93,'fan'],['极光最后一桥','bridge',94,'portal'],['万星之上的猪王','fortress',95,'gravity']]}
+  ];
+  chapters.forEach(ch=>window.WORLDS.push({id:ch.id,name:ch.name,english:ch.english,subtitle:ch.subtitle,accent:ch.accent,levelCount:12}));
+  const objectiveFor=n=>n%3===0?{kind:'shots',limit:2,label:'两鸟制胜'}:n%3===1?{kind:'egg',label:'寻蛋专家'}:{kind:'combo',limit:3,label:'三连击'};
+  function apparatus(l,kind,variant){
+    if(kind==='fan')l.mechanisms.push({type:'fan',x:790,y:555,w:110,h:190,strength:.30});
+    if(kind==='spring')l.mechanisms.push({type:'spring',x:845,y:652,w:92,h:16});
+    if(kind==='portal')l.mechanisms.push({type:'portal',x:755,y:405+(variant%3)*28,r:35,toX:1260,toY:315});
+    if(kind==='gravity')l.mechanisms.push({type:'gravity',x:830,y:350,r:160,strength:.075+(variant%3)*.01});
+    if(kind==='conveyor')l.mechanisms.push({type:'conveyor',x:1150,y:653,w:480,h:18,speed:variant%2?-.12:.12});
+  }
+  function assemble({world,theme,name,motif,variant,feature,birds,seed,stage}){
+    const p=profiles[theme]||profiles.meadow;
+    const l={world,theme,name,subtitle:hints[motif],birds:[...birds],threeStarScore:0,blocks:[],pigs:[],platforms:[],mechanisms:[],
+      egg:{x:650+(variant%7)*78,y:290+(variant%5)*40},wind:variant%4===0?(Math.floor(variant/4)%2?.009:-.009):0,objective:objectiveFor(variant),motif};
+    motifs[motif](l,p,(variant%3)-1);
+    if(p.bumper)block(l,878,644,30,32,'rubber');
+    const shift=((variant%5)-2)*5;
+    for(const body of [...l.blocks,...l.pigs,...l.platforms])body.x+=shift;
+    apparatus(l,feature,variant);
+    if(feature==='portal')l.subtitle+=' 传送门会送你到后方，记住回旋和投蛋。';
+    if(feature==='gravity')l.subtitle+=' 紫色引力场会缓慢弯曲飞行路线。';
+    if(feature==='conveyor')l.subtitle+=' 发射后传送带开始运转，别忽略地面的动静。';
+    if(feature==='spring')l.subtitle+=' 弹簧能让低空路线重新爬升。';
+    if(feature==='fan')l.subtitle+=' 上升气流可以帮你越过前排。';
+    if(world>=5)for(let i=0;i<l.pigs.length;i++)if(i%5===variant%5&&i<l.pigs.length-1)l.pigs[i].shield=true;
+    l.threeStarScore=Math.round((l.pigs.length*5000+l.blocks.length*300+Math.max(1,l.birds.length-3)*8000+3000)/500)*500;
+    if(seed!==undefined){l.seed=seed>>>0;l.stage=stage;l.routeStage=stage;}
+    return l;
+  }
+  const birdPools={
+    jungle:['pink','yellow','bomb','white','orange','terence'],desert:['orange','boomerang','bomb','white','ice','terence'],volcano:['ice','orange','bomb','terence','white','bomb'],
+    factory:['orange','ice','terence','bomb','pink','bomb'],candy:['pink','orange','blue','bomb','terence','white'],sky:['boomerang','white','pink','bomb','ice','terence'],
+    space:['ice','orange','boomerang','bomb','pink','terence'],aurora:['terence','ice','orange','bomb','pink','bomb']
+  };
+  for(const [chapterIndex,ch]of chapters.entries())for(const [localIndex,recipe]of ch.recipes.entries()){
+    const [name,motif,variant,feature]=recipe,world=worldOffset+chapterIndex;
+    const birds=localIndex===11?[ch.lead,'orange','ice','bomb','white','terence','bomb']:birdPools[ch.id].slice(0,localIndex<4?5:6);
+    const l=assemble({world,theme:ch.id,name,motif,variant,feature,birds});l.id=`${world+1}-${localIndex+1}`;l.expansion=true;window.LEVELS.push(l);
+  }
+  const motifNames=Object.keys(motifs),features=['none','fan','spring','portal','gravity','conveyor'];
+  window.VoyageFactory={
+    version:3,motifs:[...motifNames],
+    create(seed,stage){
+      const normalizedSeed=(Number.isFinite(Number(seed))?Number(seed):0)>>>0;
+      const normalizedStage=Math.max(1,Math.min(Number.MAX_SAFE_INTEGER,Math.floor(Number(stage)||1)));
+      const random=rng(hash(normalizedSeed,normalizedStage)),world=Math.floor(random()*window.WORLDS.length),theme=window.WORLDS[world].id;
+      const motif=normalizedStage%6===0?'fortress':motifNames[Math.floor(random()*(motifNames.length-1))];
+      const variant=Math.floor(random()*0x7fffffff),feature=features[Math.floor(random()*features.length)];
+      const l=assemble({world,theme,name:`远航 ${normalizedStage} · ${window.WORLDS[world].name}`,motif,variant,feature,
+        birds:['terence','orange','ice','bomb','bomb'],seed:normalizedSeed,stage:normalizedStage});
+      l.id=`voyage-${normalizedSeed}-${normalizedStage}`;l.endless=true;l.subtitle=`第 ${normalizedStage} 站 · ${hints[motif]}`;
+      return l;
+    }
+  };
+  window.VOYAGE_EXPANSION={version:3,firstLevel:originalLevelCount,addedLevels:chapters.reduce((n,ch)=>n+ch.recipes.length,0),motifCount:motifNames.length};
+  window.__voyageExpansionLoaded=true;
+})();
+
+</script>
+<script>
 /* src/audio.js */
 /* Original, self-contained synthesized audio. No samples or network requests. */
 (() => {
@@ -527,6 +755,17 @@
     moon: { sky: ['#132649','#334a72','#698797'], sun: '#eef3dc', mist: '#789da9', peak: '#526f8a', mountain: '#42647b', mountain2: '#335d68', ocean: '#588693', ocean2: '#426e80', grass: '#537e58', grassDark: '#315846', dirt: '#655e59', dirtDark: '#3f4248', fog: '#87a6af' },
     snow: { sky:['#58abd9','#93d4e9','#d7f1f4'],sun:'#fffbdb',mist:'#daf1f6',peak:'#b1d5e6',mountain:'#8dbbcc',mountain2:'#669aa7',ocean:'#a8d9e7',ocean2:'#7fb3cf',grass:'#effaff',grassDark:'#aecbd7',dirt:'#637d91',dirtDark:'#344b65',fog:'#e0f3fa' }
   };
+  Object.assign(palettes,{
+    jungle:{sky:['#41a6ae','#83d5c8','#c5e6b0'],ground:['#a18448','#705330'],rim:'#69a62d',ink:'#35532b'},
+    desert:{sky:['#ec9d64','#ffd18c','#ffebae'],ground:['#d5aa63','#ab793e'],rim:'#ecd28b',ink:'#95683b'},
+    volcano:{sky:['#4d415f','#aa6c6d','#efaa79'],ground:['#51464a','#302d39'],rim:'#706166',ink:'#302d38'},
+    factory:{sky:['#738f99','#b2bdac','#e0d7aa'],ground:['#778478','#435750'],rim:'#b4ac70',ink:'#2d4441'},
+    candy:{sky:['#cdb1e8','#f5c8e4','#ffeddd'],ground:['#885449','#593d43'],rim:'#fff1d4',ink:'#784b58'},
+    sky:{sky:['#3d87d0','#8bcaeb','#e3f6ff'],ground:['#a68a62','#725b54'],rim:'#84ba51',ink:'#536e40'},
+    space:{sky:['#10132d','#25234b','#534570'],ground:['#8a7e91','#514a67'],rim:'#b1a3b7',ink:'#423d59'},
+    aurora:{sky:['#0d3148','#246974','#77a6ae'],ground:['#7599ad','#3c647d'],rim:'#effaff',ink:'#386276'}
+  });
+  let sceneTime=0;
   const cache = new Map();
   const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
   const noise = n => { const f = Math.sin(n*127.1+311.7)*43758.5453123; return f-Math.floor(f); };
@@ -627,6 +866,7 @@
     else for(let i=0;i<74;i++)grass(c,i*22+noise(i)*7,660,.35+noise(i+542)*.38,night?'#576e4c':desert?'#b3924a':i%2?'#5b8e26':'#83ad35',i);
   }
   function renderScenery(theme){
+    if(['jungle','desert','volcano','factory','candy','sky','space','aurora'].includes(theme))return renderExpanded(theme);
     const cvs=document.createElement('canvas');cvs.width=W;cvs.height=H;const c=cvs.getContext('2d');const p=palettes[theme]||palettes.meadow;const night=theme==='moon',snow=theme==='snow',desert=theme==='sunset';
     c.fillStyle=linear(c,0,0,0,660,p.sky);c.fillRect(0,0,W,H);
     if(night){
@@ -683,9 +923,126 @@
     else{cartoonTree(c,60,656,.97);pine(c,1547,657,.9);shrub(c,6,661,.68,'meadow');shrub(c,1603,660,.75,'meadow');[[141,648,.74],[169,651,.53],[431,653,.5],[746,651,.55],[1494,651,.69]].forEach((f,i)=>flower(c,...f,i%2?'#f3d24b':'#fffbed'));}
     return cvs;
   }
+  function gear(c,x,y,r,fill='#80918a',angle=0){
+    c.save();c.translate(x,y);c.rotate(angle);c.beginPath();
+    for(let i=0;i<48;i++){const a=i*TAU/48,rr=r*([.80,.98,.98,.80][i%4]);i?c.lineTo(Math.cos(a)*rr,Math.sin(a)*rr):c.moveTo(Math.cos(a)*rr,Math.sin(a)*rr);}c.closePath();c.fillStyle=fill;c.fill();c.strokeStyle='#30433f';c.lineWidth=Math.max(1,r*.045);c.stroke();ellipse(c,0,0,r*.57,r*.57,'#62736c','#30433f',r*.035);ellipse(c,0,0,r*.23,r*.23,'#c9c496','#30433f',r*.045);c.restore();
+  }
+  function expansionGround(c,theme){
+    const p=palettes[theme];c.fillStyle=linear(c,0,660,0,800,p.ground);c.fillRect(0,660,W,140);
+    c.fillStyle=p.ink;c.beginPath();c.moveTo(0,659);c.lineTo(W,659);c.lineTo(W,677);for(let x=W;x>=0;x-=20)c.lineTo(x,675+noise(x+66)*9);c.closePath();c.fill();
+    c.fillStyle=p.rim;c.beginPath();c.moveTo(0,653);c.lineTo(W,653);c.lineTo(W,667);for(let x=W;x>=0;x-=17)c.lineTo(x,667+noise(x+93)*6);c.closePath();c.fill();c.strokeStyle=theme==='volcano'?'#b79b83':theme==='space'?'#d9c5d8':'#ffffce80';c.lineWidth=3;c.beginPath();c.moveTo(0,655);c.lineTo(W,655);c.stroke();
+    if(theme==='factory'){
+      for(let x=0;x<W;x+=160){round(c,x+4,681,152,103,5,'#677a6d','#324a40',2);round(c,x+9,686,142,93,3,null,'#a7b39455',1);for(const xx of [x+15,x+145])for(const yy of [693,772])ellipse(c,xx,yy,3,3,'#bdc2a0','#2f4940',1);c.strokeStyle='#384d413b';c.lineWidth=3;for(let k=0;k<4;k++){c.beginPath();c.moveTo(x+23+k*31,713);c.lineTo(x+23+k*31,755);c.stroke();}}
+      c.fillStyle='#d3b961';c.fillRect(0,657,W,12);for(let x=-20;x<W;x+=38)path(c,[[x,657],[x+19,657],[x+31,669],[x+12,669]],'#485844');
+    }else if(theme==='volcano'){
+      for(let i=0;i<11;i++){const xx=i*158+noise(i+1)*45,yy=678+noise(i+358)*28,k=i%3===0?-1:1;c.strokeStyle='#ef7435';c.lineWidth=4+noise(i+56)*3;c.beginPath();c.moveTo(xx,yy);c.lineTo(xx+k*(17+noise(i+778)*20),yy+20);c.lineTo(xx+k*(7+noise(i+83)*16),yy+40);c.lineTo(xx+k*(23+noise(i+543)*26),yy+64);c.lineTo(xx+k*(14+noise(i+98)*31),800);c.stroke();c.strokeStyle='#ffca57';c.lineWidth=1.6+noise(i)*1.2;c.stroke();}
+      for(let i=0;i<58;i++){const xx=noise(i+45)*W,yy=688+noise(i+954)*108;path(c,[[xx-7,yy],[xx,yy-4],[xx+8,yy+2],[xx+4,yy+7],[xx-6,yy+5]],'#282a3488');}
+    }else if(theme==='candy'){
+      for(let i=0;i<45;i++){const xx=i*37+noise(i)*8,yy=674+noise(i+643)*28;round(c,xx,yy,10,5,2,['#e6b056','#c5796a','#b98967'][i%3]);}
+      c.fillStyle='#fff0d7';c.beginPath();c.moveTo(0,655);c.lineTo(W,655);c.lineTo(W,673);for(let x=W;x>=0;x-=31){c.bezierCurveTo(x-6,680+noise(x)*19,x-21,680+noise(x)*19,x-31,671);}c.closePath();c.fill();
+      for(let i=0;i<130;i++){const xx=noise(i+435)*W,yy=654+noise(i+332)*14;c.save();c.translate(xx,yy);c.rotate(noise(i)*TAU);round(c,-3,-1,6,2.3,1,['#e4768f','#89b7c8','#e8bb5a','#b48dc4'][i%4]);c.restore();}
+      c.strokeStyle='#432d3980';c.lineWidth=2;for(let i=0;i<47;i++){const xx=noise(i+38)*W,yy=718+noise(i+428)*77;c.beginPath();c.moveTo(xx,yy);c.lineTo(xx+14,yy+2);c.stroke();}
+    }else if(theme==='space'){
+      for(let i=0;i<26;i++){const xx=noise(i+17)*W,yy=701+noise(i+62)*105,rr=7+noise(i+276)*17;ellipse(c,xx,yy,rr,rr*.37,'#574963','#bba6bd80',1.6);c.beginPath();c.ellipse(xx,yy+1,rr*.75,rr*.23,0,Math.PI,TAU);c.strokeStyle='#413951';c.lineWidth=2;c.stroke();}
+    }else if(theme==='aurora'){
+      for(let i=0;i<48;i++){const xx=i*34,hh=8+noise(i+632)*25;path(c,[[xx,667],[xx+13,667],[xx+6,667+hh]],'#d5f3fa');}
+      c.strokeStyle='#d0effe5e';c.lineWidth=2;for(let i=0;i<26;i++){const xx=noise(i+451)*W,yy=718+noise(i+251)*57;c.beginPath();c.moveTo(xx,yy-8);c.lineTo(xx+8,yy+4);c.lineTo(xx+2,yy+18);c.stroke();}
+    }else{
+      for(let i=0;i<75;i++){const xx=noise(i+695)*W,yy=692+noise(i+734)*108,rr=2+noise(i+77)*4;ellipse(c,xx,yy,rr*1.5,rr,p.rim+'55');ellipse(c,xx,yy+rr*.4,rr,.5*rr,p.ink+'66');}
+      c.strokeStyle=p.ink+'66';c.lineWidth=2;for(let i=0;i<53;i++){const xx=noise(i+109)*W,yy=693+noise(i+632)*106;c.beginPath();c.moveTo(xx,yy);c.quadraticCurveTo(xx+8,yy+3,xx+24,yy);c.stroke();}
+    }
+    if(theme==='jungle'||theme==='sky')for(let i=0;i<65;i++)grass(c,i*25+4,660,.4+noise(i)*.3,'#4c812c',i+44);
+  }
+  function floatingIsland(c,x,y,w,s=1){
+    c.save();c.translate(x,y);c.scale(s,s);path(c,[[-w/2,0],[-w*.41,46],[-w*.22,82],[-w*.10,143],[w*.05,107],[w*.18,116],[w*.34,58],[w/2,0]],'#9c8977','#796c68',2);path(c,[[0,5],[-w*.12,111],[w*.02,101],[w*.11,57]],'#baab8d');ellipse(c,0,0,w/2,18,'#86b758','#5d9049',2);ellipse(c,-w*.1,-4,w*.36,9,'#a3ca6b');c.restore();
+  }
+  function candyCane(c,x,y,s=1,flip=1){
+    c.save();c.translate(x,y);c.scale(s*flip,s);c.lineCap='round';c.beginPath();c.moveTo(0,0);c.lineTo(0,-143);c.bezierCurveTo(0,-207,73,-204,73,-154);c.strokeStyle='#80555b';c.lineWidth=25;c.stroke();c.strokeStyle='#fff3d2';c.lineWidth=19;c.stroke();c.save();c.strokeStyle='#e47b89';c.lineWidth=9;for(let i=0;i<7;i++){c.beginPath();c.moveTo(-7,-10-i*22);c.lineTo(7,-22-i*22);c.stroke();}c.beginPath();c.moveTo(8,-167);c.lineTo(19,-179);c.moveTo(34,-184);c.lineTo(39,-169);c.moveTo(56,-175);c.lineTo(69,-163);c.stroke();c.restore();c.restore();
+  }
+  function renderExpanded(theme){
+    const cvs=document.createElement('canvas');cvs.width=W;cvs.height=H;const c=cvs.getContext('2d'),p=palettes[theme];c.fillStyle=linear(c,0,0,0,660,p.sky);c.fillRect(0,0,W,H);
+    if(theme==='jungle'){
+      cloud(c,243,124,1.15,.68,'#fffdd4');cloud(c,1350,181,.86,.65,'#fffdd4');
+      c.fillStyle='#77b596';c.beginPath();c.moveTo(0,660);c.lineTo(0,418);c.bezierCurveTo(94,411,131,296,196,291);c.bezierCurveTo(284,300,247,468,394,457);c.bezierCurveTo(541,438,493,326,579,337);c.bezierCurveTo(662,348,677,435,799,445);c.bezierCurveTo(962,456,1005,282,1093,279);c.bezierCurveTo(1181,279,1203,415,1354,411);c.bezierCurveTo(1447,408,1469,367,1600,392);c.lineTo(1600,660);c.fill();
+      path(c,[[991,490],[1039,312],[1095,278],[1158,319],[1231,519]],'#6fa28b');path(c,[[1082,318],[1117,318],[1153,516],[1083,577],[1057,566],[1094,473]],'#bce8d9');path(c,[[1094,321],[1104,323],[1128,481],[1082,550]],'#eefaddaa');
+      c.fillStyle='#57936d';c.beginPath();c.moveTo(0,660);c.lineTo(0,508);c.bezierCurveTo(219,424,332,576,545,534);c.bezierCurveTo(762,491,893,537,1102,551);c.bezierCurveTo(1320,569,1400,442,1600,504);c.lineTo(1600,660);c.fill();
+      c.save();c.globalAlpha=.47;for(let i=0;i<26;i++){const xx=i*67,yy=576+Math.sin(i*.71)*23;ellipse(c,xx,yy-29,40,35,'#366e4d');round(c,xx-4,yy,8,32,1,'#3c7151');}c.restore();
+      for(let i=0;i<5;i++)round(c,1290+i*9,565-i*26,199-i*18,26,2,'#75966b','#547655',1.7);path(c,[[1328,440],[1348,397],[1434,397],[1456,440]],'#829c71','#57775b',2);round(c,1370,404,43,42,2,'#456c4f');
+      c.fillStyle='#8bad61';c.beginPath();c.moveTo(0,660);c.lineTo(0,611);c.bezierCurveTo(357,549,564,641,801,607);c.bezierCurveTo(1131,569,1376,605,1600,588);c.lineTo(1600,660);c.fill();
+    }else if(theme==='desert'){
+      ellipse(c,1240,190,70,70,'#ffefb8');cloud(c,242,183,.75,.35,'#ffefca');cloud(c,835,91,.67,.37,'#ffefca');
+      path(c,[[850,599],[1160,289],[1469,599]],'#d2a264');path(c,[[1160,289],[1206,599],[1469,599]],'#bc8a51');path(c,[[210,581],[402,390],[601,581]],'#deb77a');path(c,[[402,390],[426,580],[601,581]],'#cea264');
+      c.strokeStyle='#e7bf7c66';c.lineWidth=2;for(let i=0;i<7;i++){const yy=393+i*27,ww=(yy-289)*.99;c.beginPath();c.moveTo(1160-ww,yy);c.lineTo(1160+(yy-289)*.15,yy);c.stroke();}
+      c.fillStyle='#e3bb7b';c.beginPath();c.moveTo(0,660);c.lineTo(0,498);c.bezierCurveTo(302,408,420,605,724,554);c.bezierCurveTo(931,518,1027,563,1255,568);c.bezierCurveTo(1402,570,1498,519,1600,521);c.lineTo(1600,660);c.fill();
+      c.fillStyle='#efd296';c.beginPath();c.moveTo(0,660);c.lineTo(0,596);c.bezierCurveTo(257,634,357,523,620,548);c.bezierCurveTo(888,574,858,631,1183,604);c.bezierCurveTo(1449,581,1513,617,1600,602);c.lineTo(1600,660);c.fill();
+      c.strokeStyle='#c39b5d59';c.lineWidth=2;for(let i=0;i<22;i++){const xx=noise(i+629)*1600,yy=609+noise(i+844)*37;c.beginPath();c.moveTo(xx,yy);c.quadraticCurveTo(xx+24,yy-4,xx+49,yy);c.stroke();}
+    }else if(theme==='volcano'){
+      ellipse(c,279,172,73,73,'#ea987377');cloud(c,1168,135,1.14,.44,'#6e606b');cloud(c,943,90,.91,.40,'#806b76');cloud(c,486,258,.66,.30,'#b59b96');
+      path(c,[[531,650],[858,513],[1097,310],[1121,279],[1185,296],[1210,285],[1240,312],[1497,510],[1600,557],[1600,660]],'#765d65');path(c,[[890,540],[1119,300],[1144,304],[1149,367],[1210,414],[1190,486],[1299,578]],'#b97a64');
+      path(c,[[1118,300],[1143,306],[1131,358],[1168,402],[1148,449],[1169,492],[1147,532],[1125,479],[1129,430],[1102,375]],'#f59640');path(c,[[1191,301],[1208,298],[1212,348],[1273,379],[1295,422],[1284,424],[1244,392],[1194,361]],'#f07836');path(c,[[1129,310],[1135,318],[1121,365],[1155,405],[1143,426],[1145,401],[1111,372]],'#ffdd69');
+      path(c,[[0,660],[0,512],[162,429],[276,532],[435,456],[655,587],[760,559],[1034,637],[1308,530],[1425,576],[1541,486],[1600,532],[1600,660]],'#665960');
+      c.fillStyle='#77605c';c.beginPath();c.moveTo(0,660);c.lineTo(0,598);c.bezierCurveTo(417,550,597,653,890,614);c.bezierCurveTo(1193,575,1407,608,1600,600);c.lineTo(1600,660);c.fill();
+      c.strokeStyle='#e78d50';c.lineWidth=7;c.beginPath();c.moveTo(424,659);c.bezierCurveTo(658,605,822,638,1056,597);c.stroke();c.strokeStyle='#ffd270';c.lineWidth=2;c.stroke();
+    }else if(theme==='factory'){
+      cloud(c,387,175,1.43,.42,'#e6d6b0');cloud(c,1156,119,1.32,.43,'#e4d8b9');cloud(c,1483,270,.80,.32,'#e4d8b9');
+      c.fillStyle='#91a494';for(let i=0;i<11;i++){const xx=i*151,hh=54+noise(i+875)*94;round(c,xx,530-hh,103,hh+80,1,'#91a494');round(c,xx+16,464-hh,19,86,1,'#8a9e91');}
+      path(c,[[831,597],[831,437],[888,403],[888,437],[944,403],[944,437],[1000,403],[1000,437],[1056,403],[1056,598]],'#7d9284');round(c,1085,415,252,183,3,'#84998a','#6b8275',2);round(c,1106,300,33,144,3,'#7b9387');round(c,1169,329,29,104,3,'#728c7f');
+      for(let y=456;y<578;y+=33)for(let x=1104;x<1326;x+=38)round(c,x,y,22,16,2,'#c0c6a277','#607d7133',1);
+      c.strokeStyle='#6c8678';c.lineWidth=6;c.beginPath();c.moveTo(1376,603);c.lineTo(1376,312);c.lineTo(1507,284);c.lineTo(1544,312);c.lineTo(1376,312);c.moveTo(1491,312);c.lineTo(1491,407);c.stroke();c.lineWidth=2;c.beginPath();for(let k=0;k<7;k++){c.moveTo(1378,328+k*35);c.lineTo(1413,345+k*35);}c.stroke();
+      c.fillStyle='#9bab8c';c.beginPath();c.moveTo(0,660);c.lineTo(0,562);c.bezierCurveTo(556,568,720,616,1100,592);c.bezierCurveTo(1380,570,1488,590,1600,574);c.lineTo(1600,660);c.fill();
+      c.strokeStyle='#526c58';c.lineWidth=3;for(let i=0;i<28;i++){c.beginPath();c.moveTo(i*62,628);c.lineTo(i*62,589);c.stroke();}c.beginPath();c.moveTo(0,602);c.lineTo(1600,602);c.stroke();
+    }else if(theme==='candy'){
+      cloud(c,221,134,1.12,.89,'#fff1de');cloud(c,950,204,.97,.86,'#fff0dd');cloud(c,1449,98,.86,.91,'#fff3e2');
+      const gum=(x,y,w,h,fill)=>{c.beginPath();c.moveTo(x-w,y);c.bezierCurveTo(x-w*.9,y-h,x+w*.9,y-h,x+w,y);c.closePath();c.fillStyle=fill;c.fill();for(let j=0;j<8;j++){const xx=x+(noise(x+j)-.5)*w,yy=y-h*(.2+noise(j+x+4)*.52);c.save();c.translate(xx,yy);c.rotate(j);round(c,-5,-1.5,10,3,1.5,'#fff1d970');c.restore();}};
+      gum(243,587,209,265,'#b4d3b0');gum(527,588,185,160,'#eab8c4');gum(1187,589,263,264,'#c5b0d6');gum(1513,586,181,183,'#f1c080');
+      c.fillStyle='#c3d6aa';c.beginPath();c.moveTo(0,660);c.lineTo(0,596);c.bezierCurveTo(406,566,525,613,802,595);c.bezierCurveTo(1109,574,1425,617,1600,575);c.lineTo(1600,660);c.fill();
+      for(let i=0;i<10;i++){const xx=100+i*159,yy=584+Math.sin(i)*14;c.strokeStyle='#c3a681';c.lineWidth=7;c.beginPath();c.moveTo(xx,yy+46);c.lineTo(xx,yy-8);c.stroke();ellipse(c,xx,yy-17,24,24,['#d69ec4','#9dc8c2','#e7b470'][i%3],'#b597b0',1.5);c.strokeStyle='#fff2cd99';c.lineWidth=4;c.beginPath();c.arc(xx,yy-17,15,.5,Math.PI*1.7);c.arc(xx,yy-17,8,Math.PI*1.7,.4,true);c.stroke();}
+      c.save();c.globalAlpha=.75;
+      round(c,1318,493,186,90,5,'#e5a7bc','#c58aa2',1.7);round(c,1318,516,186,12,1,'#f8dcc5');round(c,1318,551,186,11,1,'#f7d8bd');
+      round(c,1346,452,130,47,4,'#edbec6','#ce99ac',1.5);round(c,1347,470,128,9,1,'#fff0d7');
+      for(let i=0;i<10;i++)ellipse(c,1328+i*18.6,495,12,8,'#fff1dc');for(let i=0;i<7;i++)ellipse(c,1354+i*18.8,452,11,7,'#fff1dc');
+      for(const xx of [1375,1411,1446]){round(c,xx-3,428,6,22,1,'#b19bc6','#8d80a3',1);ellipse(c,xx,423,3,6,'#f9d778');}c.restore();
+    }else if(theme==='sky'){
+      c.save();c.globalAlpha=.22;for(let i=0;i<6;i++){c.strokeStyle=['#ef888e','#f1b06a','#f6e28e','#a4d098','#89badd','#b2a4d4'][i];c.lineWidth=11;c.beginPath();c.arc(1178,430,252-i*12,Math.PI,TAU);c.stroke();}c.restore();
+      cloud(c,173,155,1.21,.95);cloud(c,590,77,.73,.9);cloud(c,1118,337,.7,.95);cloud(c,1517,166,.91,.9);
+      floatingIsland(c,425,465,249,.9);floatingIsland(c,1261,438,294,1.03);floatingIsland(c,758,560,131,.61);pine(c,425,463,.35);cartoonTree(c,1243,435,.33);cloud(c,1268,559,1.03,.88);cloud(c,275,608,1.69,.88);cloud(c,790,622,1.80,.88);cloud(c,1418,619,1.80,.96);
+    }else if(theme==='space'){
+      for(let i=0;i<156;i++){const sx=noise(i+513)*1600,sy=noise(i+421)*623,rr=.6+noise(i+165)*1.6;c.globalAlpha=.3+noise(i+14)*.66;ellipse(c,sx,sy,rr,rr,'#f4eeda');}c.globalAlpha=1;
+      c.save();c.translate(1248,183);c.rotate(-.28);ellipse(c,0,0,150,39,null,'#dbaac760',17);ellipse(c,0,0,73,73,'#cfadba','#98788f',2);c.save();c.beginPath();c.arc(0,0,71,0,TAU);c.clip();c.strokeStyle='#af829e99';c.lineWidth=14;c.beginPath();c.moveTo(-80,-34);c.quadraticCurveTo(0,-6,80,-35);c.moveTo(-80,8);c.quadraticCurveTo(0,35,80,10);c.moveTo(-80,44);c.quadraticCurveTo(0,68,80,40);c.stroke();c.restore();c.beginPath();c.ellipse(0,0,150,39,0,0,Math.PI);c.strokeStyle='#e6c4d0';c.lineWidth=10;c.stroke();c.restore();
+      ellipse(c,299,392,123,123,'#564e79');ellipse(c,259,365,29,20,'#484167');ellipse(c,337,420,37,28,'#484167');ellipse(c,302,316,16,12,'#6b5e8a');
+      for(let i=0;i<7;i++){const xx=605+noise(i+677)*921,yy=367+noise(i+748)*222;path(c,[[xx-18,yy],[xx-8,yy-20],[xx+15,yy-17],[xx+26,yy+4],[xx+6,yy+21],[xx-14,yy+16]],'#736481','#4c4365',2);ellipse(c,xx+4,yy-1,7,5,'#564766');}
+      c.fillStyle='#625979';c.beginPath();c.moveTo(0,660);c.lineTo(0,584);for(let x=0;x<=1600;x+=71)c.lineTo(x,592+noise(x+622)*48);c.lineTo(1600,660);c.fill();
+    }else if(theme==='aurora'){
+      for(let i=0;i<108;i++){const sx=noise(i+733)*1600,sy=noise(i+197)*480;c.globalAlpha=.25+noise(i+847)*.6;ellipse(c,sx,sy,1+noise(i+22),1+noise(i+22),'#e0f9ee');}c.globalAlpha=1;
+      for(let k=0;k<6;k++){c.strokeStyle=['#4edfbe20','#58e8b325','#97e6aa22','#a4aad123','#b78bcc24','#78dfce24'][k];c.lineWidth=41;c.beginPath();c.moveTo(-60,205+k*13);c.bezierCurveTo(180,58+k*19,319,382-k*18,579,207+k*10);c.bezierCurveTo(825,28+k*14,1170,278+k*4,1690,84+k*16);c.stroke();}
+      for(let i=0;i<42;i++){const xx=i*41;c.strokeStyle='#9cecbd16';c.lineWidth=8;c.beginPath();c.moveTo(xx,179+Math.sin(i*.18)*52);c.lineTo(xx+11,284+Math.sin(i*.18)*52);c.stroke();}
+      ellipse(c,1307,156,45,45,'#dcedd0');ellipse(c,1323,143,39,40,p.sky[0]);
+      path(c,[[0,637],[0,528],[126,389],[237,526],[326,421],[430,562],[509,474],[714,636]],'#568496');path(c,[[795,647],[889,498],[970,551],[1117,379],[1249,527],[1374,437],[1449,537],[1567,382],[1600,443],[1600,660]],'#6193a0');
+      path(c,[[82,440],[126,389],[179,459],[142,444],[128,460],[111,421]],'#c1e8ed');path(c,[[1074,432],[1117,379],[1174,455],[1137,436],[1118,451],[1101,418]],'#cdeff3');path(c,[[1522,446],[1567,382],[1600,443],[1563,425],[1545,444]],'#c8eaf0');
+      c.fillStyle='#8fb9c4';c.beginPath();c.moveTo(0,660);c.lineTo(0,591);c.bezierCurveTo(306,536,562,635,886,591);c.bezierCurveTo(1200,549,1409,613,1600,561);c.lineTo(1600,660);c.fill();
+    }
+    expansionGround(c,theme);
+    if(theme==='jungle'){
+      palm(c,54,655,1.03,'meadow');palm(c,1556,655,.86,'meadow',-1);shrub(c,23,660,.84,'meadow');shrub(c,1579,660,.79,'meadow');
+      for(const x of [8,67,1532,1592]){c.strokeStyle='#376634';c.lineWidth=4;c.beginPath();c.moveTo(x,-20);c.bezierCurveTo(x+55,94,x-26,201,x+4,278);c.stroke();for(let i=0;i<8;i++)leaf(c,x+Math.sin(i)*17,i*29,27,10,i%2?-.9:2.7,'#4e913c');}
+      for(let i=0;i<4;i++)flower(c,133+i*13,654-noise(i+53)*10,.8,['#eea264','#f4d474','#db8c97','#f4d474'][i]);
+    }else if(theme==='desert'){cactus(c,45,655,1.05);cactus(c,1551,655,.80);ellipse(c,124,656,26,9,'#c49658','#947148',2);path(c,[[1450,657],[1461,638],[1486,636],[1495,657]],'#b99058','#8c6b44',1.8);}
+    else if(theme==='volcano'){deadTree(c,54,656,.82);deadTree(c,1551,656,.68);for(const x of [14,102,1515,1576])path(c,[[x-23,660],[x-14,637],[x+2,624],[x+25,641],[x+28,660]],'#574a51','#332e3a',2);}
+    else if(theme==='factory'){
+      for(const x of [31,1568]){round(c,x-17,429,34,230,5,'#6a8272','#31483f',3);round(c,x-23,449,46,14,3,'#94a289','#31483f',2);round(c,x-23,611,46,14,3,'#94a289','#31483f',2);c.strokeStyle='#acc0a076';c.lineWidth=4;c.beginPath();c.moveTo(x-8,468);c.lineTo(x-8,604);c.stroke();}gear(c,76,625,34,'#a3a36d');gear(c,1511,634,28,'#9a9e6b');
+    }else if(theme==='candy'){
+      candyCane(c,47,655,.88);candyCane(c,1555,655,.82,-1);for(let i=0;i<3;i++)ellipse(c,13+i*39,655,28,20,['#efb476','#e49bb3','#a6cbb7'][i],'#ae8890',1.5);for(let i=0;i<3;i++)ellipse(c,1517+i*36,655,27,19,['#b0a2c9','#e8b776','#e5a0b9'][i],'#a7899f',1.5);
+    }else if(theme==='sky'){cartoonTree(c,40,655,.74);pine(c,1561,655,.71);cloud(c,5,794,.65,.75);cloud(c,1610,795,.71,.8);}
+    else if(theme==='space'){
+      for(const x of [37,1561]){path(c,[[x-25,659],[x-30,620],[x-16,594],[x-4,628],[x+9,572],[x+23,615],[x+32,608],[x+27,658]],'#7e8ab0','#454a75',2.5);path(c,[[x+9,577],[x+8,651],[x+20,616]],'#bbd1db99');}ellipse(c,112,660,23,6,'#635975');
+    }else if(theme==='aurora'){pine(c,38,656,.93,'snow');pine(c,1561,655,.83,'snow');ellipse(c,25,658,68,11,'#e6faff');ellipse(c,1579,658,63,10,'#e6faff');}
+    return cvs;
+  }
   function background(c,theme='meadow',time=0){
+    sceneTime=time;
     if(!palettes[theme])theme='meadow';if(!cache.has(theme))cache.set(theme,renderScenery(theme));c.drawImage(cache.get(theme),0,0);
     c.save();c.lineCap='round';
+    if(['jungle','desert','volcano','factory','candy','sky','space','aurora'].includes(theme)){expandedAmbient(c,theme,time);c.restore();return;}
     if(theme==='snow'){
       for(let i=0;i<46;i++){const xx=(noise(i+217)*1680+time*(6+noise(i+523)*8))%1680-40,yy=(noise(i+529)*790+time*(12+noise(i+47)*16))%735-30;const sz=1+noise(i+178)*2;c.globalAlpha=.25+noise(i+551)*.5;ellipse(c,xx,yy,sz,sz,'#fff');}
     }else if(theme==='moon'){
@@ -885,7 +1242,7 @@
     for(let i=0;i<3;i++){const a=time*.7+i*TAU/3,xx=Math.cos(a)*32,yy=Math.sin(a)*27;c.globalAlpha=(collected?.22:.8)*(.65+.35*Math.sin(time*4+i));path(c,[[xx,yy-5],[xx+1.5,yy-1.5],[xx+5,yy],[xx+1.5,yy+1.5],[xx,yy+5],[xx-1.5,yy+1.5],[xx-5,yy],[xx-1.5,yy-1.5]],'#fff7b4');}
     c.restore();
   }
-  function mechanism(c,item,time=0){
+  function mechanismBase(c,item,time=0){
     const x=item.position?.x??item.x??0,y=item.position?.y??item.y??0,w=item.w||90,h=item.h||16,type=item.type||item.kind;
     c.save();c.translate(x,y);c.lineCap='round';c.lineJoin='round';
     if(type==='spring'){
@@ -910,7 +1267,131 @@
       for(let side of [-1,1]){round(c,side*wBase*.35-3,by-3,6,8,2,'#334d46');}
     }c.restore();
   }
-  window.Art={background,foreground,bird,pig,block,sling,particle,collectible,mechanism,palettes};
+  function freezeShell(c,x,y,rx,ry,angle=0){
+    c.save();c.translate(x,y);c.rotate(angle);path(c,[[-rx*.77,-ry],[-rx*.14,-ry*1.09],[rx*.79,-ry*.94],[rx*1.06,-ry*.26],[rx*.95,ry*.79],[rx*.40,ry*1.07],[-rx*.76,ry*.95],[-rx*1.05,ry*.2]],'#a6eeff39','#c2f4ff',2);path(c,[[-rx*.8,-ry*.73],[-rx*.45,-ry*.9],[rx*.56,ry*.82],[rx*.31,ry*.92]],'#ffffff35');c.strokeStyle='#e9ffff99';c.lineWidth=1.3;c.beginPath();c.moveTo(-rx*.3,-ry*.65);c.lineTo(0,-ry*.1);c.lineTo(rx*.36,-ry*.3);c.moveTo(0,-ry*.1);c.lineTo(-rx*.13,ry*.5);c.stroke();c.restore();
+  }
+  function bubbleShell(c,x,y,r,shield=false){
+    c.save();c.translate(x,y);const rr=r*(1+Math.sin(sceneTime*2+x)*.015);
+    ellipse(c,0,0,rr,rr,shield?'#8bddff15':'#f8b5e419',shield?'#80daf5b3':'#ffddf4bb',2.1);ellipse(c,0,0,rr-3,rr-3,null,shield?'#d8faff66':'#a8e2f969',1);
+    c.strokeStyle=shield?'#d0f7ffcc':'#fff2fbe6';c.lineWidth=3;c.lineCap='round';c.beginPath();c.arc(0,0,rr-5,3.58,4.28);c.stroke();c.strokeStyle=shield?'#95eaff77':'#e99cde99';c.lineWidth=2;c.beginPath();c.arc(0,0,rr-4,.54,1.32);c.stroke();
+    if(shield){c.globalAlpha=.2;c.strokeStyle='#a5efff';c.lineWidth=1;for(let i=0;i<6;i++){const a=i*TAU/6;const xx=Math.cos(a)*rr*.70,yy=Math.sin(a)*rr*.70;const pts=[];for(let j=0;j<6;j++)pts.push([xx+Math.cos(j*TAU/6)*rr*.18,yy+Math.sin(j*TAU/6)*rr*.18]);path(c,pts,null,'#9ae8ff',1);}}c.restore();
+  }
+  function specialBird(c,x,y,r,type,angle=0,opts={}){
+    c.save();c.translate(x,y);c.rotate(angle);c.scale(r,r);c.lineJoin='round';c.lineCap='round';const ink='#252a2d',ice=type==='ice',pink=type==='pink';
+    if(ice){
+      path(c,[[-.83,.2],[-1.26,.05],[-1.15,.32],[-1.35,.50],[-.83,.48]],'#76c6e0',ink,.06);path(c,[[-.45,-.77],[-.41,-1.37],[-.10,-1.13],[.13,-1.48],[.34,-1.13],[.44,-.76]],'#bcecf1',ink,.075);
+      path(c,[[-.79,-.79],[-.36,-1.02],[.62,-.96],[.94,-.62],[.97,.70],[.67,.98],[-.73,.94],[-1.0,.60],[-1.0,-.47]],'#7cc9e2',ink,.09);path(c,[[-.78,-.75],[-.34,-.94],[.51,-.9],[.76,-.71],[-.54,-.46],[-.95,.11],[-.95,-.43]],'#bbe9f1');path(c,[[.66,-.89],[.90,-.59],[.93,.69],[.66,.91],[.47,.48]],'#51a4c7');path(c,[[-.70,.56],[-.31,.33],[.40,.41],[.70,.91],[-.69,.88],[-.90,.59]],'#d5f4f2');
+      path(c,[[-.78,-.24],[-.54,-.41],[-.53,-.19]],'#efffff99');path(c,[[.66,.04],[.83,-.08],[.82,.33]],'#d5faff80');
+    }else if(pink){
+      path(c,[[-.82,.18],[-1.25,.04],[-1.15,.31],[-1.40,.48],[-.82,.50]],'#b24a70',ink,.055);
+      c.beginPath();c.moveTo(-.39,-.80);c.bezierCurveTo(-.69,-1.42,.18,-1.63,.32,-1.19);c.bezierCurveTo(.18,-1.33,-.12,-1.25,-.02,-1.08);c.bezierCurveTo(.37,-1.41,.64,-1.25,.51,-.92);c.closePath();c.fillStyle='#e96694';c.fill();c.strokeStyle=ink;c.lineWidth=.065;c.stroke();
+      ellipse(c,0,0,1,.98,'#ed79a2',ink,.085);c.beginPath();c.moveTo(.53,-.80);c.bezierCurveTo(1.00,.17,.43,.86,-.24,.95);c.bezierCurveTo(.64,1.23,1.3,.30,.53,-.80);c.fillStyle='#d35985';c.fill();ellipse(c,0,.65,.72,.32,'#f8cccb');ellipse(c,-.51,-.46,.25,.14,'#f7a6bc',null,0,-.4);
+    }else{
+      path(c,[[-.80,.20],[-1.24,.02],[-1.18,.27],[-1.35,.40],[-.87,.52]],ink,ink,.05);path(c,[[-.24,-.84],[-.56,-1.39],[-.27,-1.27],[-.08,-.94],[-.05,-1.39],[.12,-1.21],[.14,-.88]],ink,ink,.055);
+      ellipse(c,0,0,.98,.97,'#ed9734',ink,.09);c.beginPath();c.moveTo(.53,-.79);c.bezierCurveTo(1.0,.25,.44,.81,-.14,.96);c.bezierCurveTo(.78,1.03,1.17,.2,.53,-.79);c.fillStyle='#d7712a';c.fill();ellipse(c,-.11,.76,.66,.23,'#f4c477');ellipse(c,-.51,-.43,.24,.14,'#ffc65b',null,0,-.45);ellipse(c,-.16,-.13,.45,.47,'#42352e');ellipse(c,.42,-.16,.42,.43,'#42352e');
+    }
+    const ey=pink?-.10:ice?-.16:-.14;
+    if(opts.blink){c.strokeStyle=ink;c.lineWidth=.07;c.beginPath();c.moveTo(-.50,ey);c.lineTo(.04,ey+.04);c.moveTo(.17,ey+.02);c.lineTo(.70,ey-.02);c.stroke();}
+    else{
+      ellipse(c,-.19,ey,.31,pink?.35:.33,'#fffbea',ink,.04,-.1);ellipse(c,.38,ey-.025,.29,pink?.35:.31,'#fffbed',ink,.04,.10);
+      if(pink){ellipse(c,-.11,ey+.03,.12,.17,'#7dc0c3');ellipse(c,.46,ey+.01,.12,.17,'#7dc0c3');}
+      ellipse(c,-.085,ey+.035,pink?.065:.08,pink?.11:.115,ink);ellipse(c,.46,ey+.02,pink?.065:.08,pink?.11:.115,ink);ellipse(c,-.11,ey-.012,.022,.035,'#fff');ellipse(c,.44,ey-.022,.022,.034,'#fff');
+    }
+    if(pink){
+      c.strokeStyle=ink;c.lineWidth=.055;c.beginPath();c.moveTo(-.48,-.31);c.lineTo(-.60,-.47);c.moveTo(-.42,-.39);c.lineTo(-.49,-.57);c.moveTo(.59,-.35);c.lineTo(.69,-.54);c.moveTo(.65,-.27);c.lineTo(.82,-.39);c.stroke();
+      c.strokeStyle='#963653';c.lineWidth=.067;c.beginPath();c.moveTo(-.51,-.53);c.quadraticCurveTo(-.28,-.74,-.05,-.52);c.moveTo(.17,-.53);c.quadraticCurveTo(.46,-.62,.62,-.53);c.stroke();ellipse(c,-.49,.31,.14,.075,'#d6548366');
+    }else{
+      const col=ice?'#29495a':'#3b302b';path(c,[[-.61,ey-.38],[-.54,ey-.57],[.04,ey-.19],[.01,ey-.06]],col);path(c,[[.14,ey-.12],[.20,ey-.26],[.75,ey-.46],[.77,ey-.30]],col);
+    }
+    const by=pink?.26:.25,bx=pink?.20:.25;path(c,[[bx-.12,by],[bx+.19,by-.16],[bx+.73,by+.09],[bx+.21,by+.25],[bx-.10,by+.15]],pink?'#f3be45':'#efad30',ink,.05);path(c,[[bx-.04,by+.17],[bx+.48,by+.17],[bx+.15,by+.41]],'#db8829',ink,.04);path(c,[[bx+.01,by-.01],[bx+.19,by-.09],[bx+.49,by+.05]],'#ffdb78');c.restore();
+  }
+  function birdEnhanced(c,x,y,r,type='red',angle=0,opts={}){
+    if(['ice','pink','orange'].includes(type))specialBird(c,x,y,r,type,angle,opts);else bird(c,x,y,r,type,angle,opts);
+    if(opts.frozen)freezeShell(c,x,y,r*1.13,r*1.13,angle);if(opts.bubbled)bubbleShell(c,x,y,r*1.48);if(opts.shield)bubbleShell(c,x,y,r*1.3,true);
+  }
+  function pigEnhanced(c,x,y,r,angle=0,opts={}){
+    pig(c,x,y,r,angle,opts);if(opts.shield)bubbleShell(c,x,y,r*1.37,true);if(opts.frozen)freezeShell(c,x,y,r*1.14,r*1.16,angle);if(opts.bubbled)bubbleShell(c,x,y,r*1.52);
+  }
+  function specialBlock(c,body){
+    const g=body.plugin?.game||{},w=g.w||40,h=g.h||40,m=g.material,damage=clamp(1-(g.hp??1)/(g.maxHp||1),0,1);c.save();c.translate(body.position.x,body.position.y);c.rotate(body.angle||0);c.lineJoin='round';c.lineCap='round';
+    if(m==='metal'){
+      round(c,-w/2,-h/2,w,h,3,linear(c,-w/2,-h/2,w/2,h/2,['#b1c0bf','#7c9497','#5d777d']),'#33454b',2.5);path(c,[[-w/2+2,-h/2+2],[w/2-2,-h/2+2],[w/2-7,-h/2+7],[-w/2+7,-h/2+7],[-w/2+7,h/2-7],[-w/2+2,h/2-2]],'#d5dfd56e');
+      c.save();c.beginPath();c.rect(-w/2+5,-h/2+5,w-10,h-10);c.clip();c.strokeStyle='#3e5a6152';c.lineWidth=2;for(let i=-h;i<w+h;i+=19){c.beginPath();c.moveTo(-w/2+i,-h/2);c.lineTo(-w/2+i-h,h/2);c.stroke();}c.restore();
+      const isTall=h>w;if(isTall)round(c,-w*.14,-h/2+6,w*.28,h-12,1,'#9aadaf','#557075',1);else round(c,-w/2+6,-h*.15,w-12,h*.3,1,'#9aadaf','#557075',1);
+      for(const sx of [-1,1])for(const sy of [-1,1]){ellipse(c,sx*(w/2-5.5),sy*(h/2-5.5),2.2,2.2,'#ced4c1','#445d60',.8);c.strokeStyle='#5b7477';c.lineWidth=.7;c.beginPath();c.moveTo(sx*(w/2-5.5)-1,sy*(h/2-5.5));c.lineTo(sx*(w/2-5.5)+1,sy*(h/2-5.5));c.stroke();}
+    }else if(m==='crystal'){
+      path(c,[[-w/2+3,-h/2],[w/2-4,-h/2],[w/2,-h/2+6],[w/2,h/2-5],[w/2-5,h/2],[-w/2+4,h/2],[-w/2,h/2-5],[-w/2,-h/2+5]],'#b8aaebbf','#676494',2.2);path(c,[[-w/2+3,-h/2],[w*.1,-h*.16],[-w/2+3,h/2]],'#daf3f880');path(c,[[w/2-3,-h/2],[w*.1,-h*.16],[w/2-3,h/2]],'#9393df8f');path(c,[[-w/2+3,h/2],[w*.1,-h*.16],[w/2-3,h/2]],'#d3b5efaa');
+      c.strokeStyle='#edecffba';c.lineWidth=1.4;c.beginPath();c.moveTo(-w/2+3,-h/2+3);c.lineTo(w*.1,-h*.16);c.lineTo(w/2-3,-h/2+3);c.moveTo(w*.1,-h*.16);c.lineTo(w*.17,h/2-3);c.stroke();c.strokeStyle='#fff8f6c9';c.lineWidth=2;c.beginPath();c.moveTo(-w/2+5,-h/2+6);c.lineTo(-w/2+5,h/2-7);c.stroke();
+    }else{
+      round(c,-w/2,-h/2,w,h,6,'#665273','#302e3e',2.6);round(c,-w/2+4,-h/2+4,w-8,h-8,3,null,'#b8a178',1.4);c.save();c.beginPath();c.rect(-w/2+7,-h/2+7,w-14,h-14);c.clip();c.strokeStyle='#967584';c.lineWidth=4;for(let yy=-h/2+10;yy<h/2;yy+=10){c.beginPath();c.moveTo(-w/2+7,yy);c.lineTo(w/2-7,yy);c.stroke();}c.restore();
+      if(w>h){round(c,-w/2+4,-h/2+4,8,h-8,2,'#c7a456');round(c,w/2-12,-h/2+4,8,h-8,2,'#c7a456');}else{round(c,-w/2+4,-h/2+4,w-8,8,2,'#c7a456');round(c,-w/2+4,h/2-12,w-8,8,2,'#c7a456');}
+    }
+    if(damage>.2){c.strokeStyle=m==='crystal'?'#f8f5ff':m==='metal'?'#344e54':'#2a2937';c.lineWidth=1.4;c.beginPath();c.moveTo(-w*.47,-h*.21);c.lineTo(-w*.14,-h*.08);c.lineTo(w*.13,-h*.23);if(damage>.55){c.lineTo(w*.35,h*.08);c.lineTo(w*.48,h*.07);c.moveTo(w*.13,-h*.23);c.lineTo(w*.01,h*.31);}c.stroke();}c.restore();
+  }
+  function blockEnhanced(c,body){
+    const g=body.plugin?.game||{};if(['metal','crystal','rubber'].includes(g.material))specialBlock(c,body);else block(c,body);
+    if(g.frozen)freezeShell(c,body.position.x,body.position.y,(g.w||40)/2+3,(g.h||40)/2+3,body.angle||0);if(g.bubbled)bubbleShell(c,body.position.x,body.position.y,Math.hypot(g.w||40,g.h||40)*.5+9);
+  }
+  function expandedForeground(c,theme,time){
+    c.save();if(theme==='factory'){gear(c,-15,820,73,'#789080',time*.04);gear(c,1612,818,73,'#879782',-time*.04);}
+    else if(theme==='space'){for(const [x,d] of [[-5,1],[1605,-1]])path(c,[[x,807],[x+d*5,752],[x+d*25,775],[x+d*47,732],[x+d*60,789],[x+d*96,807]],'#5f6484','#3c4165',2);}
+    else if(theme==='volcano'){for(const x of [-12,1605])path(c,[[x-61,807],[x-48,782],[x-20,756],[x+13,769],[x+33,751],[x+67,800]],'#3b353f','#292733',2);}
+    else if(theme==='candy'){ellipse(c,-10,813,65,47,'#a5bfba','#778b8d',2);ellipse(c,42,817,45,31,'#e6a8b5','#b47c91',2);ellipse(c,1612,811,71,41,'#b6a1d0','#817899',2);ellipse(c,1556,821,43,28,'#dfbc85','#af8d64',2);}
+    else if(theme==='sky'){cloud(c,-27,817,.73,.86,'#effaff');cloud(c,1641,817,.83,.87,'#effaff');}
+    else if(theme==='aurora'){ellipse(c,-2,807,102,27,'#d8edf5');ellipse(c,1595,809,111,29,'#e2f5fb');}
+    c.restore();
+  }
+  function foregroundEnhanced(c,theme='meadow',time=0){
+    if(['factory','space','volcano','candy','sky','aurora'].includes(theme))expandedForeground(c,theme,time);
+    else foreground(c,theme==='desert'?'sunset':theme==='jungle'?'meadow':theme,time);
+  }
+  function expandedAmbient(c,theme,time){
+    if(theme==='volcano'){
+      for(let i=0;i<16;i++){const xx=120+noise(i+432)*1390+Math.sin(time*.4+i)*16,yy=650-((time*(13+noise(i+517)*10)+noise(i+973)*360)%420);c.globalAlpha=.13+noise(i+76)*.35;ellipse(c,xx,yy,1.4+noise(i)*1.7,1.4+noise(i)*1.7,i%3?'#ffc368':'#fff1a4');}
+    }else if(theme==='aurora'){
+      c.save();c.globalAlpha=.06+.03*Math.sin(time*.23);c.strokeStyle='#c8ffc9';c.lineWidth=12;c.beginPath();c.moveTo(-50,233);c.bezierCurveTo(209,93,339,400,590,248);c.bezierCurveTo(821,62,1170,292,1660,126);c.stroke();c.restore();
+      for(let i=0;i<21;i++){const xx=(noise(i+536)*1680+time*7)%1680-40,yy=(noise(i+461)*750+time*(8+noise(i)*9))%734;c.globalAlpha=.25+noise(i+439)*.35;ellipse(c,xx,yy,1.5,1.5,'#fff');}
+    }else if(theme==='space'){
+      for(let i=0;i<13;i++){const xx=noise(i+524)*1600,yy=noise(i+76)*586,rr=2+noise(i)*2;c.globalAlpha=.16+(.5+.5*Math.sin(time*1.2+i*2))*.35;path(c,[[xx,yy-rr],[xx+.8,yy-.8],[xx+rr,yy],[xx+.8,yy+.8],[xx,yy+rr],[xx-.8,yy+.8],[xx-rr,yy],[xx-.8,yy-.8]],'#e6ebff');}
+    }else if(theme==='factory'){
+      c.globalAlpha=.09;for(let i=0;i<6;i++){const xx=1122+Math.sin(time*.2+i)*12,yy=289-((time*12+i*19)%110);ellipse(c,xx,yy,12+(289-yy)*.13,10+(289-yy)*.08,'#f3ebcf');}
+    }else if(theme==='jungle'){
+      for(let i=0;i<6;i++){const xx=565+i*29+Math.sin(time*.7+i)*18,yy=481+Math.sin(time*.9+i*3)*27;c.globalAlpha=.38;ellipse(c,xx-3,yy,3,2+Math.abs(Math.sin(time*5+i))*2,'#fbda77',null,0,-.6);ellipse(c,xx+3,yy,3,2+Math.abs(Math.sin(time*5+i))*2,'#edb66e',null,0,.6);}
+    }else if(theme==='desert'){
+      c.globalAlpha=.17;c.strokeStyle='#fff4bb';c.lineWidth=1.3;for(let i=0;i<8;i++){const xx=((time*23+noise(i+59)*1700)%1700)-70,yy=568+noise(i+392)*61;c.beginPath();c.moveTo(xx,yy);c.lineTo(xx+14+noise(i)*24,yy-1);c.stroke();}
+    }else if(theme==='candy'){
+      for(let i=0;i<8;i++){const xx=103+noise(i+926)*1400,yy=393+Math.sin(time*.65+i)*31;c.globalAlpha=.10+(.5+.5*Math.sin(time*1.4+i))*.18;ellipse(c,xx,yy,2.6,2.6,'#fff9ce');}
+    }else if(theme==='sky'){
+      c.globalAlpha=.27;c.strokeStyle='#fff';c.lineWidth=2;for(let i=0;i<5;i++){const xx=591+i*39+Math.sin(time*.2+i)*20,yy=208+Math.sin(i*3)*22;c.beginPath();c.moveTo(xx-7,yy-3);c.quadraticCurveTo(xx-3,yy-4,xx,yy);c.quadraticCurveTo(xx+3,yy-4,xx+7,yy-3);c.stroke();}
+    }
+  }
+  function portalRing(c,x,y,r,color,time,exit=false){
+    c.save();c.translate(x,y);c.lineCap='round';const rx=r*.67;
+    c.fillStyle=radial(c,0,0,r*1.35,[color+'26',color+'0d',color+'00']);c.fillRect(-r*1.4,-r*1.4,r*2.8,r*2.8);
+    ellipse(c,0,0,rx,r,'#262d6947','#263452',7);ellipse(c,0,0,rx,r,null,color,4.2);ellipse(c,0,0,rx-4,r-4,null,'#e0f8ff99',1.2);
+    c.save();c.beginPath();c.ellipse(0,0,rx-5,r-5,0,0,TAU);c.clip();c.strokeStyle=color+'6b';c.lineWidth=2;
+    for(let j=0;j<4;j++){c.beginPath();for(let k=0;k<32;k++){const a=(k/32)*TAU*1.3+time*(exit?-1:1)+j*TAU/4,rr=(k/32)*r*.85,xx=Math.cos(a)*rr*.67,yy=Math.sin(a)*rr;k?c.lineTo(xx,yy):c.moveTo(xx,yy);}c.stroke();}c.restore();
+    for(let i=0;i<5;i++){const a=time*(exit?-.7:.7)+i*TAU/5,xx=Math.cos(a)*(rx+3),yy=Math.sin(a)*(r+3);ellipse(c,xx,yy,2.4,2.4,'#f2fcff');}path(c,[[-4,-6],[5,0],[-4,6]],null,'#e9f8ff9c',2.2,false);c.restore();
+  }
+  function mechanism(c,item,time=0){
+    const type=item.type||item.kind,x=item.position?.x??item.x??0,y=item.position?.y??item.y??0;
+    if(type==='portal'){
+      const r=item.r||43;portalRing(c,x,y,r,'#59d6f2',time,false);if(Number.isFinite(item.toX)&&Number.isFinite(item.toY))portalRing(c,item.toX,item.toY,r,'#be8bf0',time,true);return;
+    }
+    if(type==='gravity'){
+      const r=item.r||130;c.save();c.translate(x,y);c.fillStyle=radial(c,0,0,r,['#c99bf522','#a68cdf09','#a68cdf00']);c.fillRect(-r,-r,r*2,r*2);c.strokeStyle='#baa1e743';c.lineWidth=1.3;c.setLineDash([3,12]);c.beginPath();c.arc(0,0,r,0,TAU);c.stroke();c.setLineDash([]);
+      for(let i=0;i<4;i++){const a=time*.25+i*TAU/4;c.save();c.rotate(a);c.strokeStyle='#d3b6ef62';c.lineWidth=1.5;c.beginPath();c.moveTo(r*.77,0);c.bezierCurveTo(r*.61,-r*.27,r*.22,-r*.29,r*.21,-r*.02);c.stroke();path(c,[[r*.16,-r*.09],[r*.21,-r*.01],[r*.27,-r*.08]],null,'#d3b6ef70',1.5,false);c.restore();}
+      ellipse(c,0,0,11,11,'#8864b9','#dec5f0',1.5);ellipse(c,-3,-4,4,3,'#d9c2f3');c.save();c.rotate(-time*.7);ellipse(c,0,0,19,7,null,'#c4abedb3',2);c.restore();c.restore();return;
+    }
+    if(type==='conveyor'){
+      const w=item.w||180,h=item.h||22,dir=(item.speed||1)>0?1:-1;c.save();c.translate(x,y);c.lineJoin='round';round(c,-w/2,-h/2,w,h,h*.35,'#3c5154','#25383c',2.5);round(c,-w/2+4,-h/2+4,w-8,h-8,5,'#8f9c8d','#536962',1.5);
+      const rr=Math.max(3,h*.23);for(let xx=-w/2+rr+5;xx<w/2-4;xx+=Math.max(17,h)){ellipse(c,xx,0,rr,rr,'#5c716d','#2e4744',1);c.save();c.translate(xx,0);c.rotate(time*dir*3);c.strokeStyle='#bdc5ab';c.lineWidth=1.2;c.beginPath();c.moveTo(-rr*.7,0);c.lineTo(rr*.7,0);c.stroke();c.restore();}
+      c.save();c.beginPath();c.rect(-w/2+2,-h/2-1,w-4,5);c.clip();c.fillStyle='#c8ad5a';c.fillRect(-w/2,-h/2,w,4);c.strokeStyle='#4d5e4b';c.lineWidth=5;const shift=(time*Math.abs(item.speed||1)*17)%22;for(let xx=-w/2-30;xx<w/2+30;xx+=22){c.beginPath();c.moveTo(xx+shift*dir,-h/2-3);c.lineTo(xx+shift*dir+7,-h/2+6);c.stroke();}c.restore();
+      for(let xx=-w*.3;xx<w*.36;xx+=w*.3)path(c,[[xx-dir*4,-3],[xx+dir*2,0],[xx-dir*4,3]],null,'#efe0a3',1.8,false);c.restore();return;
+    }
+    mechanismBase(c,item,time);
+  }
+  window.Art={background,foreground:foregroundEnhanced,bird:birdEnhanced,pig:pigEnhanced,block:blockEnhanced,sling,particle,collectible,mechanism,palettes};
 })();
 
 </script>
@@ -932,13 +1413,16 @@
     bomb:{name:'炸弹黑',ability:'引爆冲击 · 摧毁坚固石墙',r:28,color:'#39424a'},
     white:{name:'白公主',ability:'投下爆炸蛋 · 向上弹射',r:26,color:'#fff7e3'},
     boomerang:{name:'回旋绿鸟',ability:'回旋突袭 · 绕到背后再出击',r:25,color:'#76b932'},
-    terence:{name:'大红',ability:'陨石重坠 · 让整座城堡颤抖',r:34,color:'#bc3434'}
+    terence:{name:'大红',ability:'陨石重坠 · 让整座城堡颤抖',r:34,color:'#bc3434'},
+    ice:{name:'冰晶蓝',ability:'寒冰脆化 · 后续撞击双倍伤害',r:24,color:'#83e8ff'},
+    pink:{name:'泡泡粉',ability:'泡泡升空 · 抬起敌人再摔下',r:24,color:'#f486bd'},
+    orange:{name:'膨胀橙',ability:'巨型膨胀 · 撑开城堡后爆破',r:22,color:'#f39b29'}
   };
-  const MATERIALS={wood:{hp:65,density:.0022,color:'#dd9852',score:450},glass:{hp:30,density:.0014,color:'#a8edf1',score:350},stone:{hp:175,density:.004,color:'#8b999d',score:650},tnt:{hp:35,density:.002,color:'#e95b46',score:700}};
+  const MATERIALS={wood:{hp:65,density:.0022,color:'#dd9852',score:450},glass:{hp:30,density:.0014,color:'#a8edf1',score:350},stone:{hp:175,density:.004,color:'#8b999d',score:650},tnt:{hp:35,density:.002,color:'#e95b46',score:700},crystal:{hp:22,density:.0013,color:'#aeeeff',score:500},metal:{hp:220,density:.0055,color:'#97a6b3',score:850},rubber:{hp:85,density:.002,color:'#b776c9',score:600}};
   let save={levels:{},eggs:{},daily:{},sound:true,cinema:true,lastLevel:0};
   try {const s=JSON.parse(localStorage.getItem('island-adventure-v2'));if(s&&s.levels)save={...save,...s};}catch(_){}
   const persist=()=>{try{localStorage.setItem('island-adventure-v2',JSON.stringify(save));}catch(_){}};
-  save.eggs=save.eggs||{};save.daily=save.daily||{};
+  save.eggs=save.eggs||{};save.daily=save.daily||{};save.trials=save.trials||{};save.badges=save.badges||{};save.voyageBest=save.voyageBest||{};save.schema=3;
   audio.setEnabled(save.sound);
   let engine,levelIndex=0,level,blocks=[],pigs=[],birds=[],platforms=[],particles=[],labels=[],rings=[],trail=[],lastTrail=[];
   let queueIndex=0,activeBird=null,drag=null,pointerId=null,phase='ready',score=0,displayScore=0;
@@ -946,6 +1430,7 @@
   let shake=0,flash=0,combo=0,lastKill=-10,toastTimer=0,accumulator=0,lastTime=0,frameCount=0;
   let pendingDestroy=new Set(),pointerWorld={x:285,y:510},ambientTime=0,aimAngle=-.1,aimPower=.99;
   let homeOpen=false,mapWorld=0,challengeMode=false,challengeDate='',slowMo=0,mechanisms=[],springQueue=[],eggCollected=false;
+  let playMode='campaign',run=save.voyageRun||null,activeTrial=null,mapLevelPage=0,metrics={};
   let resultHTML='',resultRecorded=false,shotCount=0,skillUsed=false,abilityActivatedAt=0,eggId=0;
   const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
   const rand=(a,b)=>a+Math.random()*(b-a);
@@ -961,21 +1446,23 @@
   const mkMeta=(b,data)=>{b.plugin.game=data;return b;};
   function makeBlock(o){
     const m=MATERIALS[o.material];
-    const b=Bodies.rectangle(o.x,o.y,o.w,o.h,{angle:o.angle||0,density:m.density,friction:.65,frictionStatic:.9,frictionAir:.002,restitution:.045,chamfer:{radius:1},sleepThreshold:100});
+    const b=Bodies.rectangle(o.x,o.y,o.w,o.h,{angle:o.angle||0,density:m.density,friction:.65,frictionStatic:.9,frictionAir:.002,restitution:o.material==='rubber'?.78:.045,chamfer:{radius:1},sleepThreshold:100});
     mkMeta(b,{...o,kind:'block',hp:m.hp,maxHp:m.hp,hitAt:-100,dead:false});
     Composite.add(engine.world,b);blocks.push(b);return b;
   }
   function makePig(o){
     const hp=o.king?110:o.helmet?85:42;
     const b=Bodies.circle(o.x,o.y,o.r||24,{density:.0017,friction:.8,frictionStatic:1,frictionAir:.009,restitution:.09,sleepThreshold:100});
-    mkMeta(b,{...o,kind:'pig',r:o.r||24,hp,maxHp:hp,hitAt:-100,dead:false});
+    mkMeta(b,{...o,kind:'pig',r:o.r||24,hp,maxHp:hp,shieldHP:o.shield?60:0,hitAt:-100,dead:false});
     Composite.add(engine.world,b);pigs.push(b);return b;
   }
   function loadLevel(index,options={}){
-    homeOpen=false;$('homeScreen')?.classList.add('hidden');challengeMode=!!options.challenge;challengeDate=challengeMode?(options.challengeKey||dailyKey()):'';
-    levelIndex=(index+LEVELS.length)%LEVELS.length;level=LEVELS[levelIndex];
+    homeOpen=false;$('homeScreen')?.classList.add('hidden');playMode=options.mode||(options.challenge?'daily':'campaign');activeTrial=playMode==='trial'?TRIALS[options.trial]:null;challengeMode=playMode==='daily';challengeDate=challengeMode?(options.challengeKey||dailyKey()):'';
+    metrics={combo:0,portals:0,springs:0,frozen:0,lifted:0,inflations:0,skills:[]};
+    levelIndex=(index+LEVELS.length)%LEVELS.length;level=options.level||LEVELS[levelIndex];
+    if(activeTrial)level={...level,birds:[...activeTrial.birds],subtitle:activeTrial.description,objective:null,mechanisms:[...(level.mechanisms||[]),...(activeTrial.mechanisms||[])]};
     if(challengeMode)level={...level,birds:['boomerang','terence','bomb'],subtitle:'每日挑战：限定三只小鸟，争取最高分！'};
-    stage.dataset.theme=level.theme;stage.dataset.mode=challengeMode?'daily':'adventure';save.lastLevel=levelIndex;
+    stage.dataset.theme=level.theme;stage.dataset.mode=playMode;if(playMode==='campaign')save.lastLevel=levelIndex;
     mechanisms=(level.mechanisms||[]).map(o=>({...o,pulse:0}));springQueue=[];eggCollected=false;slowMo=0;
     if(engine){Events.off(engine);Composite.clear(engine.world,false);Engine.clear(engine);}
     engine=Engine.create({enableSleeping:true,positionIterations:10,velocityIterations:8});engine.gravity.y=.95;
@@ -990,11 +1477,11 @@
     Events.on(engine,'collisionStart',onCollisions);
     queueIndex=0;score=0;displayScore=0;gameTime=0;flightTime=0;endTime=0;settleTime=0;paused=false;phase='ready';shotCount=0;resultRecorded=false;resultHTML='';skillUsed=false;shake=0;flash=0;combo=0;lastKill=-10;
     activeBird=null;drag=null;closeModal();spawnReady();
-    $('chapterLabel').textContent=challengeMode?'DAILY CHALLENGE':(window.WORLDS?.[level.world||0]?.name||'怒鸟群岛');
-    $('levelName').textContent=`${(level.world||0)+1} - ${levelIndex%6+1}  ${level.name}`;
+    $('chapterLabel').textContent=playMode==='voyage'?`无限远征 · 第 ${run.stage} 站`:activeTrial?'大师试炼':challengeMode?'DAILY CHALLENGE':(window.WORLDS?.[level.world||0]?.name||'怒鸟群岛');
+    $('levelName').textContent=playMode==='voyage'?level.name:activeTrial?activeTrial.name:`${level.id||((level.world||0)+1)+' - '+(LEVELS.filter((l,i)=>i<=levelIndex&&l.world===level.world).length)}  ${level.name}`;
     if($('windValue'))$('windValue').textContent=level.wind?`${level.wind>0?'→':'←'} ${Math.round(Math.abs(level.wind)*1000)}`:'微风';
     if($('eggStatus'))$('eggStatus').classList.toggle('collected',!!save.eggs[levelIndex]);
-    $('bestValue').textContent=format(challengeMode?(save.daily[challengeDate]?.score||0):(save.levels[levelIndex]?.score||0));
+    $('bestValue').textContent=format(playMode==='voyage'?(save.voyageBest[run.difficulty]?.score||0):activeTrial?(save.trials[activeTrial.id]?.score||0):challengeMode?(save.daily[challengeDate]?.score||0):(save.levels[levelIndex]?.score||0));
     $('shotHint').classList.toggle('hidden',levelIndex!==0);
     $('pauseBtn').setAttribute('aria-label','暂停游戏');
     updateHUD();toast(level.subtitle,4.4);canvas.focus({preventScroll:true});
@@ -1023,7 +1510,9 @@
     $('pigCounter').setAttribute('aria-label',`剩余 ${pigs.filter(p=>!meta(p).dead).length} 只绿猪，共 ${level.pigs.length} 只`);
     const can=phase==='flying'&&activeBird&&!meta(activeBird).used&&!meta(activeBird).dead;
     $('abilityBtn').classList.toggle('hidden',!can||paused||!!modal||homeOpen);
-    if(can)$('abilityBtn').textContent=`${{red:'冲击波',yellow:'极速冲刺',blue:'一分为三',bomb:'引爆炸弹',white:'投下爆炸蛋',boomerang:'回旋突袭',terence:'陨石重坠'}[meta(activeBird).type]} · SPACE`;
+    if(can)$('abilityBtn').textContent=`${{red:'冲击波',yellow:'极速冲刺',blue:'一分为三',bomb:'引爆炸弹',white:'投下爆炸蛋',boomerang:'回旋突袭',terence:'陨石重坠',ice:'寒冰脆化',pink:'泡泡升空',orange:'巨型膨胀'}[meta(activeBird).type]} · SPACE`;
+    if($('voyageHud')){$('voyageHud').classList.toggle('hidden',playMode!=='voyage'||homeOpen);if(playMode==='voyage')$('voyageHud').textContent=`第 ${run.stage} 站 · ${'♥'.repeat(Math.max(0,run.lives))} · 总分 ${format(run.score)}`;}
+    if($('objectiveHud')){const goal=activeTrial?.goal||level.objective;$('objectiveHud').classList.toggle('hidden',!goal||homeOpen);if(goal){$('objectiveHud').textContent=`${activeTrial?'必达':'奖励'}：${goal.label}${objectiveMet(goal)?' ✓':''}`;$('objectiveHud').classList.toggle('earned',objectiveMet(goal));}}
     if($('levelProgress'))$('levelProgress').style.width=(levelIndex+1)/LEVELS.length*100+'%';
   }
   function launch(point){
@@ -1033,7 +1522,7 @@
     Body.setPosition(activeBird,point);
     Body.setVelocity(activeBird,{x:dx*.235,y:dy*.235});Body.setAngularVelocity(activeBird,-dy*.0012);
     meta(activeBird).launched=true;meta(activeBird).born=gameTime;Composite.add(engine.world,activeBird);birds.push(activeBird);
-    phase='flying';canDamage=true;persist();flightTime=0;settleTime=0;drag=null;shotCount++;queueIndex++;skillUsed=false;
+    phase='flying';canDamage=true;if(playMode==='voyage'){run.attemptStarted=true;persistRun();}else persist();flightTime=0;settleTime=0;drag=null;shotCount++;queueIndex++;skillUsed=false;
     lastTrail=trail;trail=[];$('shotHint').classList.add('hidden');
     burst(point.x,point.y,12,'#fff6d9','dust',2);updateQueue();updateHUD();
   }
@@ -1062,7 +1551,7 @@
         let damage=(speed-1.5)*Math.sqrt(mass)*5.2;
         if(om.kind==='bird'){
           if(om.type==='yellow'&&om.used&&m.material==='wood')damage*=2;
-          if(om.type==='blue'&&m.material==='glass')damage*=2.2;
+          if(om.type==='blue'&&(m.material==='glass'||m.material==='crystal'))damage*=2.2;
         }
         if(m.kind==='pig')damage*=1.25;
         damageBody(body,damage);
@@ -1077,9 +1566,12 @@
   }
   function damageBody(body,amount){
     const m=meta(body);if(m.dead||amount<2)return;
+    if(playMode==='voyage')amount*=1+(run?.upgrades?.power||0)*.18;
+    if(m.frozenUntil>gameTime)amount*=2.1;
+    if(m.shieldHP>0){const absorbed=Math.min(m.shieldHP,amount);m.shieldHP-=absorbed;amount-=absorbed;if(m.shieldHP===0){burst(body.position.x,body.position.y,18,'#9fd5ff','glass',4);audio.play('glass');}}
     m.hp-=amount;m.hitAt=gameTime;
     if(m.hp<=0)pendingDestroy.add(body);
-    else if(amount>12){audio.play(m.kind==='pig'?'pig':m.material,Math.min(.7,amount/100));if(m.kind==='pig')labels.push({x:body.position.x,y:body.position.y-30,text:'!',color:'#fff',life:.6,max:.6,size:25});}
+    else if(amount>12){audio.play(m.kind==='pig'?'pig':(({crystal:'glass',metal:'stone',rubber:'wood'})[m.material]||m.material),Math.min(.7,amount/100));if(m.kind==='pig')labels.push({x:body.position.x,y:body.position.y-30,text:'!',color:'#fff',life:.6,max:.6,size:25});}
   }
   function addScore(points,x,y,label){
     score+=points;labels.push({x,y,text:label||'+'+format(points),color:points>=5000?'#fff5a7':'#ffffff',life:1.55,max:1.55,size:points>=5000?31:21});
@@ -1088,18 +1580,19 @@
     const m=meta(body);if(m.removed)return;m.dead=true;m.removed=true;
     Composite.remove(engine.world,body);const {x,y}=body.position;
     if(m.kind==='pig'){
-      combo=gameTime-lastKill<2.3?combo+1:1;lastKill=gameTime;save.bestCombo=Math.max(save.bestCombo||0,combo);
+      combo=gameTime-lastKill<2.3?combo+1:1;lastKill=gameTime;metrics.combo=Math.max(metrics.combo,combo);save.bestCombo=Math.max(save.bestCombo||0,combo);
       addScore(5000+(combo-1)*1000,x,y-30);burst(x,y,28,'#a9d755','shard',5);burst(x,y,13,'#edf6b5','dust',4);
       rings.push({x,y,r:15,maxR:85,life:.45,max:.45,color:'#daf59a'});
       labels.push({x:x+20,y:y-70,text:combo>1?`${combo} 连击!`:'POP!',color:'#eaffb0',life:.9,max:.9,size:43});audio.play('pig');shake=Math.max(shake,5);
       if(combo>1){toast(`漂亮！${combo} 连击 · +${(combo-1)*1000}`,2);audio.play('combo');}
     }else if(m.kind==='block'){
-      const mat=MATERIALS[m.material];addScore(mat.score,x,y);burst(x,y,Math.round(clamp(m.w*m.h/140,9,30)),mat.color,m.material==='glass'?'glass':'shard',5);audio.play(m.material);
+      const mat=MATERIALS[m.material];addScore(mat.score,x,y);burst(x,y,Math.round(clamp(m.w*m.h/140,9,30)),mat.color,m.material==='glass'?'glass':'shard',5);audio.play(({crystal:'glass',metal:'stone',rubber:'wood'})[m.material]||m.material);
       if(m.material==='tnt')explode(x,y,200,1.2);
     }else if(m.kind==='egg')explode(x,y,160,1.1);
   }
   function flushDestroyed(){let n=0;while(pendingDestroy.size&&n++<100){const current=[...pendingDestroy];pendingDestroy.clear();current.forEach(destroy);}}
   function explode(x,y,radius=180,power=1){
+    if(playMode==='voyage')radius*=1+(run?.upgrades?.blast||0)*.12;
     audio.play('explosion');shake=13*power;flash=.24;if(save.cinema)slowMo=.4;
     burst(x,y,40,'#ffbd43','spark',12*power);burst(x,y,25,'#51483c','dust',6*power);burst(x,y,22,'#fff6b3','spark',8*power);
     rings.push({x,y,r:8,maxR:radius*1.3,life:.55,max:.55,color:'#ffdc70'});
@@ -1114,9 +1607,19 @@
   function ability(){
     if(paused||modal||phase!=='flying'||!activeBird)return false;
     const b=activeBird,m=meta(b);if(m.used||m.dead)return false;
-    audio.init?.();audio.unlock?.();audio.play('ability');m.used=true;skillUsed=true;abilityActivatedAt=gameTime;
+    audio.init?.();audio.unlock?.();audio.play('ability');m.used=true;skillUsed=true;abilityActivatedAt=gameTime;if(!metrics.skills.includes(m.type))metrics.skills.push(m.type);
     const {x,y}=b.position;
-    if(m.type==='boomerang'){
+    if(m.type==='ice'){
+      rings.push({x,y,r:15,maxR:220,life:.65,max:.65,color:'#c7fbff'});burst(x,y,36,'#acf2ff','glass',8);
+      for(const t of [...blocks,...pigs]){const d=meta(t);if(!d.dead&&Math.hypot(t.position.x-x,t.position.y-y)<220){d.frozenUntil=gameTime+8;metrics.frozen++;Body.setVelocity(t,{x:t.velocity.x*.25,y:t.velocity.y*.25});damageBody(t,12);}}
+    }else if(m.type==='pink'){
+      rings.push({x,y,r:15,maxR:190,life:.65,max:.65,color:'#ffbbe8'});burst(x,y,22,'#ffcaeb','dust',7);
+      for(const t of [...blocks,...pigs]){const d=meta(t);if(!d.dead&&Math.hypot(t.position.x-x,t.position.y-y)<190){d.bubbleUntil=gameTime+1.7;d.bubblePopped=false;d.shieldHP=0;metrics.lifted++;Sleeping.set(t,false);Body.setVelocity(t,{x:t.velocity.x+1.8,y:-9});}}
+    }else if(m.type==='orange'){
+      m.inflated=true;metrics.inflations++;Body.scale(b,2.4,2.4);m.r*=2.4;m.popAt=gameTime+1.15;Body.setVelocity(b,{x:b.velocity.x*.7,y:-4});shake=7;
+      burst(x,y,20,'#ffd273','spark',7);rings.push({x,y,r:20,maxR:140,life:.4,max:.4,color:'#ffdc80'});
+      for(const t of [...blocks,...pigs]){const d=meta(t),dx=t.position.x-x,dy=t.position.y-y,dist=Math.hypot(dx,dy);if(!d.dead&&dist<125){Sleeping.set(t,false);Body.setVelocity(t,{x:t.velocity.x+dx/Math.max(1,dist)*11,y:t.velocity.y-6});damageBody(t,40);}}
+    }else if(m.type==='boomerang'){
       Body.setVelocity(b,{x:-Math.max(18,Math.abs(b.velocity.x)*1.25),y:-4});Body.setAngularVelocity(b,-.18);
       burst(x,y,25,'#acd947','feather',6);rings.push({x,y,r:12,maxR:95,life:.45,max:.45,color:'#dcff83'});
     }else if(m.type==='terence'){
@@ -1150,14 +1653,26 @@
   function toast(text,seconds=2.4){$('toast').textContent=text;$('toast').classList.remove('hidden');toastTimer=seconds;}
   function stepPhysics(){
     for(const b of birds){const m=meta(b);if(m.dead||!m.launched)continue;
+      for(const gate of mechanisms)if(gate.type==='portal'&&gameTime-(m.portalAt??-99)>.8){
+        const radius=gate.r||35,a=Math.hypot(b.position.x-gate.x,b.position.y-gate.y),z=Math.hypot(b.position.x-gate.toX,b.position.y-gate.toY);
+        if(a<radius+m.r*.5||z<radius+m.r*.5){const forward=a<radius+m.r*.5,tx=forward?gate.toX:gate.x,ty=forward?gate.toY:gate.y,old={...b.position},vel={...b.velocity};Body.setPosition(b,{x:tx+(vel.x>=0?1:-1)*(radius+8),y:ty});Body.setVelocity(b,vel);m.portalAt=gameTime;gate.pulse=1;metrics.portals++;burst(old.x,old.y,12,'#b691ff','spark',4);burst(b.position.x,b.position.y,15,'#8aecff','spark',4);audio.play('ability');}
+      }
       let vx=b.velocity.x+(level.wind||0),vy=b.velocity.y;
+      for(const field of mechanisms)if(field.type==='gravity'){const dx=field.x-b.position.x,dy=field.y-b.position.y,d=Math.hypot(dx,dy);if(d<field.r&&d>15){const f=(field.strength||.1)*(1-d/field.r);vx+=dx/d*f;vy+=dy/d*f;}}
+
       for(const fan of mechanisms)if(fan.type==='fan'&&Math.abs(b.position.x-fan.x)<fan.w/2&&Math.abs(b.position.y-fan.y)<fan.h/2){vy-=fan.strength||.35;vx+=.015;fan.pulse=1;}
       if(vx!==b.velocity.x||vy!==b.velocity.y)Body.setVelocity(b,{x:vx,y:vy});
     }
+    for(const b of [...blocks,...pigs,...birds]){const m=meta(b);if(m.dead)continue;
+      m.frozen=m.frozenUntil>gameTime;m.bubbled=m.bubbleUntil>gameTime;
+      if(m.bubbled){Sleeping.set(b,false);Body.setVelocity(b,{x:b.velocity.x*.998,y:b.velocity.y-.4});}
+      if(m.bubbleUntil&&m.bubbleUntil<=gameTime&&!m.bubblePopped){m.bubblePopped=true;burst(b.position.x,b.position.y,10,'#ffc9ee','spark',3);}
+      for(const belt of mechanisms)if(belt.type==='conveyor'&&Math.abs(b.position.x-belt.x)<belt.w/2&&Math.abs(b.position.y-(belt.y-belt.h/2))<(m.r||m.h/2||20)+12){Sleeping.set(b,false);Body.setVelocity(b,{x:clamp(b.velocity.x+(belt.speed||.12),-9,9),y:b.velocity.y});}
+    }
     Engine.update(engine,STEP);flushDestroyed();
-    for(const {body,spring} of springQueue){if(meta(body).dead)continue;const o=meta(spring).mechanism;o.pulse=1;Sleeping.set(body,false);Body.setVelocity(body,{x:(body.velocity.x<0?-1:1)*Math.max(10,Math.abs(body.velocity.x)),y:-Math.max(15,Math.abs(body.velocity.y)*1.2)});burst(body.position.x,body.position.y,14,'#ffec7e','spark',4);audio.play('ability');}
+    for(const {body,spring} of springQueue){metrics.springs++;if(meta(body).dead)continue;const o=meta(spring).mechanism;o.pulse=1;Sleeping.set(body,false);Body.setVelocity(body,{x:(body.velocity.x<0?-1:1)*Math.max(10,Math.abs(body.velocity.x)),y:-Math.max(15,Math.abs(body.velocity.y)*1.2)});burst(body.position.x,body.position.y,14,'#ffec7e','spark',4);audio.play('ability');}
     springQueue=[];
-    if(level.egg&&!eggCollected){for(const b of birds){const m=meta(b);if(m.kind!=='bird'||m.dead)continue;if(Math.hypot(b.position.x-level.egg.x,b.position.y-level.egg.y)<m.r+21){eggCollected=true;save.eggs[levelIndex]=true;persist();addScore(3000,level.egg.x,level.egg.y,'金蛋 +3,000');burst(level.egg.x,level.egg.y,35,'#ffd34f','spark',6);audio.play('star');toast('找到金蛋！ +3,000',2.4);$('eggStatus')?.classList.add('collected');break;}}}
+    if(level.egg&&!eggCollected){for(const b of birds){const m=meta(b);if(m.kind!=='bird'||m.dead)continue;if(Math.hypot(b.position.x-level.egg.x,b.position.y-level.egg.y)<m.r+21){eggCollected=true;if(playMode==='campaign'||playMode==='daily')save.eggs[levelIndex]=true;persist();addScore(3000,level.egg.x,level.egg.y,'金蛋 +3,000');burst(level.egg.x,level.egg.y,35,'#ffd34f','spark',6);audio.play('star');toast('找到金蛋！ +3,000',2.4);$('eggStatus')?.classList.add('collected');break;}}}
 
     // Fuses and cleanup keep ticking while the next bird waits on the sling.
     for(const body of [...blocks,...pigs,...birds]){
@@ -1166,6 +1681,7 @@
         if(m.kind==='pig'||m.kind==='block')pendingDestroy.add(body);
         else{m.dead=true;Composite.remove(engine.world,body);}continue;
       }
+      if(m.popAt&&gameTime>=m.popAt){m.dead=true;Composite.remove(engine.world,body);explode(body.position.x,body.position.y,195,1.1);continue;}
       if(m.slamImpact&&!m.slamConsumed){m.slamConsumed=true;explode(body.position.x,body.position.y,170,.85);labels.push({x:body.position.x,y:body.position.y-60,text:'BOOM!',color:'#ffdc7b',life:1,max:1,size:48});}
       if(m.kind==='bird'&&m.autoBombAt&&gameTime>=m.autoBombAt&&!m.used){
         m.used=true;m.dead=true;Composite.remove(engine.world,body);
@@ -1215,11 +1731,11 @@
     Art.background(ctx,level.theme,ambientTime);
     drawTrail(lastTrail,.23);drawTrail(trail,.72);
     for(const o of mechanisms)Art.mechanism?.(ctx,o,ambientTime);
-    if(level.egg&&!eggCollected)Art.collectible?.(ctx,level.egg.x,level.egg.y,!!save.eggs[levelIndex],ambientTime);
+    if(level.egg&&!eggCollected)Art.collectible?.(ctx,level.egg.x,level.egg.y,(playMode==='campaign'||playMode==='daily')&&!!save.eggs[levelIndex],ambientTime);
     for(const b of platforms)Art.block(ctx,b);
     if(!homeOpen)Art.sling(ctx,SLING.x,SLING.y,'back',drag||(phase==='ready'?SLING:null));
     for(const b of blocks)if(!meta(b).dead)Art.block(ctx,b);
-    for(const b of pigs)if(!meta(b).dead){const m=meta(b);Art.pig(ctx,b.position.x,b.position.y,m.r,b.angle,{...m,hurt:gameTime-m.hitAt<.3,blink:Math.sin(ambientTime*1.3+b.id)> .997});}
+    for(const b of pigs)if(!meta(b).dead){const m=meta(b);Art.pig(ctx,b.position.x,b.position.y,m.r,b.angle,{...m,shield:m.shieldHP>0,hurt:gameTime-m.hitAt<.3,blink:Math.sin(ambientTime*1.3+b.id)> .997});}
     if(!homeOpen)drawWaitingBirds();
     for(const b of birds){const m=meta(b);if(m.dead||homeOpen)continue;
       if(m.kind==='egg'){
@@ -1289,7 +1805,7 @@
     if(e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
     if((e.key===' '||e.key==='Enter')&&e.target.closest('button'))return;
     if(e.key==='Escape'){e.preventDefault();if(modal)closeModal();else togglePause();return;}
-    if(e.key.toLowerCase()==='r'&&!modal){e.preventDefault();loadLevel(levelIndex,{challenge:challengeMode,challengeKey:challengeDate});return;}
+    if(e.key.toLowerCase()==='r'&&!modal){e.preventDefault();restartCurrent();return;}
     if(e.key.toLowerCase()==='m'){toggleSound();return;}
     if(e.key.toLowerCase()==='c'){toggleCinema();return;}
     if(e.key.toLowerCase()==='h'){showHelp();return;}
@@ -1311,8 +1827,69 @@
   const btn=(text,action,primary=false)=>`<button type="button" class="${primary?'primary-btn':'secondary-btn'}" data-action="${action}">${text}</button>`;
   function togglePause(){
     if(modal==='pause'){closeModal();return;}if(modal)return;
-    showModal('pause',`<div class="modal-eyebrow">PAUSED</div><h2 class="modal-title">稍作休息！</h2><p class="modal-desc">准备好了，就继续发射。</p><div class="modal-actions">${btn('继续 ▶','resume',true)}${btn('重新挑战','restart')}${btn('关卡地图','levels')}${btn('主菜单','home')}</div><p class="modal-footnote">按 P 或 Esc 继续</p>`);
+    showModal('pause',`<div class="modal-eyebrow">PAUSED</div><h2 class="modal-title">稍作休息！</h2><p class="modal-desc">准备好了，就继续发射。</p><div class="modal-actions">${btn('继续 ▶','resume',true)}${btn('重新挑战','restart')}${activeTrial?btn('试炼列表','trials'):btn('关卡地图','levels')}${btn('主菜单','home')}</div><p class="modal-footnote">按 P 或 Esc 继续</p>`);
     $('pauseBtn').classList.add('is-paused');
+  }
+  const TRIALS=[
+    {id:0,name:'红鸟基本功',index:0,birds:['red','red','red'],description:'只有三只红鸟，找准承重位置。',goal:{kind:'shots',limit:3,label:'三只红鸟内过关'}},
+    {id:1,name:'玻璃三重奏',index:2,birds:['blue','blue','red','bomb'],description:'用蓝鸟分裂打开玻璃花房。',goal:{kind:'skill',type:'blue',label:'至少使用一次蓝鸟分裂'}},
+    {id:2,name:'拆迁许可证',index:5,birds:['bomb','bomb','bomb'],description:'三颗炸弹，对付整座王堡。',goal:{kind:'skill',type:'bomb',label:'主动引爆一次炸弹'}},
+    {id:3,name:'背后的破绽',index:6,birds:['boomerang','boomerang','bomb','red'],description:'先飞到后方，用回旋打乱防线。',goal:{kind:'skill',type:'boomerang',label:'至少释放一次回旋'}},
+    {id:4,name:'冰封连锁',index:0,birds:['ice','bomb','red','yellow'],description:'让冰晶命中建筑附近，再用后续小鸟破冰。',goal:{kind:'frozen',limit:1,label:'冻结至少一个目标'}},
+    {id:5,name:'泡泡拆迁队',index:0,birds:['pink','bomb','white','red'],description:'把支柱或绿猪抬起来，再让重力接手。',goal:{kind:'lifted',limit:1,label:'泡泡抬起至少一个目标'}},
+    {id:6,name:'一发入魂',index:0,birds:['bomb'],description:'只有一只炸弹黑，一击拿下整个木屋。',goal:{kind:'shots',limit:1,label:'一只小鸟完成过关'}},
+    {id:7,name:'金蛋快递',index:0,birds:['red','white','bomb','bomb'],description:'先带走空中的金蛋，再清理绿猪。',goal:{kind:'egg',label:'收集金蛋并消灭绿猪'}},
+    {id:8,name:'弹跳高手',index:19,birds:['red','terence','bomb','white','bomb'],description:'至少有一次真正的弹簧反弹。',goal:{kind:'springs',limit:1,label:'触发弹簧后完成关卡'}},
+    {id:9,name:'能量折跃',index:0,birds:['boomerang','bomb','red','bomb'],description:'穿过蓝紫传送门，再夺下木堡。',mechanisms:[{type:'portal',x:620,y:465,r:48,toX:1320,toY:440}],goal:{kind:'portals',limit:1,label:'通过传送门后完成关卡'}},
+    {id:10,name:'橙色风暴',index:0,birds:['orange','orange','bomb'],description:'用巨型膨胀撑开一条通路。',goal:{kind:'inflations',limit:1,label:'至少发动一次膨胀'}},
+    {id:11,name:'皇冠终结者',index:23,birds:['terence','bomb','white','bomb','bomb'],description:'没有退路，最后的王座等你粉碎。',goal:{kind:'skill',type:'terence',label:'使出大红重坠后过关'}}
+  ];
+  function objectiveMet(g){if(!g)return false;if(g.kind==='shots')return shotCount>0&&shotCount<=g.limit;if(g.kind==='egg')return eggCollected;if(g.kind==='skill')return metrics.skills?.includes(g.type);return (metrics[g.kind]||0)>=(g.limit||1);}
+  function showModes(){
+    const best=save.voyageBest.normal||{},done=Object.keys(save.trials).length;
+    showModal('modes',`<div class="modal-eyebrow">BEYOND THE ISLANDS</div><h2 class="modal-title">这次，玩点不一样的！</h2><div class="mode-grid"><button class="mode-card" data-action="voyage-setup"><span class="mode-icon">∞</span><h3>无限远征</h3><p class="mode-desc">种子生成新岛屿 · 三颗心<br>每过三站选择升级，冲击无限连胜。</p><small>标准纪录 ${format(best.score||0)} · ${best.stage||0} 站</small></button><button class="mode-card" data-action="trials"><span class="mode-icon">♛</span><h3>大师试炼</h3><p class="mode-desc">12 场专项挑战<br>限定阵容、金蛋任务、折跃与弹跳。</p><small>已完成 ${done} / ${TRIALS.length}</small></button><button class="mode-card" data-action="daily-menu"><span class="mode-icon">★</span><h3>每日挑战</h3><p class="mode-desc">每天固定战场和三鸟阵容<br>今天的最佳方案由你发现。</p><small>${dailyKey()}</small></button></div><div class="modal-actions">${btn('返回','resume')}</div>`);
+  }
+  function showVoyageSetup(){
+    showModal('voyage-setup',`<div class="modal-eyebrow">ENDLESS EXPEDITION</div><h2 class="modal-title">无限远征</h2><p class="modal-desc">相同种子会生成相同航线。分享种子，和朋友挑战同一片群岛。<br>三颗心出发，每过三站获得一次升级。</p><div class="voyage-fields"><label>航线种子<input id="voyageSeed" maxlength="32" value="${Date.now()%100000000}" placeholder="数字或暗号"></label><label>远征难度<select id="voyageDifficulty"><option value="normal">标准 · 原始阵容</option><option value="casual">休闲 · 额外炸弹</option><option value="hard">硬核 · 减少一只鸟</option></select></label></div><div class="modal-actions">${btn('开启新远征','voyage-start',true)}${run&&run.lives>0?btn(`继续第 ${run.stage} 站`,'voyage-resume'):''}${btn('玩法中心','modes')}</div><p class="modal-footnote">失败或中途重试扣一颗心。已发射的未完成关卡，离开后继续也会扣心并重开。</p>`);
+  }
+  function seedNumber(value){const t=String(value||'0').trim();if(/^\d+$/.test(t))return Number(t)>>>0;let h=2166136261;for(const c of t)h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0;}
+  function persistRun(){if(run){const old=save.voyageBest[run.difficulty]||{};save.voyageBest[run.difficulty]={score:Math.max(old.score||0,run.score),stage:Math.max(old.stage||0,run.pendingNext?run.stage:Math.max(0,run.stage-1))};}save.voyageRun=run;persist();}
+  function startVoyage(seed,difficulty='normal'){
+    run={seed:seedNumber(seed),difficulty:['casual','normal','hard'].includes(difficulty)?difficulty:'normal',stage:1,lives:3,score:0,upgrades:{bird:0,power:0,blast:0},pendingNext:false,attemptStarted:false,awaitingUpgrade:false,upgradedForStage:0};persistRun();loadVoyageStage();
+  }
+  function voyageLevel(){
+    const l=VoyageFactory.create(run.seed,run.stage);l.birds=[...l.birds];
+    if(run.difficulty==='casual')l.birds.push('bomb');if(run.difficulty==='hard'&&l.birds.length>4)l.birds.pop();for(let i=0;i<run.upgrades.bird;i++)l.birds.push('bomb');
+    l.subtitle=`远征第 ${run.stage} 站 · 种子 ${run.seed} · ${l.subtitle}`;return l;
+  }
+  function loadVoyageStage(){if(!run||run.lives<=0){showVoyageSetup();return;}run.attemptStarted=false;loadLevel(0,{mode:'voyage',level:voyageLevel()});persistRun();}
+  function resumeVoyage(){if(!run||run.lives<=0){showVoyageSetup();return;}if(run.pendingNext){advanceVoyage();return;}if(run.attemptStarted){run.lives--;run.attemptStarted=false;persistRun();if(run.lives<=0){exhaustVoyage();return;}}loadVoyageStage();}
+  function advanceVoyage(){
+    if(!run||!run.pendingNext)return;
+    if(run.stage%3===0&&run.upgradedForStage!==run.stage){run.awaitingUpgrade=true;persistRun();showUpgrade();return;}
+    run.stage++;run.pendingNext=false;run.awaitingUpgrade=false;persistRun();loadVoyageStage();
+  }
+  function upgradeChoices(){
+    const a=[];if(run.upgrades.bird<3)a.push(['bird','增援小队','之后每站多一只炸弹黑']);if(run.upgrades.power<3)a.push(['power','强化冲击','所有破坏伤害提高 18%']);if(run.upgrades.blast<3)a.push(['blast','扩散爆破','爆炸作用半径提高 12%']);if(run.lives<5)a.push(['heart','补给之心','恢复一颗心，最多五颗']);a.push(['score','宝藏补给','远征总分增加 6,000']);return a.slice(0,3);
+  }
+  function showUpgrade(){showModal('upgrade',`<div class="modal-eyebrow">EXPEDITION UPGRADE</div><h2 class="modal-title">选一份远征补给！</h2><p class="modal-desc">已通过第 ${run.stage} 站。这份升级会陪你走完本次远征。</p><div class="upgrade-grid">${upgradeChoices().map(([id,name,desc])=>`<button class="upgrade-card" data-upgrade="${id}"><span>${id==='heart'?'♥':id==='bird'?'➕':'✦'}</span><h3>${name}</h3><p>${desc}</p></button>`).join('')}</div>`);}
+  function chooseUpgrade(key){
+    if(!run?.awaitingUpgrade||!upgradeChoices().some(x=>x[0]===key))return;
+    if(key==='heart')run.lives=Math.min(5,run.lives+1);else if(key==='score')run.score+=6000;else run.upgrades[key]++;
+    run.upgradedForStage=run.stage;run.awaitingUpgrade=false;persistRun();advanceVoyage();
+  }
+  function showTrials(){showModal('trials',`<div class="modal-eyebrow">MASTER THE FLOCK</div><h2 class="modal-title">十二道大师试炼</h2><p class="modal-desc">除了清空绿猪，还必须完成卡片上的任务。</p><div class="trial-grid">${TRIALS.map(t=>`<button class="trial-card ${save.trials[t.id]?'completed':''}" data-trial="${t.id}"><strong>${t.id+1}. ${t.name}</strong><span>${t.goal.label}</span><small>${save.trials[t.id]?'✓ '+format(save.trials[t.id].score):t.birds.map(b=>BIRDS[b].name).join(' / ')}</small></button>`).join('')}</div><div class="modal-actions">${btn('玩法中心','modes')}</div>`);}
+  function startTrial(id){const t=TRIALS[id];if(t)loadLevel(t.index,{mode:'trial',trial:id});}
+  function restartCurrent(){
+    if(playMode==='voyage'){
+      if(phase==='won'){advanceVoyage();return;}
+      if(phase!=='lost')run.lives--;persistRun();
+      if(run.lives<=0){exhaustVoyage();return;}loadVoyageStage();
+    }else if(activeTrial)startTrial(activeTrial.id);else loadLevel(levelIndex,{challenge:challengeMode,challengeKey:challengeDate});
+  }
+  function exhaustVoyage(){run.lives=0;run.attemptStarted=false;run.pendingNext=false;cancelAim();homeOpen=false;$('homeScreen')?.classList.add('hidden');playMode='voyage';phase='lost';resultRecorded=true;persistRun();showVoyageResult(false);}
+  function showVoyageResult(won){
+    showModal('result',`<div class="modal-eyebrow">SEED ${run.seed} · ${run.difficulty.toUpperCase()}</div><h2 class="modal-title">${won?`第 ${run.stage} 站，拿下！`:run.lives>0?'还能再战！':'远征结束！'}</h2><div class="result-score"><small>远征累计得分</small><strong>${format(run.score)}</strong><span>${'♥'.repeat(Math.max(0,run.lives))||'本次航程结束'} · 已通过 ${won?run.stage:run.stage-1} 站</span></div><p class="modal-desc">${won?(run.stage%3===0?'下一站之前，可以选择一份永久补给。':'还有更多未知岛屿等着你。'):'调整角度，把这一程的经验带到下一次。'}</p><div class="modal-actions">${won?btn(run.stage%3===0?'选择补给 ▶':'下一站 ▶','voyage-next',true):run.lives>0?btn('重试本站','restart',true):btn('新的远征','voyage-setup',true)}${btn('玩法中心','modes')}${btn('主菜单','home')}</div>`);
   }
   function worldInfo(index){return window.WORLDS?.[index]||{name:['偷蛋风波','落日峡谷','月夜奇袭','冰雪王国'][index],subtitle:'准备好，让绿猪飞起来！',id:['meadow','sunset','moon','snow'][index]};}
   function totalStars(){return Object.values(save.levels).reduce((n,l)=>n+(l.stars||0),0);}
@@ -1329,23 +1906,25 @@
     const c=$('titleBirds');if(!c)return;
     if(c.width!==1200){c.width=1200;c.height=410;}
     const g=c.getContext('2d');g.clearRect(0,0,1200,410);
-    const flock=[['terence',175,291,93],['white',750,280,77],['bomb',590,268,87],['boomerang',912,310,71],['yellow',438,299,76],['red',298,275,95],['blue',1050,325,48]];
+    const flock=[['pink',835,210,55],['ice',1050,224,51],['orange',470,185,49],['terence',175,291,93],['white',750,280,77],['bomb',590,268,87],['boomerang',912,310,71],['yellow',438,299,76],['red',298,275,95],['blue',1050,325,48]];
     for(const [type,x,y,r] of flock){g.fillStyle='rgba(15,39,16,.22)';g.beginPath();g.ellipse(x,366,r*.75,12,0,0,Math.PI*2);g.fill();Art.bird(g,x,y+Math.sin(ambientTime*1.7+x)*3,r,type,Math.sin(ambientTime*.7+x)*.018,{blink:Math.sin(ambientTime+x)>.997});}
   }
-  function showLevels(world){
-    mapWorld=typeof world==='number'?clamp(world,0,3):(level.world||0);
-    const info=worldInfo(mapWorld),points=[[10,66],[25,31],[42,62],[59,27],[76,60],[91,28]];
-    const tabs=[0,1,2,3].map(i=>`<button type="button" class="world-tab ${i===mapWorld?'active':''}" data-world="${i}"><span>${['☀','☄','☾','❄'][i]}</span>${esc(worldInfo(i).name)}</button>`).join('');
-    let nodes='';LEVELS.forEach((l,i)=>{if((l.world||0)!==mapWorld)return;const n=i%6,p=points[n],record=save.levels[i],stars=record?.stars||0;
-      nodes+=`<button type="button" class="map-node ${stars?'completed':''} ${i===levelIndex?'current':''} ${n===5?'boss-node':''}" style="--x:${p[0]}%;--y:${p[1]}%" data-level="${i}" aria-label="第${i+1}关 ${esc(l.name)}，${stars}星"><span class="node-number">${n===5?'♛':n+1}</span><span class="node-stars">${[1,2,3].map(j=>`<i class="${j<=stars?'earned':''}">★</i>`).join('')}</span><span class="node-name">${esc(l.name)}</span>${save.eggs[i]?'<span class="node-egg" title="已找到金蛋">◆</span>':''}</button>`;
-    });
-    showModal('levels',`<div class="map-top"><div><div class="modal-eyebrow">EPISODE ${mapWorld+1}</div><h2 class="modal-title">怒鸟冒险地图</h2></div><div class="map-totals">★ ${totalStars()} / ${LEVELS.length*3}<span>金蛋 ${Object.keys(save.eggs).length}</span></div></div><div class="world-tabs">${tabs}</div><div class="map-board theme-${info.id||info.theme||['meadow','sunset','moon','snow'][mapWorld]}"><div class="world-heading"><strong>${esc(info.name)}</strong><span>${esc(info.subtitle||'选择关卡，向绿猪发起挑战！')}</span></div><svg class="map-path" viewBox="0 0 1000 430" preserveAspectRatio="none" aria-hidden="true"><path d="M100 284 C140 294 177 87 250 133 S340 280 420 267 S510 80 590 116 S695 280 760 258 S850 117 910 120"/></svg>${nodes}<div class="map-grass"></div></div><div class="map-nav"><span>每一关都有一颗隐藏金蛋 · 自由选择挑战</span>${btn(homeOpen?'返回主菜单':'返回游戏','resume')}</div>`);
+  function showLevels(world,part){
+    const incoming=typeof world==='number'?clamp(world,0,WORLDS.length-1):(level.world||0);
+    const all=LEVELS.map((l,i)=>({l,i})).filter(v=>v.l.world===incoming);
+    mapLevelPage=typeof part==='number'?clamp(part,0,Math.ceil(all.length/6)-1):(incoming===mapWorld?mapLevelPage:0);mapWorld=incoming;
+    const info=worldInfo(mapWorld),points=[[10,66],[25,31],[42,62],[59,27],[76,60],[91,28]],worldPage=Math.floor(mapWorld/4),worldPages=Math.ceil(WORLDS.length/4);
+    const symbols=['☀','☄','☾','❄','♣','◇','▲','⚙','✿','☁','✦','❋'];
+    const tabs=WORLDS.slice(worldPage*4,worldPage*4+4).map((w,n)=>{const i=worldPage*4+n;return `<button type="button" class="world-tab ${i===mapWorld?'active':''}" data-world="${i}"><span>${symbols[i]||'✦'}</span>${esc(w.name)}</button>`;}).join('');
+    const nodes=all.slice(mapLevelPage*6,mapLevelPage*6+6).map(({l,i},n)=>{const p=points[n],record=save.levels[i],stars=record?.stars||0,num=mapLevelPage*6+n+1,boss=num===all.length;return `<button type="button" class="map-node ${stars?'completed':''} ${i===levelIndex?'current':''} ${boss?'boss-node':''}" style="--x:${p[0]}%;--y:${p[1]}%" data-level="${i}" aria-label="第${i+1}关 ${esc(l.name)}，${stars}星"><span class="node-number">${boss?'♛':num}</span><span class="node-stars">${[1,2,3].map(j=>`<i class="${j<=stars?'earned':''}">★</i>`).join('')}</span><span class="node-name">${esc(l.name)}</span>${save.eggs[i]?'<span class="node-egg" title="已找到金蛋">◆</span>':''}${save.badges[i]?'<span class="node-badge" title="奖励目标完成">✓</span>':''}</button>`;}).join('');
+    const pageButtons=all.length>6?`<div class="level-page-nav">${Array.from({length:Math.ceil(all.length/6)},(_,i)=>`<button type="button" class="secondary-btn ${i===mapLevelPage?'active':''}" data-level-page="${i}">${i*6+1}–${Math.min(all.length,i*6+6)} 关</button>`).join('')}</div>`:'';
+    showModal('levels',`<div class="map-top"><div><div class="modal-eyebrow">WORLD TOUR · ${LEVELS.length} LEVELS</div><h2 class="modal-title">怒鸟环球冒险</h2></div><div class="map-totals">★ ${totalStars()} / ${LEVELS.length*3}<span>金蛋 ${Object.keys(save.eggs).length} / ${LEVELS.length}</span></div></div><div class="world-pager"><button type="button" class="secondary-btn" data-world-page="prev" ${worldPage===0?'disabled':''}>◀ 前四章</button><span>群岛 ${worldPage+1} / ${worldPages}</span><button type="button" class="secondary-btn" data-world-page="next" ${worldPage===worldPages-1?'disabled':''}>后四章 ▶</button></div><div class="world-tabs">${tabs}</div><div class="map-board theme-${info.id}"><div class="world-heading"><strong>${esc(info.name)}</strong><span>${esc(info.subtitle||'选择关卡，向绿猪发起挑战！')}</span></div><svg class="map-path" viewBox="0 0 1000 430" preserveAspectRatio="none" aria-hidden="true"><path d="M100 284 C140 294 177 87 250 133 S340 280 420 267 S510 80 590 116 S695 280 760 258 S850 117 910 120"/></svg>${nodes}<div class="map-grass"></div></div>${pageButtons}<div class="map-nav"><span>寻找金蛋 · 挑战奖励目标 · 收集 ${LEVELS.length*3} 颗星</span>${btn(homeOpen?'返回主菜单':'返回游戏','resume')}</div>`);
   }
   function showAlbum(){
-    const details={red:['怒鸟红','RED','稳定的抛物线与近距离冲击波，最适合攻击承重支柱。接近建筑时再使用技能。'],yellow:['飞镖黄','CHUCK','飞行中瞬间加速。木头是它的拿手好戏，先瞄准结构薄弱处再冲刺。'],blue:['蓝弟弟','THE BLUES','一分为三，扩大打击范围。三只蓝鸟对玻璃能造成更高伤害。'],bomb:['炸弹黑','BOMB','主动引爆，或猛烈撞击后延时引爆。冲击波能掀翻石墙、点燃 TNT。'],white:['白公主','MATILDA','投下一枚会爆炸的蛋，同时向上弹射。适合从上方打击受掩护的绿猪。'],boomerang:['回旋绿鸟','HAL','飞到目标背后再释放技能，像回旋镖一样反向突袭。位置比力度更重要。'],terence:['大红','TERENCE','体型与重量远超其他小鸟。空中释放陨石重坠，落点会产生强烈震荡。']};
+    const details={red:['怒鸟红','RED','稳定的抛物线与近距离冲击波，最适合攻击承重支柱。接近建筑时再使用技能。'],yellow:['飞镖黄','CHUCK','飞行中瞬间加速。木头是它的拿手好戏，先瞄准结构薄弱处再冲刺。'],blue:['蓝弟弟','THE BLUES','一分为三，扩大打击范围。三只蓝鸟对玻璃能造成更高伤害。'],bomb:['炸弹黑','BOMB','主动引爆，或猛烈撞击后延时引爆。冲击波能掀翻石墙、点燃 TNT。'],white:['白公主','MATILDA','投下一枚会爆炸的蛋，同时向上弹射。适合从上方打击受掩护的绿猪。'],boomerang:['回旋绿鸟','HAL','飞到目标背后再释放技能，像回旋镖一样反向突袭。位置比力度更重要。'],terence:['大红','TERENCE','体型与重量远超其他小鸟。空中释放陨石重坠，落点会产生强烈震荡。'],ice:['冰晶蓝','ICE','冻结附近建筑与绿猪，使其减速并变脆。八秒内后续伤害加倍，适合搭配炸弹。'],pink:['泡泡粉','PINK','把附近目标裹入泡泡并抬高，同时解除护盾。泡泡破裂后，目标会从空中摔落。'],orange:['膨胀橙','BUBBLES','变成巨大弹性球，撑开墙体，随后爆破。狭窄建筑内部是它最擅长的舞台。']};
     const cards=Object.entries(details).map(([type,d])=>`<article class="bird-card type-${type}"><canvas class="portrait" data-bird-portrait="${type}" width="160" height="150" aria-label="${d[0]}"></canvas><div class="bird-detail"><small>${d[1]}</small><h3>${d[0]}</h3><p>${d[2]}</p></div></article>`).join('');
-    const achievements=[[Object.values(save.levels).some(l=>l.stars===3),'一鸣惊人','取得一次三星'],Object.keys(save.eggs).length>=1? [true,'金蛋猎人','找到隐藏金蛋']:[false,'金蛋猎人','找到隐藏金蛋'],[(save.bestCombo||0)>=3,'连锁专家','达成三连击'],[Object.keys(save.levels).length>=24,'群岛英雄','完成全部关卡']];
-    showModal('album',`<div class="modal-eyebrow">MEET THE FLOCK</div><h2 class="modal-title">七只小鸟，各显神通</h2><div class="bird-album">${cards}</div><div class="achievement-row">${achievements.map(a=>`<div class="achievement ${a[0]?'earned':''}"><b>${a[0]?'★':'☆'} ${a[1]}</b><span>${a[2]}</span></div>`).join('')}</div><div class="modal-actions">${btn('返回冒险','resume',true)}</div>`);
+    const achievements=[[Object.values(save.levels).some(l=>l.stars===3),'一鸣惊人','取得一次三星'],Object.keys(save.eggs).length>=1? [true,'金蛋猎人','找到隐藏金蛋']:[false,'金蛋猎人','找到隐藏金蛋'],[(save.bestCombo||0)>=3,'连锁专家','达成三连击'],[Object.keys(save.levels).length>=LEVELS.length,'群岛英雄','完成全部关卡']];
+    showModal('album',`<div class="modal-eyebrow">MEET THE FLOCK</div><h2 class="modal-title">十只小鸟，各显神通</h2><div class="bird-album">${cards}</div><div class="achievement-row">${achievements.map(a=>`<div class="achievement ${a[0]?'earned':''}"><b>${a[0]?'★':'☆'} ${a[1]}</b><span>${a[2]}</span></div>`).join('')}</div><div class="modal-actions">${btn('返回冒险','resume',true)}</div>`);
     for(const c of $('modalContent').querySelectorAll('[data-bird-portrait]'))Art.bird(c.getContext('2d'),80,87,c.dataset.birdPortrait==='terence'?51:43,c.dataset.birdPortrait,0,{});
   }
   function showChallenge(){
@@ -1353,32 +1932,38 @@
     showModal('challenge',`<div class="modal-eyebrow">DAILY CHALLENGE · ${dailyKey()}</div><h2 class="modal-title">今天，换一种打法！</h2><div class="challenge-emblem">★</div><p class="modal-desc">今日战场：<b>${esc(LEVELS[i].name)}</b><br>限定阵容：回旋绿鸟 + 大红 + 炸弹黑<br>用三只小鸟完成挑战，刷新今日最高分。</p><div class="result-score"><small>今日最佳</small><strong>${format(record?.score||0)}</strong><span>${record?'已完成挑战，再冲一次纪录！':'每天一场新挑战，随时可以重试。'}</span></div><div class="modal-actions">${btn('接受挑战','daily',true)}${btn('返回','resume')}</div>`);
   }
   function showHelp(){
-    showModal('help',`<div class="modal-eyebrow">HOW TO PLAY</div><h2 class="modal-title">拉！瞄！放！</h2><div class="help-grid"><div class="help-item"><b>① 拉开弹弓</b><p>拖住小鸟向后拉，白点预测飞行路线。拉得越远，飞得越快。松手发射！</p></div><div class="help-item"><b>② 空中绝招</b><p>点击场景、技能按钮或按 <span class="key">Space</span>。每只鸟都有独门绝招，去图鉴了解它们！</p></div><div class="help-item"><b>③ 连锁破坏</b><p>木头怕黄鸟，玻璃怕蓝鸟，石头怕炸弹。打断支柱、点燃 TNT，让倒塌帮你消灭绿猪。</p></div><div class="help-item"><b>④ 新机关与收集</b><p>弹簧能把小鸟弹向高处；气流会托起小鸟，风向也会影响轨迹。碰到金蛋获得 3,000 分，收集永久保存。</p></div><div class="help-item"><b>⑤ 高分秘诀</b><p>快速击破多只绿猪触发连击。每只剩余小鸟奖励 8,000 分。24 关、72 颗星与24颗金蛋等你挑战。</p></div><div class="help-item"><b>⑥ 键盘操作</b><p>↑↓ 角度 · ←→ 力度 · 空格 发射/技能<br>R 重开 · P/Esc 暂停 · M 声音 · F 全屏<br>C 开关冲击慢动作 · H 帮助</p></div></div><div class="modal-actions">${btn('出发！','resume',true)}${btn('小鸟图鉴','album')}</div>`);
+    showModal('help',`<div class="modal-eyebrow">HOW TO PLAY</div><h2 class="modal-title">拉！瞄！放！</h2><div class="help-grid"><div class="help-item"><b>① 拉开弹弓</b><p>拖住小鸟向后拉，白点预测飞行路线。拉得越远，飞得越快。松手发射！</p></div><div class="help-item"><b>② 空中绝招</b><p>点击场景、技能按钮或按 <span class="key">Space</span>。每只鸟都有独门绝招，去图鉴了解它们！</p></div><div class="help-item"><b>③ 连锁破坏</b><p>木头怕黄鸟，玻璃怕蓝鸟，石头怕炸弹。打断支柱、点燃 TNT，让倒塌帮你消灭绿猪。</p></div><div class="help-item"><b>④ 新机关与收集</b><p>弹簧能把小鸟弹向高处；传送门转移位置，引力场弯曲轨迹，传送带推动建筑。碰到金蛋获得 3,000 分，收集永久保存。</p></div><div class="help-item"><b>⑤ 高分秘诀</b><p>快速击破多只绿猪触发连击。每只剩余小鸟奖励 8,000 分。${LEVELS.length} 关、${LEVELS.length*3} 颗星与${LEVELS.length}颗金蛋等你挑战。玩法中心还有无限远征与12道试炼。</p></div><div class="help-item"><b>⑥ 键盘操作</b><p>↑↓ 角度 · ←→ 力度 · 空格 发射/技能<br>R 重开 · P/Esc 暂停 · M 声音 · F 全屏<br>C 开关冲击慢动作 · H 帮助</p></div></div><div class="modal-actions">${btn('出发！','resume',true)}${btn('小鸟图鉴','album')}${btn('玩法中心','modes')}</div>`);
   }
   function finish(won){
-    if(resultRecorded)return;resultRecorded=true;phase=won?'won':'lost';
-    const bonus=won?(level.birds.length-queueIndex)*8000:0;score+=bonus;displayScore=score;
-    let stars=0;if(won){stars=score>=level.threeStarScore?3:score>=level.threeStarScore*.64?2:1;if(challengeMode){const key=challengeDate;save.daily[key]={score:Math.max(save.daily[key]?.score||0,score),stars:Math.max(save.daily[key]?.stars||0,stars)};}else{const old=save.levels[levelIndex];save.levels[levelIndex]={score:Math.max(old?.score||0,score),stars:Math.max(old?.stars||0,stars)};}}persist();
+    if(resultRecorded)return;const trialFailed=won&&activeTrial&&!objectiveMet(activeTrial.goal);if(trialFailed)won=false;resultRecorded=true;phase=won?'won':'lost';
+    const bonus=won?(level.birds.length-queueIndex)*8000:0,goalBonus=won&&level.objective&&objectiveMet(level.objective)?3000:0;score+=bonus+goalBonus;displayScore=score;
+    if(won&&goalBonus&&playMode==='campaign')save.badges[levelIndex]=true;
+    if(playMode==='voyage'){run.attemptStarted=false;if(won){run.score+=score;run.pendingNext=true;const old=save.voyageBest[run.difficulty]||{};save.voyageBest[run.difficulty]={score:Math.max(old.score||0,run.score),stage:Math.max(old.stage||0,run.stage)};}else run.lives--;persistRun();audio.play(won?'win':'lose');updateHUD();showVoyageResult(won);return;}
+    let stars=0;if(won){stars=score>=level.threeStarScore?3:score>=level.threeStarScore*.64?2:1;if(activeTrial){const old=save.trials[activeTrial.id]||{};save.trials[activeTrial.id]={score:Math.max(old.score||0,score),stars:Math.max(old.stars||0,stars)};}else if(challengeMode){const key=challengeDate;save.daily[key]={score:Math.max(save.daily[key]?.score||0,score),stars:Math.max(save.daily[key]?.stars||0,stars)};}else{const old=save.levels[levelIndex];save.levels[levelIndex]={score:Math.max(old?.score||0,score),stars:Math.max(old?.stars||0,stars)};}}persist();
     audio.play(won?'win':'lose');updateHUD();
     if(won)for(let i=0;i<100;i++){const life=rand(2,4);particles.push({x:rand(200,1400),y:rand(50,260),vx:rand(-2,2),vy:rand(-3,2),color:['#ffcd59','#e96c55','#a5cf71','#8dd4e7'][i%4],kind:'shard',life,max:life,size:rand(4,8),angle:rand(0,6),spin:rand(-.1,.1)});}
-    showModal('result',`<div class="modal-eyebrow">${challengeMode?'DAILY CHALLENGE':won?'LEVEL CLEARED!':'LEVEL FAILED!'}</div><h2 class="modal-title">${won?(stars===3?'三星！漂亮！':'绿猪全灭！'):'再来一次！'}</h2><div class="result-stars" aria-label="${stars}颗星">${[1,2,3].map(n=>`<span class="${n<=stars?'earned':''}" style="--delay:${n*.16}s">★</span>`).join('')}</div><div class="result-score"><small>SCORE</small><strong>${format(score)}</strong><span>${won?`剩余小鸟奖励 +${format(bonus)}${eggCollected?' · 金蛋 +3,000':''}`:`还剩 ${pigs.filter(p=>!meta(p).dead).length} 只绿猪`}</span></div><p class="modal-desc">${won?(challengeMode?'今日成绩已保存，明天再来挑战！':stars===3?'完美的破坏艺术。下一关，继续！':'寻找薄弱点，用更少的小鸟拿下三星！'):'换个角度，或者试着从背后突破。'}</p><div class="modal-actions">${won&&!challengeMode&&levelIndex<LEVELS.length-1?btn('下一关 ▶','next',true):btn('再来一次','restart',true)}${won&&!challengeMode?btn('再玩一次','restart'):''}${btn('关卡地图','levels')}${btn('主菜单','home')}</div>`);
+    showModal('result',`<div class="modal-eyebrow">${activeTrial?'MASTER TRIAL':challengeMode?'DAILY CHALLENGE':won?'LEVEL CLEARED!':'LEVEL FAILED!'}</div><h2 class="modal-title">${won?(stars===3?'三星！漂亮！':'绿猪全灭！'):'再来一次！'}</h2><div class="result-stars" aria-label="${stars}颗星">${[1,2,3].map(n=>`<span class="${n<=stars?'earned':''}" style="--delay:${n*.16}s">★</span>`).join('')}</div><div class="result-score"><small>SCORE</small><strong>${format(score)}</strong><span>${won?`剩余小鸟奖励 +${format(bonus)}${eggCollected?' · 金蛋 +3,000':''}${goalBonus?' · 奖励目标 +3,000':''}`:`还剩 ${pigs.filter(p=>!meta(p).dead).length} 只绿猪`}</span></div><p class="modal-desc">${trialFailed?'绿猪已清空，但还没有完成必达任务：'+activeTrial.goal.label:won?(challengeMode?'今日成绩已保存，明天再来挑战！':stars===3?'完美的破坏艺术。下一关，继续！':'寻找薄弱点，用更少的小鸟拿下三星！'):'换个角度，或者试着从背后突破。'}</p><div class="modal-actions">${won&&activeTrial&&activeTrial.id<TRIALS.length-1?btn('下一道试炼 ▶','trial-next',true):won&&!challengeMode&&!activeTrial&&levelIndex<LEVELS.length-1?btn('下一关 ▶','next',true):btn('再来一次','restart',true)}${won&&!challengeMode&&!activeTrial?btn('再玩一次','restart'):''}${activeTrial?btn('试炼列表','trials'):btn('关卡地图','levels')}${btn('主菜单','home')}</div>`);
   }
   $('modalContent').addEventListener('click',e=>{
     const button=e.target.closest('button');if(!button)return;audio.init?.();audio.unlock?.();audio.play('click');
-    if(button.dataset.world!==undefined){showLevels(+button.dataset.world);return;}
+    if(button.dataset.worldPage!==undefined){showLevels(clamp((Math.floor(mapWorld/4)+(button.dataset.worldPage==='next'?1:-1))*4,0,WORLDS.length-1),0);return;}
+    if(button.dataset.levelPage!==undefined){showLevels(mapWorld,+button.dataset.levelPage);return;}
+    if(button.dataset.trial!==undefined){startTrial(+button.dataset.trial);return;}
+    if(button.dataset.upgrade){chooseUpgrade(button.dataset.upgrade);return;}
+    if(button.dataset.world!==undefined){showLevels(+button.dataset.world,0);return;}
     if(button.dataset.level!==undefined){loadLevel(+button.dataset.level);return;}
-    const action=button.dataset.action;if(action==='resume')closeModal();else if(action==='restart')loadLevel(levelIndex,{challenge:challengeMode,challengeKey:challengeDate});else if(action==='next')loadLevel(levelIndex+1);else if(action==='levels')showLevels();else if(action==='home')openHome();else if(action==='album')showAlbum();else if(action==='daily'){audio.init?.();loadLevel(dailyIndex(),{challenge:true});}
+    const action=button.dataset.action;if(action==='resume')closeModal();else if(action==='restart')restartCurrent();else if(action==='next')loadLevel(levelIndex+1);else if(action==='levels')showLevels();else if(action==='home')openHome();else if(action==='album')showAlbum();else if(action==='modes')showModes();else if(action==='voyage-setup')showVoyageSetup();else if(action==='voyage-start')startVoyage($('voyageSeed').value,$('voyageDifficulty').value);else if(action==='voyage-resume')resumeVoyage();else if(action==='voyage-next')advanceVoyage();else if(action==='trials')showTrials();else if(action==='trial-next'&&activeTrial)startTrial(activeTrial.id+1);else if(action==='daily-menu')showChallenge();else if(action==='daily'){audio.init?.();loadLevel(dailyIndex(),{challenge:true});}
   });
-  $('modalOverlay').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const buttons=[...$('modalContent').querySelectorAll('button')];if(!buttons.length)return;const first=buttons[0],last=buttons.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
-  function toggleSound(){save.sound=!save.sound;save.eggs=save.eggs||{};save.daily=save.daily||{};
+  $('modalOverlay').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const buttons=[...$('modalContent').querySelectorAll('button:not([disabled]),input,select')];if(!buttons.length)return;const first=buttons[0],last=buttons.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
+  function toggleSound(){save.sound=!save.sound;save.eggs=save.eggs||{};save.daily=save.daily||{};save.trials=save.trials||{};save.badges=save.badges||{};save.voyageBest=save.voyageBest||{};save.schema=3;
   audio.setEnabled(save.sound);if(save.sound){audio.init?.();audio.unlock?.();audio.play('click');}persist();updateSound();}
   function updateSound(){$('soundBtn').classList.toggle('muted',!save.sound);$('soundBtn').setAttribute('aria-label',save.sound?'关闭声音':'开启声音');$('soundBtn').setAttribute('aria-pressed',String(save.sound));$('soundBtn').title=save.sound?'关闭声音 (M)':'开启声音 (M)';}
-  $('soundBtn').addEventListener('click',toggleSound);$('helpBtn').addEventListener('click',showHelp);$('levelsBtn').addEventListener('click',showLevels);$('pauseBtn').addEventListener('click',togglePause);$('restartBtn').addEventListener('click',()=>loadLevel(levelIndex,{challenge:challengeMode,challengeKey:challengeDate}));$('abilityBtn').addEventListener('click',ability);
+  $('soundBtn').addEventListener('click',toggleSound);$('helpBtn').addEventListener('click',showHelp);$('levelsBtn').addEventListener('click',showLevels);$('pauseBtn').addEventListener('click',togglePause);$('restartBtn').addEventListener('click',restartCurrent);$('abilityBtn').addEventListener('click',ability);
   $('fullscreenBtn').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch(_){toast('当前浏览器不支持全屏，可使用 F11',3);}});
   function updateCinema(){$('cinemaBtn')?.classList.toggle('disabled',!save.cinema);$('cinemaBtn')?.setAttribute('aria-pressed',String(save.cinema));}
   function toggleCinema(){save.cinema=!save.cinema;persist();updateCinema();toast(save.cinema?'冲击慢动作：开启':'冲击慢动作：关闭',1.5);}
   const bind=(id,fn)=>$(id)?.addEventListener('click',()=>{audio.init?.();audio.play('click');fn();});
-  bind('playBtn',()=>loadLevel(clamp(save.lastLevel||0,0,LEVELS.length-1)));bind('homeLevelsBtn',showLevels);bind('homeAlbumBtn',showAlbum);bind('homeChallengeBtn',showChallenge);bind('homeBtn',openHome);bind('albumBtn',showAlbum);bind('cinemaBtn',toggleCinema);
+  bind('playBtn',()=>loadLevel(clamp(save.lastLevel||0,0,LEVELS.length-1)));bind('homeLevelsBtn',showLevels);bind('homeAlbumBtn',showAlbum);bind('homeChallengeBtn',showChallenge);bind('homeBtn',openHome);bind('albumBtn',showAlbum);bind('cinemaBtn',toggleCinema);bind('homeModesBtn',showModes);
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&!modal&&phase!=='won'&&phase!=='lost'){cancelAim();togglePause();}lastTime=performance.now();accumulator=0;});
   window.addEventListener('blur',cancelAim);
   function frame(time){
@@ -1390,11 +1975,12 @@
     draw();requestAnimationFrame(frame);
   }
   // Read-only diagnostic state supports repeatable browser QA without changing play.
-  window.IslandGame={getState:()=>({level:levelIndex,phase,paused,homeOpen,challengeMode,challengeDate,eggCollected,world:level.world||0,modal,score,birdsRemaining:level.birds.length-queueIndex,pigsAlive:pigs.filter(p=>!meta(p).dead).length,shotCount,skillUsed,active:activeBird?{x:activeBird.position.x,y:activeBird.position.y,type:meta(activeBird).type,used:meta(activeBird).used}:null,bodyCount:Composite.allBodies(engine.world).length,stars:save.levels[levelIndex]?.stars||0,totalEggs:Object.keys(save.eggs).length,mechanisms:mechanisms.map(o=>({type:o.type,pulse:o.pulse})),slowMo})};
+  window.IslandGame={getState:()=>({version:'3.0.0',totalLevels:LEVELS.length,worldCount:WORLDS.length,birdCount:Object.keys(BIRDS).length,level:levelIndex,phase,paused,homeOpen,playMode,challengeMode,challengeDate,eggCollected,metrics:{...metrics,skills:[...(metrics.skills||[])]},trial:activeTrial?.id??null,voyage:playMode==='voyage'?{seed:run.seed,stage:run.stage,lives:run.lives,score:run.score,difficulty:run.difficulty,upgrades:{...run.upgrades}}:null,world:level.world||0,modal,score,birdsRemaining:level.birds.length-queueIndex,pigsAlive:pigs.filter(p=>!meta(p).dead).length,shotCount,skillUsed,active:activeBird?{x:activeBird.position.x,y:activeBird.position.y,type:meta(activeBird).type,used:meta(activeBird).used,vx:activeBird.velocity.x,vy:activeBird.velocity.y,r:meta(activeBird).r}:null,bodyCount:Composite.allBodies(engine.world).length,stars:save.levels[levelIndex]?.stars||0,totalEggs:Object.keys(save.eggs).length,mechanisms:mechanisms.map(o=>({type:o.type,pulse:o.pulse})),slowMo})};
   resize();const resumeIndex=save.lastLevel||0;loadLevel(5);save.lastLevel=resumeIndex;updateSound();updateCinema();openHome();requestAnimationFrame(frame);
 })();
 
 </script>
 </body>
 </html>
+
 
